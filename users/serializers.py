@@ -38,7 +38,7 @@ class IndividualOwnerCreaterSerializer(serializers.ModelSerializer):
         user_data = validated_data.pop('user', None)
         password = validated_data.pop('password')
         pin = GeneratePin()
-        verfication_pin = pin.gen_pin()
+        verification_pin = pin.gen_pin()
 
         # Update the user fields
         if user_data:
@@ -50,11 +50,11 @@ class IndividualOwnerCreaterSerializer(serializers.ModelSerializer):
         (user_instance, created) = User.objects.get_or_create(
             username=username,
             defaults={'first_name': first_name,
-                      'last_name': last_name, 'middle_name': middle_name, "email": username, 'verfication_pin': verfication_pin}
+                      'last_name': last_name, 'middle_name': middle_name, "email": username, 'verification_pin': verification_pin}
         )
         if created:
             mail_server = SendEmail()
-            mail_server.send_welcome_email([username], verfication_pin)
+            mail_server.send_welcome_email([username], verification_pin)
             user_instance.set_password(password)
             user_instance.save()
         else:
@@ -123,7 +123,7 @@ class CompanyOwnerCreateSeralizer(serializers.ModelSerializer):
         password = validated_data.pop('password')
         company_name = validated_data.pop("company_name")
         pin = GeneratePin()
-        verfication_pin = pin.gen_pin()
+        verification_pin = pin.gen_pin()
         if user_data:
             username = user_data.get('username')
 
@@ -134,7 +134,7 @@ class CompanyOwnerCreateSeralizer(serializers.ModelSerializer):
         )
         if created:
             mail_server = SendEmail()
-            mail_server.send_welcome_email([username], verfication_pin)
+            mail_server.send_welcome_email([username], verification_pin)
             user_instance.set_password(password)
             user_instance.save()
         else:
@@ -201,15 +201,15 @@ class CompanyOwnerUpdateSeralizer(serializers.ModelSerializer):
 
 class UserEmailVerificationSerializer(serializers.ModelSerializer):
     username = serializers.EmailField()
-    verfication_pin = serializers.CharField()
+    verification_pin = serializers.CharField()
 
     class Meta:
         model = User
-        fields = ['username', 'verfication_pin']
+        fields = ['username', 'verification_pin']
 
     def validate(self, attrs):
         username = attrs.get('username')
-        verfication_pin = attrs.get('verfication_pin')
+        verification_pin = attrs.get('verification_pin')
 
         try:
             user = User.objects.get(username=username)
@@ -217,17 +217,17 @@ class UserEmailVerificationSerializer(serializers.ModelSerializer):
         except User.DoesNotExist:
             raise serializers.ValidationError("User does not exist")
 
-        if user.verfication_pin == 1:
+        if user.verification_pin == 1:
             raise serializers.ValidationError("Email already verified")
 
-        if int(verfication_pin) != user.verfication_pin:
+        if int(verification_pin) != user.verification_pin:
             raise serializers.ValidationError("Invalid verification pin")
 
         return attrs
 
     def update(self, instance, validated_data):
         user = User.objects.get(username=validated_data.get('username'))
-        user.verfication_pin = 1
+        user.verification_pin = 1
         user.save()
         return instance
 

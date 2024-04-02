@@ -28,7 +28,7 @@ class Migration(migrations.Migration):
                 ('date_joined', models.DateTimeField(default=django.utils.timezone.now, verbose_name='date joined')),
                 ('middle_name', models.CharField(blank=True, max_length=50, null=True)),
                 ('username', models.EmailField(max_length=254, primary_key=True, serialize=False, unique=True)),
-                ('verfication_pin', models.IntegerField(blank=True, null=True)),
+                ('verification_pin', models.IntegerField(blank=True, null=True)),
                 ('password_reset_pin', models.IntegerField(blank=True, null=True)),
                 ('groups', models.ManyToManyField(blank=True, help_text='The groups this user belongs to. A user will get all permissions granted to each of their groups.', related_name='user_set', related_query_name='user', to='auth.group', verbose_name='groups')),
                 ('user_permissions', models.ManyToManyField(blank=True, help_text='Specific permissions for this user.', related_name='user_set', related_query_name='user', to='auth.permission', verbose_name='user permissions')),
