@@ -11,6 +11,9 @@ from .serializers import (CompanyOwnerCreateSeralizer,
                           )
 from rest_framework.views import APIView
 from rest_framework.response import Response
+import logging
+
+logging.getLogger(__name__)
 
 
 class IndvidualOwnerCreateView(mixins.CreateModelMixin,  mixins.RetrieveModelMixin, viewsets.GenericViewSet):

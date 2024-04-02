@@ -1,6 +1,9 @@
 from typing import List
 from django.core.mail import BadHeaderError
 from templated_mail.mail import BaseEmailMessage
+import logging
+
+loger = logging.getLogger(__name__)
 
 
 class SendEmail:
@@ -12,7 +15,7 @@ class SendEmail:
             )
             message.send(recipient_list)
         except BadHeaderError:
-            print("Error occured")
+            logging.ERROR("Error sending a welcome email")
 
     def send_password_reset_email(self, recipient_list: List[str], passcode: str):
         try:
@@ -22,4 +25,4 @@ class SendEmail:
             )
             message.send(recipient_list)
         except BadHeaderError:
-            print("Error Occured")
+            logging.ERROR("Error sending a welcome email")

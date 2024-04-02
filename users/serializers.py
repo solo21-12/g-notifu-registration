@@ -1,4 +1,3 @@
-from pprint import pprint
 from .models import Address, CompanyOwner, IndividualOwner, Owner
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
@@ -58,7 +57,7 @@ class IndividualOwnerCreaterSerializer(serializers.ModelSerializer):
             user_instance.set_password(password)
             user_instance.save()
         else:
-            raise serializers.ValidationError("User data is required")
+            raise serializers.ValidationError("User already exists")
 
         # Create the address
         contact = validated_data.pop('contact')
