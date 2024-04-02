@@ -7,6 +7,7 @@ class User(AbstractUser):
     username = models.EmailField(unique=True, primary_key=True)
     verification_pin = models.IntegerField(null=True, blank=True)
     password_reset_pin = models.IntegerField(null=True, blank=True)
+    id = models.BigAutoField(unique=True)
 
     def __str__(self) -> str:
         return self.email
