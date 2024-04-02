@@ -1,0 +1,27 @@
+# Virtual Environment
+/venv/
+
+# Static files
+/staticfiles/
+
+# Media files
+/media/
+/utils/token.json
+
+# Database
+db.sqlite3
+
+# Secrets and Configurations
+/secrets.json
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+*.pyc
+
+# Logs and Temporary Files
+/logs/
+/tmp/
+
+# Migration Files
+/users/migrations/
