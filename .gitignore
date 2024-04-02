@@ -25,3 +25,5 @@ db.sqlite3
 
 # Migration Files
 /users/migrations/
+
+/static/
