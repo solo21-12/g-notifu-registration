@@ -13,6 +13,7 @@ djangorestframework-simplejwt = "*"
 psycopg2-binary = "*"
 django-templated-mail = "*"
 gunicorn = "*"
+dj-database-url = "*"
 
 [dev-packages]
 

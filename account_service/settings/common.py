@@ -141,12 +141,7 @@ SIMPLE_JWT = {
     "REFRESH_TOKEN_LIFETIME": timedelta(days=5)
 }
 
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'dawitabrham0021@gmail.com'
-EMAIL_HOST_PASSWORD = 'xqapvbcwtyicjxpq'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+
 
 
 # LOGGING = {
