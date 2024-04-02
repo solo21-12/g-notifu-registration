@@ -1,16 +1,13 @@
 from .common import *
 import os
-from dj_database_url import config
+import dj_database_url
 
 
 DEBUG = False
 ALLOWED_HOSTS = ['g-notify-user-auth-eb39843fac64.herokuapp.com']
 SECRET_KEY = os.environ['SECRET_KEY']
 DATABASES = {
-    'default': config()
-    # DATABASE_URL
-
-}
+    'default': dj_database_url.config()}
 
 
 EMAIL_HOST = os.environ['EMAIL_HOST']
