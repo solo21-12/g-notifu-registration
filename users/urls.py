@@ -6,7 +6,8 @@ from .views import (
     IndvidualOwnerUpdateDeleteView,
     UserEmailVerificationView,
     UserPasswordResetRequestView,
-    UserPasswordResetView
+    UserPasswordResetView,
+    UserPasswordSetView
 )
 from rest_framework.routers import DefaultRouter
 
@@ -24,6 +25,7 @@ urlpatterns = [
     path("reset-password-request/",
          UserPasswordResetRequestView.as_view(), name="reset password"),
     path("reset-password-change/", UserPasswordResetView.as_view(),
-         name="reset password update")
+         name="reset password update"),
+    path("set-up-password", UserPasswordSetView.as_view(), name="set_up_password")
 
 ] + router.urls

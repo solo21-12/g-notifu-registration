@@ -25,17 +25,16 @@ class IndividualOwnerCreaterSerializer(serializers.ModelSerializer):
     last_name = serializers.CharField(source='user.last_name', required=True)
     middle_name = serializers.CharField(
         source='user.middle_name', required=False, allow_null=True, default=None)
-    password = serializers.CharField(
-        style={"input_type": "password"}, write_only=True)
+    # password = serializers.CharField(
+    #     style={"input_type": "password"}, write_only=True)
 
     class Meta:
         model = IndividualOwner
         fields = ['username', 'first_name', 'middle_name',
-                  'last_name', 'password'] + OwnerSerializer.Meta.fields
+                  'last_name'] + OwnerSerializer.Meta.fields
 
     def create(self, validated_data):
         user_data = validated_data.pop('user', None)
-        password = validated_data.pop('password')
         pin = GeneratePin()
         verification_pin = pin.gen_pin()
 
@@ -54,8 +53,6 @@ class IndividualOwnerCreaterSerializer(serializers.ModelSerializer):
         if created:
             mail_server = SendEmail()
             mail_server.send_welcome_email([username], verification_pin)
-            user_instance.set_password(password)
-            user_instance.save()
         else:
             raise serializers.ValidationError("User already exists")
 
@@ -108,18 +105,15 @@ class IndividualOwnerUpdateSerializer(serializers.ModelSerializer):
 
 class CompanyOwnerCreateSeralizer(serializers.ModelSerializer):
     username = serializers.CharField(source='user.username', required=True)
-    password = serializers.CharField(
-        style={"input_type": "password"}, write_only=True)
     contact = AddressSerlizer()
 
     class Meta:
         model = CompanyOwner
-        fields = ['username', 'company_name', 'password'] + \
+        fields = ['username', 'company_name'] + \
             OwnerSerializer.Meta.fields
 
     def create(self, validated_data):
         user_data = validated_data.pop('user', None)
-        password = validated_data.pop('password')
         company_name = validated_data.pop("company_name")
         pin = GeneratePin()
         verification_pin = pin.gen_pin()
@@ -134,8 +128,6 @@ class CompanyOwnerCreateSeralizer(serializers.ModelSerializer):
         if created:
             mail_server = SendEmail()
             mail_server.send_welcome_email([username], verification_pin)
-            user_instance.set_password(password)
-            user_instance.save()
         else:
             raise serializers.ValidationError("User data is required")
 
@@ -277,3 +269,26 @@ class UserPasswordResetUpdateSerlizer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['username', 'password']
+
+
+class UserPasswordSetUpSerlizer(serializers.ModelSerializer):
+    password = serializers.CharField(
+        style={"input_type": "password"}, write_only=True)
+
+    class Meta:
+        model = User
+        fields = ['username', 'password']
+
+    def update(self, instance, validated_data):
+        username = validated_data.get("username")
+        password = validated_data.get('password')
+
+        try:
+            user = User.objects.get(username=username)
+        except User.DoesNotExist:
+            raise serializers.ValidationError("User doesn't exist")
+
+        user.set_password(password)
+        user.save()
+
+        return user

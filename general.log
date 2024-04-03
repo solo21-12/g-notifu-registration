@@ -1,0 +1,209 @@
+2024-04-03 19:18:06,457 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:18:20,429 (WARNING) - django.request - Unauthorized: /auth/users/set_password/
+2024-04-03 19:18:20,654 (WARNING) - django.request - Not Found: /favicon.ico
+2024-04-03 19:18:34,265 (WARNING) - django.request - Unauthorized: /auth/users/set_password/
+2024-04-03 19:20:32,972 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/common.py changed, reloading.
+2024-04-03 19:20:33,348 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:20:34,718 (WARNING) - django.request - Unauthorized: /auth/users/set_password/
+2024-04-03 19:20:38,772 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:20:40,924 (WARNING) - django.request - Unauthorized: /auth/users/set_password/
+2024-04-03 19:20:45,167 (WARNING) - django.request - Unauthorized: /auth/users/set_password/
+2024-04-03 19:20:47,599 (WARNING) - django.request - Unauthorized: /auth/users/set_password/
+2024-04-03 19:20:47,886 (WARNING) - django.request - Unauthorized: /auth/users/set_password/
+2024-04-03 19:20:48,088 (WARNING) - django.request - Unauthorized: /auth/users/set_password/
+2024-04-03 19:20:48,286 (WARNING) - django.request - Unauthorized: /auth/users/set_password/
+2024-04-03 19:20:48,451 (WARNING) - django.request - Unauthorized: /auth/users/set_password/
+2024-04-03 19:20:57,813 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:21:03,698 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:21:12,235 (WARNING) - django.request - Unauthorized: /auth/users/set_password/
+2024-04-03 19:21:12,437 (WARNING) - django.request - Not Found: /favicon.ico
+2024-04-03 19:22:49,318 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:22:49,698 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:22:57,044 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:22:57,394 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:23:09,760 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:23:10,087 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:23:28,602 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:23:28,948 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:23:32,209 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:23:32,557 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:23:35,846 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:23:36,174 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:23:49,517 (WARNING) - django.request - Unauthorized: /users/
+2024-04-03 19:24:09,437 (ERROR) - django.request - Internal Server Error: /users/in/create/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/renderers.py", line 726, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/renderers.py", line 657, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/renderers.py", line 564, in get_raw_data_form
+    data = serializer.data.copy()
+           ^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/serializers.py", line 571, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.get_initial()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/serializers.py", line 421, in get_initial
+    for field in self.fields.values()
+                 ^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/serializers.py", line 1079, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/serializers.py", line 1175, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'password' was declared on serializer IndividualOwnerCreaterSerializer, but has not been included in the 'fields' option.
+2024-04-03 19:24:24,089 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:24:24,501 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:24:30,819 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:24:31,175 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:24:31,705 (WARNING) - django.request - Unauthorized: /users/in/create/
+2024-04-03 19:24:50,069 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-04-03 19:24:50,069 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-04-03 19:25:32,361 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:25:32,736 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:25:39,030 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:25:39,409 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:25:56,835 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:25:57,233 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:25:58,455 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:25:58,762 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:26:01,994 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:26:02,356 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:26:03,623 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:26:03,928 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:26:06,220 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:26:06,570 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:26:12,942 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:26:13,294 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:26:17,606 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:26:17,939 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:26:20,172 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:26:20,487 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:26:24,735 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:26:25,054 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:26:30,329 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:26:30,651 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:26:41,028 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:26:41,372 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:27:02,885 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 19:27:03,212 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:35:24,358 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:35:33,718 (ERROR) - django.request - Internal Server Error: /users/set-up-password
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: IsAuthenticated.has_permission() missing 1 required positional argument: 'view'
+2024-04-03 19:36:00,098 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-04-03 19:36:00,446 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:36:01,218 (ERROR) - django.request - Internal Server Error: /users/set-up-password
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: IsAuthenticated.has_permission() missing 1 required positional argument: 'view'
+2024-04-03 19:36:07,797 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-04-03 19:36:08,106 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:36:38,491 (ERROR) - django.request - Internal Server Error: /users/set-up-password
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: IsAuthenticated.has_permission() missing 1 required positional argument: 'view'
+2024-04-03 19:40:39,494 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-04-03 19:40:39,494 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-04-03 19:40:39,510 (WARNING) - django.request - Method Not Allowed: /auth/jwt/refresh/
+2024-04-03 19:46:41,270 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 19:46:54,162 (WARNING) - django.request - Not Found: /docs

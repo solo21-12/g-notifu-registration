@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "0a370dd167da8b7143e09fcfcc836c825f50542df21da6c3d456b5636c4815f5"
+            "sha256": "d2e222f92f11becec7387f25a767a5d340dff5df268a713b87a29f950fd6787a"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -242,11 +242,11 @@
         },
         "django": {
             "hashes": [
-                "sha256:5c7d748ad113a81b2d44750ccc41edc14e933f56581683db548c9257e078cc83",
-                "sha256:5fb37580dcf4a262f9258c1f4373819aacca906431f505e4688e37f3a99195df"
+                "sha256:4bd01a8c830bb77a8a3b0e7d8b25b887e536ad17a81ba2dce5476135c73312bd",
+                "sha256:916423499d75d62da7aa038d19aef23d23498d8df229775eb0a6309ee1013775"
             ],
             "index": "pypi",
-            "version": "==5.0.3"
+            "version": "==5.0.4"
         },
         "django-filter": {
             "hashes": [
@@ -255,6 +255,14 @@
             ],
             "index": "pypi",
             "version": "==24.2"
+        },
+        "django-rest-framework-docs": {
+            "hashes": [
+                "sha256:d911ead684a34ebc72541aa1e4985c9c69f2254ceb79c13a74b4431017e6bf01",
+                "sha256:e341f950c5c08ac9e0afbe4f87f2e258237489049b637f625ab8bc5d8214e185"
+            ],
+            "index": "pypi",
+            "version": "==0.1.7"
         },
         "django-templated-mail": {
             "hashes": [
@@ -303,6 +311,14 @@
             ],
             "markers": "python_version >= '3.5'",
             "version": "==3.6"
+        },
+        "jsonpickle": {
+            "hashes": [
+                "sha256:5691f44495327858ab3a95b9c440a79b41e35421be1a6e09a47b6c9b9421fd06",
+                "sha256:e8d6dcc58f6722bea0321cd328fbda81c582461185688a535df02be0f699afb4"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==3.0.3"
         },
         "markdown": {
             "hashes": [

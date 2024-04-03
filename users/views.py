@@ -7,11 +7,11 @@ from .serializers import (CompanyOwnerCreateSeralizer,
                           IndividualOwnerUpdateSerializer,
                           UserEmailVerificationSerializer,
                           UserPasswordResetRequestSerializer,
-                          UserPasswordResetUpdateSerlizer
+                          UserPasswordResetUpdateSerlizer,
+                          UserPasswordSetUpSerlizer
                           )
 from rest_framework.views import APIView
 from rest_framework.response import Response
-
 
 
 class IndvidualOwnerCreateView(mixins.CreateModelMixin,  mixins.RetrieveModelMixin, viewsets.GenericViewSet):
@@ -100,3 +100,17 @@ class UserPasswordResetView(APIView):
         return Response('Password succesfully changed', status=status.HTTP_204_NO_CONTENT)
 
         # return Response(serlizer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class UserPasswordSetView(APIView):
+    def get_permissions(self):
+        if self.request.method == 'PUT':
+            return [AllowAny()]
+
+        return [IsAuthenticated]
+
+    def put(self, request):
+        serlizer = UserPasswordSetUpSerlizer(data=request.data)
+        serlizer.update(serlizer.instance, request.data)
+
+        return Response('Password succesfully changed', status=status.HTTP_204_NO_CONTENT)
