@@ -27,11 +27,8 @@ class IndvidualOwnerCreateView(mixins.CreateModelMixin,  mixins.RetrieveModelMix
 class IndvidualOwnerUpdateDeleteView(mixins.DestroyModelMixin, mixins.RetrieveModelMixin, mixins.UpdateModelMixin, viewsets.GenericViewSet):
     queryset = IndividualOwner.objects.all()
     serializer_class = IndividualOwnerUpdateSerializer
+    lookup_field='username'
 
-    def get_permissions(self):
-        if self.request.method == 'POST':
-            return [AllowAny()]
-        return [IsAuthenticated()]
 
 
 class CompanyOwnerCreateView(mixins.CreateModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):

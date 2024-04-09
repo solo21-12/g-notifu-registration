@@ -23,6 +23,7 @@ class IndividualOwnerCreaterSerializer(serializers.ModelSerializer):
     username = serializers.CharField(source='user.username', required=True)
     first_name = serializers.CharField(source='user.first_name', required=True)
     last_name = serializers.CharField(source='user.last_name', required=True)
+    
     middle_name = serializers.CharField(
         source='user.middle_name', required=False, allow_null=True, default=None)
     # password = serializers.CharField(

@@ -207,3 +207,98 @@ TypeError: IsAuthenticated.has_permission() missing 1 required positional argume
 2024-04-03 19:40:39,510 (WARNING) - django.request - Method Not Allowed: /auth/jwt/refresh/
 2024-04-03 19:46:41,270 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-04-03 19:46:54,162 (WARNING) - django.request - Not Found: /docs
+2024-04-03 20:07:45,713 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 20:07:59,766 (WARNING) - django.request - Not Found: /users/in/update
+2024-04-03 20:08:28,388 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-04-03 20:08:28,700 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 20:08:45,174 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-04-03 20:08:45,501 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 20:08:54,790 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-04-03 20:08:55,087 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 20:12:23,538 (WARNING) - django.request - Not Found: /users/in/update
+2024-04-03 20:13:18,560 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-04-03 20:13:18,878 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 20:13:23,124 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-04-03 20:13:23,489 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 20:13:37,018 (WARNING) - django.request - Not Found: /users/in/update/dawitabrham00021@gmail.com
+2024-04-03 20:13:40,283 (WARNING) - django.request - Not Found: /users/in/update/dawitabrham00021@gmail.com
+2024-04-03 20:13:47,128 (WARNING) - django.request - Not Found: /users/in/update/dawitabrham00021@gmail.com
+2024-04-03 20:13:59,686 (WARNING) - django.request - Not Found: /users/in/update/
+2024-04-03 20:14:21,343 (WARNING) - django.request - Not Found: /users/in/update/
+2024-04-03 20:16:10,901 (WARNING) - django.request - Unauthorized: /users/in/update/username=daw/
+2024-04-03 20:16:27,293 (WARNING) - django.request - Not Found: /users/in/update/username=dawitabrahm00021@gmail.com
+2024-04-03 20:16:34,474 (WARNING) - django.request - Not Found: /users/in/update/username=dawitabrahm00021@gmail.com
+2024-04-03 20:17:09,543 (WARNING) - django.request - Not Found: /users/in/update/dawitabrahm00021@gmail.com/
+2024-04-03 20:17:26,648 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 20:17:28,400 (WARNING) - django.request - Not Found: /users/in/update/dawitabrahm00021@gmail.com/
+2024-04-03 20:18:52,736 (WARNING) - django.request - Not Found: /users/in/update/dawitabrahm00021@gmail.com/
+2024-04-03 20:19:00,070 (WARNING) - django.request - Not Found: /users/in/update/dawitabrahm00021@gmail.com/
+2024-04-03 20:19:22,517 (WARNING) - django.request - Not Found: /users/in/update/dawitabrahm00021@gmail.com/
+2024-04-03 20:20:24,937 (WARNING) - django.request - Unauthorized: /users/in/update/1/
+2024-04-03 20:21:17,431 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 20:21:20,820 (WARNING) - django.request - Unauthorized: /users/in/update/1/
+2024-04-03 20:22:11,060 (WARNING) - django.request - Unauthorized: /users/in/update/1/
+2024-04-03 20:26:00,176 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/serializers.py changed, reloading.
+2024-04-03 20:26:00,583 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-03 20:30:54,057 (WARNING) - django.request - Not Found: /users/ reset-password-request/
+2024-04-03 20:32:27,534 (WARNING) - django.request - Unauthorized: /users/reset-password-request/
+2024-04-03 20:33:19,003 (ERROR) - django.request - Internal Server Error: /users/reset-password-change/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: IsAuthenticated.has_permission() missing 1 required positional argument: 'view'
+2024-04-03 20:34:57,165 (WARNING) - django.request - Not Found: /users/seup_password
+2024-04-03 20:35:04,769 (ERROR) - django.request - Internal Server Error: /users/set-up-password
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: IsAuthenticated.has_permission() missing 1 required positional argument: 'view'
+2024-04-03 20:38:11,265 (WARNING) - django.request - Unauthorized: /users/in/create/1/
