@@ -36,6 +36,10 @@ INSTALLED_APPS = [
     'rest_framework_docs',
     'core.apps.CoreConfig',
     'users.apps.UsersConfig',
+    'notification.apps.NotificationConfig',
+    'documents.apps.DocumentsConfig',
+    'vehicle.apps.VehicleConfig',
+    'files.apps.FilesConfig'
 
 
 ]
