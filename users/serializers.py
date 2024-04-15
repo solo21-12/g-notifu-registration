@@ -281,9 +281,10 @@ class UserPasswordSetUpSerlizer(serializers.ModelSerializer):
         fields = ['username', 'password']
 
     def update(self, instance, validated_data):
+        
         username = validated_data.get("username")
         password = validated_data.get('password')
-
+        print(username)
         try:
             user = User.objects.get(username=username)
         except User.DoesNotExist:
