@@ -17,6 +17,9 @@ dj-database-url = "*"
 whitenoise = "*"
 django-rest-framework-docs = "*"
 django-cors-headers = "*"
+redis = "*"
+celery = "*"
+flower = "*"
 
 [dev-packages]
 

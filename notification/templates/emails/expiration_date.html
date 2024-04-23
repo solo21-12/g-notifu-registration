@@ -1,0 +1,19 @@
+{% extends "mail_templated/base.tpl" %}
+
+{% block subject %} 
+Reminder: Renewal of {{document_name}} for {{car_id}} Due Soon
+{% endblock %} 
+
+{% block html %}
+<p>
+  Dear customer,<br />
+  we hope this email finds you well.we wanted to remind you that the expiration
+  date for renewing your {{document_name}} for {{car_id}} is approaching. <br />
+  You have {{days}} days left to renew it.<br />
+  Please ensure that you take necessary action to renew the document before it
+  expires to avoid any inconvenience. <br />
+  If you have any questions or need assistance with the renewal process, feel
+  free to reach out to us.
+  <br />Best regards
+</p>
+{% endblock %}

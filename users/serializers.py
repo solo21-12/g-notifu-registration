@@ -11,7 +11,6 @@ class AddressSerlizer(serializers.ModelSerializer):
         model = Address
         fields = ['phone_number', 'city']
 
-
 class OwnerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Owner
@@ -159,7 +158,6 @@ class CompanyOwnerCreateSeralizer(serializers.ModelSerializer):
             address_instance.save()
         return super().update(instance, validated_data)
 
-
 class CompanyOwnerUpdateSeralizer(serializers.ModelSerializer):
     username = serializers.CharField(source='user.username', read_only=True)
     contact = AddressSerlizer()
@@ -271,7 +269,6 @@ class UserPasswordResetUpdateSerlizer(serializers.ModelSerializer):
         model = User
         fields = ['username', 'password']
 
-
 class UserPasswordSetUpSerlizer(serializers.ModelSerializer):
     password = serializers.CharField(
         style={"input_type": "password"}, write_only=True)
@@ -284,7 +281,6 @@ class UserPasswordSetUpSerlizer(serializers.ModelSerializer):
         
         username = validated_data.get("username")
         password = validated_data.get('password')
-        print(username)
         try:
             user = User.objects.get(username=username)
         except User.DoesNotExist:

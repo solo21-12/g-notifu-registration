@@ -23,3 +23,4 @@ EMAIL_HOST_USER = 'dawitabrham0021@gmail.com'
 EMAIL_HOST_PASSWORD = 'xqapvbcwtyicjxpq'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+CELERY_BROKER_URL = 'redis://localhost:6379/1'

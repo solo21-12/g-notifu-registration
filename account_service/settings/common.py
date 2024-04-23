@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from datetime import timedelta
 from pathlib import Path
+from celery.schedules import crontab
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -178,3 +179,14 @@ LOGGING = {
 
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+CELERY_BEAT_SCHEDULE = {
+    'check_expiry_date': {
+        'task': "notification.tasks.check_expiry_date",
+        "schedule": crontab(hour=23)
+    },
+    'clean_unverfied_user': {
+        'task': "notification.tasks.clean_unverfied_user",
+        "schedule": crontab(hour=1)
+    }
+}

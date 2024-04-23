@@ -31,7 +31,6 @@ class Document(models.Model):
     renewal_date = models.DateField()
     expiry_date = models.DateField(null=True, blank=True)
     files = models.ManyToManyField(Files, blank=True)
-
     def __str__(self) -> str:
         return str(self.id)
 
