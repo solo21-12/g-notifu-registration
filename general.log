@@ -4460,3 +4460,7 @@ django.core.exceptions.ImproperlyConfigured: Field name `status` is not valid fo
 2024-04-23 20:08:25,746 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-04-23 20:08:29,132 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/utils/sendmail.py changed, reloading.
 2024-04-23 20:08:29,700 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-23 21:01:07,290 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-23 21:04:40,306 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-04-23 21:04:47,587 (WARNING) - django.request - Not Found: /favicon.ico
+2024-04-23 21:08:16,005 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
