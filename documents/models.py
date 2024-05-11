@@ -7,23 +7,20 @@ from vehicle.models import Vehicel
 from files.models import Files
 
 Key = CustomPrimaryKeyField()
+THIRD_PARTY_INSURANCE = 'Third party insurance'
+ROAD_FUND = 'Road fund'
+ROAD_AUTHORITY = 'Road Authority'
+BOLO = 'Bolo'
+
+document_type_choices = [
+    (THIRD_PARTY_INSURANCE, 'Third party insurance'),
+    (ROAD_FUND, 'Road Fund'),
+    (ROAD_AUTHORITY, 'Road Authority'),
+    (BOLO, 'Bolo')
+]
 
 
 class Document(models.Model):
-    THIRD_PARTY_INSURANCE = 'Third party insurance'
-    ROAD_FUND = 'Road fund'
-    ROAD_AUTHORITY = 'Road Authority'
-    BOLO = 'Bolo'
-
-    document_type_choices = [
-        (THIRD_PARTY_INSURANCE, 'Third party insurance'),
-        (ROAD_FUND, 'Road Fund'),
-        (ROAD_AUTHORITY, 'Road Authority'),
-        (BOLO, 'Bolo')
-    ]
-
-    id = models.CharField(
-        primary_key=True, default=Key.generate_key(), max_length=16)
     vehicle = models.ForeignKey(Vehicel, on_delete=models.CASCADE)
     document_type = models.CharField(
         choices=document_type_choices, max_length=100)
@@ -31,6 +28,7 @@ class Document(models.Model):
     renewal_date = models.DateField()
     expiry_date = models.DateField(null=True, blank=True)
     files = models.ManyToManyField(Files, blank=True)
+
     def __str__(self) -> str:
         return str(self.id)
 

@@ -8,6 +8,7 @@ Key = CustomPrimaryKeyField()
 class Vehicel(models.Model):
     id = models.CharField(
         primary_key=True, default=Key.generate_key(), max_length=16)
+    chassis_number = models.CharField(max_length=32, unique=True)
     owner = models.OneToOneField(
         settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 

@@ -1,5 +1,6 @@
 import random
 import string
+import uuid
 
 from django.db import models
 import secrets
@@ -7,14 +8,12 @@ import secrets
 
 class CustomPrimaryKeyField(models.Field):
     def __init__(self, *args, **kwargs):
-        kwargs['max_length'] = 16
-        kwargs['primary_key'] = True
+        kwargs.setdefault('primary_key', True)
+        kwargs.setdefault('editable', False)
+        kwargs.setdefault('unique', True)
+        kwargs.setdefault('default', self.generate_key)
         super().__init__(*args, **kwargs)
 
-    def get_prep_value(self, value):
-        if not value:
-            value = self.generate_key()
-        return super().get_prep_value(value)
-
-    def generate_key(self):
-        return ''.join(random.choices(string.ascii_uppercase + string.digits, k=16))
+    @staticmethod
+    def generate_key():
+        return str(uuid.uuid4().hex)[:16]
