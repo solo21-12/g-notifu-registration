@@ -27,6 +27,8 @@ class Document(models.Model):
     renewal_status = models.BooleanField(default=False)
     renewal_date = models.DateField()
     expiry_date = models.DateField(null=True, blank=True)
+    insurance_company_name = models.CharField(
+        null=True, blank=True, max_length=32)
     files = models.ManyToManyField(Files, blank=True)
 
     def __str__(self) -> str:

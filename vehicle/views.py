@@ -3,6 +3,7 @@ from datetime import datetime
 from django.http import JsonResponse
 from django.contrib.auth import get_user_model
 from rest_framework import viewsets, status
+from rest_framework import generics, mixins, views
 
 from .serializers import VehicleSerializer, AddVehicleSerlizer
 from .models import Vehicel
@@ -26,36 +27,52 @@ class Helper:
         document_type = kwargs.get('document_type')
         renewal_date = kwargs.get('renewal_date')
         expiry_date = kwargs.get('expiry_date')
+        insurance_company_name = kwargs.get('insurance_company_name') or ""
         renewal_status = True
         expiry_date = datetime.strptime(expiry_date, '%Y-%m-%d')
 
         if expiry_date < datetime.now():
             renewal_status = False
         try:
-            document = Document.objects.create(
+            Document.objects.create(
                 renewal_date=renewal_date,
                 expiry_date=expiry_date,
                 renewal_status=renewal_status,
                 vehicle=vehicle,
-                document_type=document_type
+                document_type=document_type,
+                insurance_company_name=insurance_company_name
             )
 
             return JsonResponse({'sucess': 'sucess'}, status=status.HTTP_201_CREATED)
         except Exception as e:
+            print(e)
             return JsonResponse({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
 
-class VehicleViewSet(viewsets.ModelViewSet):
+class VehicleViewSet(
+        mixins.RetrieveModelMixin,
+        mixins.UpdateModelMixin,
+        mixins.DestroyModelMixin,
+        mixins.ListModelMixin,
+        viewsets.GenericViewSet):
+
     queryset = Vehicel.objects.all()
     serializer_class = VehicleSerializer
 
 
-class AddVehicleViewSet(viewsets.ViewSet):
+class AddVehicleViewSet(mixins.CreateModelMixin,
+                        mixins.UpdateModelMixin,
+                        mixins.DestroyModelMixin,
+                        viewsets.GenericViewSet):
+
+    queryset = Vehicel.objects.all()
+    serializer_class = AddVehicleSerlizer
 
     def create(self, request):
         serlizer = AddVehicleSerlizer(data=request.data)
         serlizer.is_valid(raise_exception=True)
         chassis_number = serlizer.validated_data['chassis_number']
+        insurance_name = serlizer.validated_data['insurance_company_name']
         url_road_auth = f'http://localhost:8001/roadauthrity/{chassis_number}'
         url_road_fund = f'http://localhost:8001/roadfund/{chassis_number}'
         url_insurance = f'http://localhost:8001/insurance/{chassis_number}'
@@ -67,6 +84,10 @@ class AddVehicleViewSet(viewsets.ViewSet):
 
         if road_auth_data and road_auth_data.status_code == 200 and insurance_data and insurance_data.status_code == 200:
             if road_fund_data and road_fund_data.status_code == 200:
+                print(insurance_data.json(), insurance_name)
+                if insurance_data.json().get('insurance_name') != insurance_name:
+                    return JsonResponse({'status': 'failed', 'message': 'Invalid insurance company'}, status=status.HTTP_400_BAD_REQUEST)
+
                 road_fund = road_fund_data.json()
                 road_auth = road_auth_data.json()
                 insurance = insurance_data.json()
@@ -91,36 +112,40 @@ class AddVehicleViewSet(viewsets.ViewSet):
 
                 if owner and owner.get_username() == owner_email_road_fund and owner_email_road_auth == owner_email_road_fund and owner.get_username() == owner_email_insurance:
 
-                    vehicle = Vehicel.objects.get(
-                        chassis_number=chassis_number)
+                    try:
+                        vehicle = Vehicel.objects.get(
+                            chassis_number=chassis_number)
 
-                    if vehicle:
                         return JsonResponse({'status': 'failed', 'message': 'Vehicle already exists'}, status=status.HTTP_400_BAD_REQUEST)
 
-                    vehicle = Vehicel.objects.create(
-                        owner=owner,
-                        chassis_number=chassis_number)
+                    except Vehicel.DoesNotExist:
 
-                    create_road_fund = helper.create_document(
-                        renewal_date=renewal_date_road_fund,
-                        expiry_date=expiry_date_road_fund,
-                        vehicle=vehicle,
-                        document_type=ROAD_FUND)
+                        vehicle = Vehicel.objects.create(
+                            owner=owner,
+                            chassis_number=chassis_number)
 
-                    create_road_auth = helper.create_document(
-                        renewal_date=renewal_date_road_auth,
-                        expiry_date=expiry_date_road_auth,
-                        vehicle=vehicle,
-                        document_type=ROAD_AUTHORITY)
+                        create_road_fund = helper.create_document(
+                            renewal_date=renewal_date_road_fund,
+                            expiry_date=expiry_date_road_fund,
+                            vehicle=vehicle,
+                            document_type=ROAD_FUND)
 
-                    create_insurance = helper.create_document(
-                        renewal_date=renewal_date_insurance,
-                        expiry_date=expiry_date_insurance,
-                        vehicle=vehicle,
-                        document_type=THIRD_PARTY_INSURANCE)
+                        create_road_auth = helper.create_document(
+                            renewal_date=renewal_date_road_auth,
+                            expiry_date=expiry_date_road_auth,
+                            vehicle=vehicle,
+                            document_type=ROAD_AUTHORITY)
 
-                    if create_road_auth.status_code == 400 or create_road_fund.status_code == 404 or create_insurance.status_code == 400:
-                        return JsonResponse({'status': 'failed', 'message': 'Something went wrong'}, status=status.HTTP_400_BAD_REQUEST)
+                        create_insurance = helper.create_document(
+                            renewal_date=renewal_date_insurance,
+                            expiry_date=expiry_date_insurance,
+                            vehicle=vehicle,
+                            document_type=THIRD_PARTY_INSURANCE,
+                            insurance_company_name=insurance_name
+                        )
+
+                        if create_road_auth.status_code == 400 or create_road_fund.status_code == 404 or create_insurance.status_code == 400:
+                            return JsonResponse({'status': 'failed', 'message': 'Something went wrong'}, status=status.HTTP_400_BAD_REQUEST)
 
                 else:
                     return JsonResponse({'status': 'failed', 'message': 'Invalid user'}, status=status.HTTP_400_BAD_REQUEST)
@@ -130,3 +155,16 @@ class AddVehicleViewSet(viewsets.ViewSet):
                 return JsonResponse({'status': 'failed', 'message': 'Invalid chassis number'}, status=status.HTTP_400_BAD_REQUEST)
         else:
             return JsonResponse({'status': 'failed', 'message': 'Invalid chassis number'}, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, id=None):
+
+        try:
+            vehicle = Vehicel.objects.get(id=id)
+        except Vehicel.DoesNotExist:
+            return JsonResponse({'message': "No vehicel found with the given information"}, status=status.HTTP_404_NOT_FOUND)
+
+        vehicle.delete()
+
+        return JsonResponse({'message': "sucess"}, status=status.HTTP_204_NO_CONTENT)
+
+
