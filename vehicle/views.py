@@ -4,7 +4,7 @@ from django.http import JsonResponse
 from django.contrib.auth import get_user_model
 from rest_framework import viewsets, status
 from rest_framework import generics, mixins, views
-
+from documents.models import Document
 from .serializers import VehicleSerializer, AddVehicleSerlizer
 from .models import Vehicel
 from documents.models import Document, ROAD_AUTHORITY, ROAD_FUND, THIRD_PARTY_INSURANCE
@@ -47,17 +47,6 @@ class Helper:
         except Exception as e:
             print(e)
             return JsonResponse({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
-
-
-class VehicleViewSet(
-        mixins.RetrieveModelMixin,
-        mixins.UpdateModelMixin,
-        mixins.DestroyModelMixin,
-        mixins.ListModelMixin,
-        viewsets.GenericViewSet):
-
-    queryset = Vehicel.objects.all()
-    serializer_class = VehicleSerializer
 
 
 class AddVehicleViewSet(mixins.CreateModelMixin,
@@ -168,3 +157,14 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
         return JsonResponse({'message': "sucess"}, status=status.HTTP_204_NO_CONTENT)
 
 
+class ManageVehicleViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
+    queryset = Vehicel.objects.all()
+    serializer_class = VehicleSerializer
+
+    def list(self, request):
+        user_id = request.user.id
+        owner = User.objects.get(id=user_id)
+        vehicles = Vehicel.objects.filter(owner=owner)
+        serializer = VehicleSerializer(vehicles, many=True, context={
+            'request': request})  # Pass the request context
+        return JsonResponse(serializer.data, status=status.HTTP_200_OK, safe=False)

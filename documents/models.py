@@ -1,3 +1,4 @@
+from uuid import uuid4
 from django.db import models
 from django.db.models.signals import pre_save
 from django.dispatch import receiver
@@ -21,6 +22,7 @@ document_type_choices = [
 
 
 class Document(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid4)
     vehicle = models.ForeignKey(Vehicel, on_delete=models.CASCADE)
     document_type = models.CharField(
         choices=document_type_choices, max_length=100)
