@@ -66,9 +66,9 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
         plate_number = serlizer.validated_data['plate_number']
 
         insurance_name = serlizer.validated_data['insurance_company_name']
-        url_road_auth = f'https://g-notify-third-parties-ceb6d907d4de.herokuapp.com/{chassis_number}'
-        url_road_fund = f'https://g-notify-third-parties-ceb6d907d4de.herokuapp.com/{chassis_number}'
-        url_insurance = f'https://g-notify-third-parties-ceb6d907d4de.herokuapp.com/{chassis_number}'
+        url_road_auth = f'https://g-notify-third-parties-ceb6d907d4de.herokuapp.com/roadauthrity/{chassis_number}'
+        url_road_fund = f'https://g-notify-third-parties-ceb6d907d4de.herokuapp.com/roadfund/{chassis_number}'
+        url_insurance = f'https://g-notify-third-parties-ceb6d907d4de.herokuapp.com/insurance{chassis_number}'
         helper = Helper()
 
         road_auth_data = helper.get_third_party_data(url_road_auth)
