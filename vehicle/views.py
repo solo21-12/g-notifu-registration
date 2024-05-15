@@ -19,7 +19,7 @@ class Helper:
             response = requests.get(url, verify=False)
             return response
         except Exception as e:
-            return JsonResponse({'error': 'error'})
+            return JsonResponse({'error': 'error'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     def create_document(self, **kwargs):
         '''This method genenerate the required type of document'''
@@ -61,10 +61,12 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
         serlizer = AddVehicleSerlizer(data=request.data)
         serlizer.is_valid(raise_exception=True)
         chassis_number = serlizer.validated_data['chassis_number']
+        plate_number = serlizer.validated_data['plate_number']
+
         insurance_name = serlizer.validated_data['insurance_company_name']
-        url_road_auth = f'http://localhost:8001/roadauthrity/{chassis_number}'
-        url_road_fund = f'http://localhost:8001/roadfund/{chassis_number}'
-        url_insurance = f'http://localhost:8001/insurance/{chassis_number}'
+        url_road_auth = f'https://g-notify-third-parties-1160918eed04.herokuapp.com/{chassis_number}'
+        url_road_fund = f'https://g-notify-third-parties-1160918eed04.herokuapp.com/{chassis_number}'
+        url_insurance = f'https://g-notify-third-parties-1160918eed04.herokuapp.com/{chassis_number}'
         helper = Helper()
 
         road_auth_data = helper.get_third_party_data(url_road_auth)
@@ -73,9 +75,10 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
 
         if road_auth_data and road_auth_data.status_code == 200 and insurance_data and insurance_data.status_code == 200:
             if road_fund_data and road_fund_data.status_code == 200:
-                print(insurance_data.json(), insurance_name)
-                if insurance_data.json().get('insurance_name') != insurance_name:
+                if insurance_data and insurance_data.json().get('insurance_name') != insurance_name:
                     return JsonResponse({'status': 'failed', 'message': 'Invalid insurance company'}, status=status.HTTP_400_BAD_REQUEST)
+                elif road_auth_data.json().get('plate_number') != plate_number:
+                    return JsonResponse({"status": "error", "message": "plate number didn't match"}, status=status.HTTP_400_BAD_REQUEST)
 
                 road_fund = road_fund_data.json()
                 road_auth = road_auth_data.json()
@@ -111,7 +114,8 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
 
                         vehicle = Vehicel.objects.create(
                             owner=owner,
-                            chassis_number=chassis_number)
+                            chassis_number=chassis_number,
+                            plate_number=plate_number)
 
                         create_road_fund = helper.create_document(
                             renewal_date=renewal_date_road_fund,
@@ -142,6 +146,8 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
                 return JsonResponse({'status': 'success'})
             else:
                 return JsonResponse({'status': 'failed', 'message': 'Invalid chassis number'}, status=status.HTTP_400_BAD_REQUEST)
+        elif road_auth_data and road_auth_data.status_code == 500:
+            return JsonResponse({"status": "error", "message": "Internal server error"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         else:
             return JsonResponse({'status': 'failed', 'message': 'Invalid chassis number'}, status=status.HTTP_400_BAD_REQUEST)
 
@@ -157,14 +163,9 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
         return JsonResponse({'message': "sucess"}, status=status.HTTP_204_NO_CONTENT)
 
 
-class ManageVehicleViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
+class ManageVehicleViewSet(mixins.DestroyModelMixin,
+                           mixins.ListModelMixin,
+                           mixins.RetrieveModelMixin,
+                           viewsets.GenericViewSet):
     queryset = Vehicel.objects.all()
     serializer_class = VehicleSerializer
-
-    def list(self, request):
-        user_id = request.user.id
-        owner = User.objects.get(id=user_id)
-        vehicles = Vehicel.objects.filter(owner=owner)
-        serializer = VehicleSerializer(vehicles, many=True, context={
-            'request': request})  # Pass the request context
-        return JsonResponse(serializer.data, status=status.HTTP_200_OK, safe=False)

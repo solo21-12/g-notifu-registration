@@ -1,3 +1,4 @@
+from uuid import uuid4
 from django.db import models
 from django.core.validators import RegexValidator
 from django.conf import settings
@@ -22,6 +23,7 @@ class Owner(models.Model):
         (INDIVIDUAL, 'Individual'),
         (COMPANY, 'Company'),
     ]
+    id = models.UUIDField(default=uuid4, primary_key=True)
     owner_type = models.CharField(max_length=10, choices= OWNER_TYPE_CHOICES)
     contact = models.OneToOneField(Address, on_delete=models.CASCADE)
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete= models.CASCADE)

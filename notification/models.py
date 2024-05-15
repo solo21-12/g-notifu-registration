@@ -1,3 +1,4 @@
+from uuid import uuid4
 from django.db import models
 from core.utils.custome_primary_key_generate import CustomPrimaryKeyField
 from documents.models import Document
@@ -27,7 +28,7 @@ class Notification(models.Model):
         (MEDIUM, 'Medium'),
         (HIGH, 'High')
     ]
-
+    id = models.UUIDField(default=uuid4, primary_key=True)
     message_content = models.TextField(blank=True)
     notification_type = models.CharField(
         max_length=20, choices=Notification_type_choices, null=True)
