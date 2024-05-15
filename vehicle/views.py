@@ -105,7 +105,7 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
 
                 renewal_date_insurance = insurance.get('renewal_date')
                 expiry_date_insurance = insurance.get('expiry_date')
-                logger.info(owner.get_username(), owner_email_insurance, owner_email_road_auth, owner_email_road_fund, 'email')
+                print(owner.get_username(), owner_email_insurance, owner_email_road_auth, owner_email_road_fund, 'email')
                 if owner and owner.get_username() == owner_email_road_fund and owner_email_road_auth == owner_email_road_fund and owner.get_username() == owner_email_insurance:
 
                     try:
