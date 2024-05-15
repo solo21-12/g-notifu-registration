@@ -64,9 +64,9 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
         plate_number = serlizer.validated_data['plate_number']
 
         insurance_name = serlizer.validated_data['insurance_company_name']
-        url_road_auth = f'https://g-notify-third-parties-ceb6d907d4de.herokuapp.com//{chassis_number}'
-        url_road_fund = f'https://g-notify-third-parties-ceb6d907d4de.herokuapp.com//{chassis_number}'
-        url_insurance = f'https://g-notify-third-parties-ceb6d907d4de.herokuapp.com//{chassis_number}'
+        url_road_auth = f'https://g-notify-third-parties-ceb6d907d4de.herokuapp.com/{chassis_number}'
+        url_road_fund = f'https://g-notify-third-parties-ceb6d907d4de.herokuapp.com/{chassis_number}'
+        url_insurance = f'https://g-notify-third-parties-ceb6d907d4de.herokuapp.com/{chassis_number}'
         helper = Helper()
 
         road_auth_data = helper.get_third_party_data(url_road_auth)
@@ -101,7 +101,7 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
 
                 renewal_date_insurance = insurance.get('renewal_date')
                 expiry_date_insurance = insurance.get('expiry_date')
-
+                print(owner.get_username(), owner_email_insurance, owner_email_road_auth, owner_email_road_fund, 'email')
                 if owner and owner.get_username() == owner_email_road_fund and owner_email_road_auth == owner_email_road_fund and owner.get_username() == owner_email_insurance:
 
                     try:
