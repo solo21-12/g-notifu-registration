@@ -7,3 +7,4 @@ class VehicleConfig(AppConfig):
 
 # I want this thing to work serioulsy
 # work
+# sdkjfosdl
