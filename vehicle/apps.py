@@ -6,3 +6,4 @@ class VehicleConfig(AppConfig):
     name = 'vehicle'
 
 # I want this thing to work serioulsy
+# work
