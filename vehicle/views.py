@@ -4,51 +4,15 @@ from django.http import JsonResponse
 from django.contrib.auth import get_user_model
 from rest_framework import viewsets, status
 from rest_framework import generics, mixins, views
+from core.utils.Helper import Helper
 from documents.models import Document
 from .serializers import VehicleSerializer, AddVehicleSerlizer
 from .models import Vehicel
-from documents.models import Document, ROAD_AUTHORITY, ROAD_FUND, THIRD_PARTY_INSURANCE
+from documents.models import ROAD_AUTHORITY, ROAD_FUND, THIRD_PARTY_INSURANCE
 import logging
 
 logger = logging.getLogger(__name__)
 User = get_user_model()
-
-
-class Helper:
-    def get_third_party_data(self, url: str):
-        '''This methods make a request to an external site and fetch the required data'''
-        try:
-            response = requests.get(url, verify=False)
-            return response
-        except Exception as e:
-            return JsonResponse({'error': 'error'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-    def create_document(self, **kwargs):
-        '''This method genenerate the required type of document'''
-        vehicle = kwargs.get('vehicle')
-        document_type = kwargs.get('document_type')
-        renewal_date = kwargs.get('renewal_date')
-        expiry_date = kwargs.get('expiry_date')
-        insurance_company_name = kwargs.get('insurance_company_name') or ""
-        renewal_status = True
-        expiry_date = datetime.strptime(expiry_date, '%Y-%m-%d')
-
-        if expiry_date < datetime.now():
-            renewal_status = False
-        try:
-            Document.objects.create(
-                renewal_date=renewal_date,
-                expiry_date=expiry_date,
-                renewal_status=renewal_status,
-                vehicle=vehicle,
-                document_type=document_type,
-                insurance_company_name=insurance_company_name
-            )
-
-            return JsonResponse({'sucess': 'sucess'}, status=status.HTTP_201_CREATED)
-        except Exception as e:
-            print(e)
-            return JsonResponse({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
 
 class AddVehicleViewSet(mixins.CreateModelMixin,
@@ -75,8 +39,8 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
         road_fund_data = helper.get_third_party_data(url_road_fund)
         insurance_data = helper.get_third_party_data(url_insurance)
 
-        logger.info(road_auth_data, road_fund_data, insurance_data ,'data')
-        
+        logger.info(road_auth_data, road_fund_data, insurance_data, 'data')
+
         if road_auth_data and road_auth_data.status_code == 200 and insurance_data and insurance_data.status_code == 200:
             if road_fund_data and road_fund_data.status_code == 200:
                 if insurance_data and insurance_data.json().get('insurance_name') != insurance_name:
@@ -105,9 +69,7 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
 
                 renewal_date_insurance = insurance.get('renewal_date')
                 expiry_date_insurance = insurance.get('expiry_date')
-                print(owner.get_username(), owner_email_insurance, owner_email_road_auth, owner_email_road_fund, 'email')
                 if owner and owner.get_username() == owner_email_road_fund and owner_email_road_auth == owner_email_road_fund and owner.get_username() == owner_email_insurance:
-
                     try:
                         vehicle = Vehicel.objects.get(
                             chassis_number=chassis_number)

@@ -1,6 +1,8 @@
 from rest_framework import status
 from django.http import JsonResponse
 from django.shortcuts import render
+
+from core.utils.Helper import Helper
 from .serializers import DocumentSerializer
 from .models import Document
 from rest_framework import viewsets, status
@@ -34,3 +36,22 @@ class VehicleWithUser(viewsets.ViewSet):
 
         serializer = DocumentSerializer(user_documents, many=True)
         return JsonResponse(serializer.data, status=status.HTTP_200_OK, safe=False)
+
+
+class UpdateInsurance(viewsets.ViewSet):
+    # This needs some workthrough
+    def update(self, request, pk=None):
+        user_id = request.user.id
+        chassis_number = request.query_params.get('chassis_number')
+        insurance_name = request.query_params.get('insurance_name')
+
+        try:
+            document = Document.objects.get(
+                vehicle__owner=user_id, vehicle_id=pk)
+        except Document.DoesNotExist:
+            return JsonResponse({'error': 'No document found for the given user and vehicle'}, status=status.HTTP_404_NOT_FOUND)
+
+        insurnance_check = Helper().get_third_party_data(
+            f'https://g-notify-third-parties-ceb6d907d4de.herokuapp.com/insurance/check?chassis_number={chassis_number}&insurance_name={insurance_name}')
+        if insurnance_check.status_code == 200:
+            pass
