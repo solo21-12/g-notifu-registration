@@ -25,6 +25,16 @@ db.sqlite3
 
 # Migration Files
 /users/migrations/
+/core/migrations/
+/files/migrations/
+/notification/migrations/
+/vehicle/migrations/
+/documents/migrations/
+makefile
+
+
+
+
 
 /static/
 *.log

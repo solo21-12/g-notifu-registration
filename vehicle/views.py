@@ -39,7 +39,6 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
         road_fund_data = helper.get_third_party_data(url_road_fund)
         insurance_data = helper.get_third_party_data(url_insurance)
 
-        logger.info(road_auth_data, road_fund_data, insurance_data, 'data')
 
         if road_auth_data and road_auth_data.status_code == 200 and insurance_data and insurance_data.status_code == 200:
             if road_fund_data and road_fund_data.status_code == 200:
