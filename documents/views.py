@@ -1,7 +1,6 @@
 from rest_framework import status
-from rest_framework import viewsets, status, mixins
+from rest_framework import viewsets, status
 from django.http import JsonResponse
-from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth import get_user_model
 from rest_framework.routers import Response
 from .serializers import DocumentSerializer, DocumentRenewalInitalizer
