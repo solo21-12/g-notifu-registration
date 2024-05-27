@@ -24,21 +24,21 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
     serializer_class = AddVehicleSerlizer
 
     def create(self, request):
+        url = 'http://localhost:8001'
         serlizer = AddVehicleSerlizer(data=request.data)
         serlizer.is_valid(raise_exception=True)
         chassis_number = serlizer.validated_data['chassis_number']
         plate_number = serlizer.validated_data['plate_number']
 
         insurance_name = serlizer.validated_data['insurance_company_name']
-        url_road_auth = f'https://g-notify-third-parties-ceb6d907d4de.herokuapp.com/roadauthrity/{chassis_number}'
-        url_road_fund = f'https://g-notify-third-parties-ceb6d907d4de.herokuapp.com/roadfund/{chassis_number}'
-        url_insurance = f'https://g-notify-third-parties-ceb6d907d4de.herokuapp.com/insurance/{chassis_number}'
+        url_road_auth = f'{url}/roadauthrity/{chassis_number}'
+        url_road_fund = f'{url}/roadfund/{chassis_number}'
+        url_insurance = f'{url}/insurance/{chassis_number}'
         helper = Helper()
 
-        road_auth_data = helper.get_third_party_data(url_road_auth)
-        road_fund_data = helper.get_third_party_data(url_road_fund)
-        insurance_data = helper.get_third_party_data(url_insurance)
-
+        road_auth_data = helper.make_api_call(url_road_auth)
+        road_fund_data = helper.make_api_call(url_road_fund)
+        insurance_data = helper.make_api_call(url_insurance)
 
         if road_auth_data and road_auth_data.status_code == 200 and insurance_data and insurance_data.status_code == 200:
             if road_fund_data and road_fund_data.status_code == 200:

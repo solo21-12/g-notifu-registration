@@ -2,17 +2,18 @@ import requests
 from datetime import datetime
 from django.http import JsonResponse
 from rest_framework import status
+from rest_framework.routers import Response
 from documents.models import Document
 
 
 class Helper:
-    def get_third_party_data(self, url: str):
+    def make_api_call(self, url: str) -> Response:
         '''This methods make a request to an external site and fetch the required data'''
         try:
             response = requests.get(url, verify=False)
             return response
         except Exception as e:
-            return JsonResponse({'error': 'error'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            return Response({'error': 'something went wrong'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     def create_document(self, **kwargs):
         '''This method genenerate the required type of document'''

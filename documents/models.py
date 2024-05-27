@@ -32,6 +32,8 @@ class Document(models.Model):
     insurance_company_name = models.CharField(
         null=True, blank=True, max_length=32)
     files = models.ManyToManyField(Files, blank=True)
+    renewed_tansaction_code = models.CharField(
+        max_length=255, blank=True, null=True)
 
     def __str__(self) -> str:
         return str(self.id)

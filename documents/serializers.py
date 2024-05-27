@@ -10,3 +10,8 @@ class DocumentSerializer(serializers.ModelSerializer):
         model = Document
         fields = ['id', 'document_type', 'renewal_status',
                   'renewal_date', 'expiry_date', 'vehicle']
+
+
+class DocumentRenewalInitalizer(serializers.Serializer):
+    chassis_number = serializers.CharField()
+    transaction_code = serializers.CharField()
