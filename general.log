@@ -11740,3 +11740,6 @@ documents.models.Document.MultipleObjectsReturned: get() returned more than one 
 2024-05-27 19:48:34,424 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
 2024-05-27 19:48:34,951 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-05-27 20:07:14,745 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-05-27 20:11:17,161 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-05-27 20:11:54,870 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-05-27 20:11:54,892 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/get_payment_info/123456/ HTTP/1.1" 200 90
