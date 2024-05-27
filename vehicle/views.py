@@ -102,7 +102,7 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
                             insurance_company_name=insurance_name
                         )
 
-                        if create_road_auth.status_code == 400 or create_road_fund.status_code == 404 or create_insurance.status_code == 400:
+                        if not create_road_auth or not create_road_fund or not create_insurance:
                             return JsonResponse({'status': 'failed', 'message': 'Something went wrong'}, status=status.HTTP_400_BAD_REQUEST)
 
                 else:
