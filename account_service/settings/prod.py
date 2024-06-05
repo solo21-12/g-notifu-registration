@@ -4,7 +4,9 @@ import dj_database_url
 
 
 DEBUG = False
-ALLOWED_HOSTS = ['g-notify-user-auth-eb39843fac64.herokuapp.com']
+# ALLOWED_HOSTS = ['g-notify-user-auth-eb39843fac64.herokuapp.com']
+ALLOWED_HOSTS = ['*']
+
 REDISCLOUD_URL = os.environ['REDISCLOUD_URL']
 CELERY_BROKER_URL = REDISCLOUD_URL
 SECRET_KEY = os.environ['SECRET_KEY']

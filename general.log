@@ -11743,3 +11743,147 @@ documents.models.Document.MultipleObjectsReturned: get() returned more than one 
 2024-05-27 20:11:17,161 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-05-27 20:11:54,870 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
 2024-05-27 20:11:54,892 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/get_payment_info/123456/ HTTP/1.1" 200 90
+2024-05-27 20:44:53,837 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-05-27 21:05:22,798 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/urls.py changed, reloading.
+2024-05-27 21:05:23,286 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-05-27 21:05:26,495 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/urls.py changed, reloading.
+2024-05-27 21:05:26,881 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-05-27 21:05:31,143 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/urls.py changed, reloading.
+2024-05-27 21:05:31,537 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-05 18:14:25,873 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-05 18:15:00,922 (WARNING) - django.request - Unauthorized: /users/
+2024-06-05 18:15:01,241 (WARNING) - django.request - Not Found: /favicon.ico
+2024-06-05 18:16:26,842 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '02af-37-19-221-245.ngrok-free.app'. You may need to add '02af-37-19-221-245.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '02af-37-19-221-245.ngrok-free.app'. You may need to add '02af-37-19-221-245.ngrok-free.app' to ALLOWED_HOSTS.
+2024-06-05 18:16:26,858 (WARNING) - django.request - Bad Request: /
+2024-06-05 18:16:29,710 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '02af-37-19-221-245.ngrok-free.app'. You may need to add '02af-37-19-221-245.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '02af-37-19-221-245.ngrok-free.app'. You may need to add '02af-37-19-221-245.ngrok-free.app' to ALLOWED_HOSTS.
+2024-06-05 18:16:29,739 (WARNING) - django.request - Bad Request: /favicon.ico
+2024-06-05 18:16:36,833 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '02af-37-19-221-245.ngrok-free.app'. You may need to add '02af-37-19-221-245.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '02af-37-19-221-245.ngrok-free.app'. You may need to add '02af-37-19-221-245.ngrok-free.app' to ALLOWED_HOSTS.
+2024-06-05 18:16:36,848 (WARNING) - django.request - Bad Request: /admin
+2024-06-05 18:16:39,642 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '02af-37-19-221-245.ngrok-free.app'. You may need to add '02af-37-19-221-245.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '02af-37-19-221-245.ngrok-free.app'. You may need to add '02af-37-19-221-245.ngrok-free.app' to ALLOWED_HOSTS.
+2024-06-05 18:16:39,659 (WARNING) - django.request - Bad Request: /favicon.ico
+2024-06-05 18:17:22,866 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-05 18:17:27,771 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '02af-37-19-221-245.ngrok-free.app'. You may need to add '02af-37-19-221-245.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '02af-37-19-221-245.ngrok-free.app'. You may need to add '02af-37-19-221-245.ngrok-free.app' to ALLOWED_HOSTS.
+2024-06-05 18:17:27,807 (WARNING) - django.request - Bad Request: /admin
+2024-06-05 18:17:30,023 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '02af-37-19-221-245.ngrok-free.app'. You may need to add '02af-37-19-221-245.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '02af-37-19-221-245.ngrok-free.app'. You may need to add '02af-37-19-221-245.ngrok-free.app' to ALLOWED_HOSTS.
+2024-06-05 18:17:30,037 (WARNING) - django.request - Bad Request: /favicon.ico
+2024-06-05 18:17:57,056 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '8acf-37-19-221-245.ngrok-free.app'. You may need to add '8acf-37-19-221-245.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '8acf-37-19-221-245.ngrok-free.app'. You may need to add '8acf-37-19-221-245.ngrok-free.app' to ALLOWED_HOSTS.
+2024-06-05 18:17:57,070 (WARNING) - django.request - Bad Request: /
+2024-06-05 18:17:59,624 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '8acf-37-19-221-245.ngrok-free.app'. You may need to add '8acf-37-19-221-245.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '8acf-37-19-221-245.ngrok-free.app'. You may need to add '8acf-37-19-221-245.ngrok-free.app' to ALLOWED_HOSTS.
+2024-06-05 18:17:59,831 (WARNING) - django.request - Bad Request: /favicon.ico
+2024-06-05 18:18:11,119 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/dev.py changed, reloading.
+2024-06-05 18:18:11,826 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-05 18:18:33,095 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-05 18:18:40,134 (WARNING) - django.request - Not Found: /
+2024-06-05 18:18:41,916 (WARNING) - django.request - Not Found: /favicon.ico
+2024-06-05 18:19:13,207 (WARNING) - django.security.csrf - Forbidden (Origin checking failed - https://8acf-37-19-221-245.ngrok-free.app does not match any trusted origins.): /admin/login/
+2024-06-05 18:19:47,000 (WARNING) - django.request - Not Found: /user
+2024-06-05 18:19:52,479 (WARNING) - django.request - Unauthorized: /users/
+2024-06-05 18:21:37,446 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-05 18:21:37,447 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-05 18:21:43,426 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-05 18:21:43,426 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-05 18:21:43,439 (WARNING) - django.request - Method Not Allowed: /users/co/create/
