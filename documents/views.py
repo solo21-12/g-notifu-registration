@@ -7,12 +7,15 @@ from .serializers import DocumentSerializer, DocumentRenewalInitalizer
 from .models import Document
 from .serializers import DocumentSerializer
 from core.utils.Helper import Helper
-from vehicle.models import Vehicel
 from core.utils.document_type import DocumentType
+from files.utils.create_file import ManageFile
+from .utils.check_owner import OwnerCheck
+import logging
 
 User = get_user_model()
-
 Doc = DocumentType()
+logger = logging.getLogger(__name__)
+
 
 class DocuemntViewSet(viewsets.ModelViewSet):
     queryset = Document.objects.all()
@@ -56,11 +59,11 @@ class RoadFundDocumentRenew(viewsets.ViewSet):
         user_id = request.user.id
         chassis_number = pk
 
-        cur_user = User.objects.get(id=user_id)
-        cur_vehicle = Vehicel.objects.get(chassis_number=chassis_number)
+        error_response, current_user, current_vehicle = OwnerCheck.check_owner(
+            user_id, chassis_number)
 
-        if cur_vehicle.owner != cur_user:
-            return Response({"Message": "The current users doesn't own the vehicle"}, status=status.HTTP_400_BAD_REQUEST)
+        if error_response:
+            return error_response
 
         url = 'http://localhost:8001'
 
@@ -87,38 +90,41 @@ class RoadFundDocumentRenew(viewsets.ViewSet):
         transaction_code = request.data.get("transaction_code")
         user_id = request.user.id
 
-        try:
-            cur_user = User.objects.get(id=user_id)
-        except User.DoesNotExist:
-            return Response({"Message": "User does not exist"}, status=status.HTTP_400_BAD_REQUEST)
+        # Check if the user owns the vehicle
+        error_response, current_user, current_vehicle = OwnerCheck.check_owner(
+            user_id, chassis_number)
 
-        try:
-            cur_vehicle = Vehicel.objects.get(chassis_number=chassis_number)
-        except Vehicel.DoesNotExist:
-            return Response({"Message": "Vehicle does not exist"}, status=status.HTTP_400_BAD_REQUEST)
+        if error_response:
+            return error_response
 
-        if cur_vehicle.owner != cur_user:
-            return Response({"Message": "The current user doesn't own the vehicle"}, status=status.HTTP_400_BAD_REQUEST)
-
-        try:
-            cur_doc = Document.objects.get(
-                vehicle=cur_vehicle, renewal_status=True, document_type=Doc.ROAD_FUND)
-        except Document.DoesNotExist:
-            return Response({"Message": "Current vehicle doesn't have an active document"}, status=status.HTTP_400_BAD_REQUEST)
+        # Get the current active document
+        error_response_getting_doc, cur_doc = OwnerCheck.get_document(
+            current_vehicle, Doc.ROAD_FUND)
+        if error_response_getting_doc:
+            return error_response_getting_doc
 
         # Outdate the current active document
-        outdated_success = Helper.outdate_document(cur_doc.id)
-
+        outdated_success = Helper.outdate_document(id=cur_doc.id)
         if not outdated_success:
-            return Response({"Message": "Error occured"}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"Message": "Error occurred while outdating the document"}, status=status.HTTP_400_BAD_REQUEST)
+
+        # Get the current file
+        error_response_getting_file, cur_file = OwnerCheck.get_file(cur_doc)
+        if error_response_getting_file:
+            return error_response_getting_file
+
+        # Outdate the current file
+        outdate_file = ManageFile.out_date_file(cur_file.id)
+        if not outdate_file:
+            return Response({"Message": "Error occurred while outdating the file"}, status=status.HTTP_400_BAD_REQUEST)
 
         # Update the vehicle road fund document and create a new document
         updated_doc = Helper.update_document(
-            cur_vehicle, Doc.ROAD_FUND, transaction_code)
-
+            current_vehicle, Doc.ROAD_FUND, transaction_code, current_user.get_username())
         if not updated_doc:
-            return Response({"Message": "Error occured"}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"Message": "Error occurred while updating the document"}, status=status.HTTP_400_BAD_REQUEST)
 
+        # Serialize the updated document
         serializer = DocumentSerializer(updated_doc)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
@@ -130,11 +136,11 @@ class InsuranceDocumentRenew(viewsets.ViewSet):
         user_id = request.user.id
         chassis_number = pk
 
-        cur_user = User.objects.get(id=user_id)
-        cur_vehicle = Vehicel.objects.get(chassis_number=chassis_number)
+        error_response, current_user, current_vehicle = OwnerCheck.check_owner(
+            user_id, chassis_number)
 
-        if cur_vehicle.owner != cur_user:
-            return Response({"Message": "The current users doesn't own the vehicle"}, status=status.HTTP_400_BAD_REQUEST)
+        if error_response:
+            return error_response
 
         url = 'http://localhost:8001'
 
@@ -161,24 +167,17 @@ class InsuranceDocumentRenew(viewsets.ViewSet):
         transaction_code = request.data.get("transaction_code")
         user_id = request.user.id
 
-        try:
-            cur_user = User.objects.get(id=user_id)
-        except User.DoesNotExist:
-            return Response({"Message": "User does not exist"}, status=status.HTTP_400_BAD_REQUEST)
+        error_response, current_user, current_vehicle = OwnerCheck.check_owner(
+            user_id, chassis_number)
 
-        try:
-            cur_vehicle = Vehicel.objects.get(chassis_number=chassis_number)
-        except Vehicel.DoesNotExist:
-            return Response({"Message": "Vehicle does not exist"}, status=status.HTTP_400_BAD_REQUEST)
+        if error_response:
+            return error_response
 
-        if cur_vehicle.owner != cur_user:
-            return Response({"Message": "The current user doesn't own the vehicle"}, status=status.HTTP_400_BAD_REQUEST)
+        error_response_getting_doc, cur_doc = OwnerCheck.get_document(
+            current_vehicle, Doc.THIRD_PARTY_INSURANCE)
 
-        try:
-            cur_doc = Document.objects.get(
-                vehicle=cur_vehicle, renewal_status=True, document_type=Doc.THIRD_PARTY_INSURANCE)
-        except Document.DoesNotExist:
-            return Response({"Message": "Current vehicle doesn't have an active document"}, status=status.HTTP_400_BAD_REQUEST)
+        if error_response_getting_doc:
+            return error_response_getting_doc
 
         # Outdate the current active document
         outdated_success = Helper.outdate_document(cur_doc.id)
@@ -186,9 +185,19 @@ class InsuranceDocumentRenew(viewsets.ViewSet):
         if not outdated_success:
             return Response({"Message": "Error occured"}, status=status.HTTP_400_BAD_REQUEST)
 
+        error_response_getting_file, cur_file = OwnerCheck.get_file(cur_doc)
+
+        if error_response_getting_file:
+            return error_response_getting_file
+
+        # Outdate the current file
+        outdate_file = ManageFile.out_date_file(cur_file.id)
+        if not outdate_file:
+            return Response({"Message": "Error occurred while outdating the file"}, status=status.HTTP_400_BAD_REQUEST)
+
         # Update the vehicle road fund document and create a new document
         updated_doc = Helper.update_document(
-            cur_vehicle, Doc.THIRD_PARTY_INSURANCE, transaction_code, insurance_company_name=cur_doc.insurance_company_name)
+            current_vehicle, Doc.THIRD_PARTY_INSURANCE, transaction_code, current_user.get_username(), insurance_company_name=cur_doc.insurance_company_name)
 
         if not updated_doc:
             return Response({"Message": "Error occured"}, status=status.HTTP_400_BAD_REQUEST)
@@ -204,11 +213,11 @@ class RoadAuthorityDocumentRenew(viewsets.ViewSet):
         user_id = request.user.id
         chassis_number = pk
 
-        cur_user = User.objects.get(id=user_id)
-        cur_vehicle = Vehicel.objects.get(chassis_number=chassis_number)
+        error_response, current_user, current_vehicle = OwnerCheck.check_owner(
+            user_id, chassis_number)
 
-        if cur_vehicle.owner != cur_user:
-            return Response({"Message": "The current users doesn't own the vehicle"}, status=status.HTTP_400_BAD_REQUEST)
+        if error_response:
+            return error_response
 
         url = 'http://localhost:8001'
 
@@ -235,18 +244,11 @@ class RoadAuthorityDocumentRenew(viewsets.ViewSet):
         transaction_code = request.data.get("transaction_code")
         user_id = request.user.id
 
-        try:
-            cur_user = User.objects.get(id=user_id)
-        except User.DoesNotExist:
-            return Response({"Message": "User does not exist"}, status=status.HTTP_400_BAD_REQUEST)
+        error_response, current_user, current_vehicle = OwnerCheck.check_owner(
+            user_id, chassis_number)
 
-        try:
-            cur_vehicle = Vehicel.objects.get(chassis_number=chassis_number)
-        except Vehicel.DoesNotExist:
-            return Response({"Message": "Vehicle does not exist"}, status=status.HTTP_400_BAD_REQUEST)
-
-        if cur_vehicle.owner != cur_user:
-            return Response({"Message": "The current user doesn't own the vehicle"}, status=status.HTTP_400_BAD_REQUEST)
+        if error_response:
+            return error_response
 
         url = 'http://localhost:8001'
 
@@ -256,11 +258,11 @@ class RoadAuthorityDocumentRenew(viewsets.ViewSet):
         if result.status_code == 400:
             return Response({"Message": "Please update the bolo document before updating this!"}, status=status.HTTP_400_BAD_REQUEST)
 
-        try:
-            cur_doc = Document.objects.get(
-                vehicle=cur_vehicle, renewal_status=True, document_type=Doc.ROAD_AUTHORITY)
-        except Document.DoesNotExist:
-            return Response({"Message": "Current vehicle doesn't have an active document"}, status=status.HTTP_400_BAD_REQUEST)
+        error_response_getting_doc, cur_doc = OwnerCheck.get_document(
+            current_vehicle, Doc.ROAD_AUTHORITY)
+
+        if error_response_getting_doc:
+            return error_response_getting_doc
 
         # Outdate the current active document
         outdated_success = Helper.outdate_document(cur_doc.id)
@@ -268,9 +270,14 @@ class RoadAuthorityDocumentRenew(viewsets.ViewSet):
         if not outdated_success:
             return Response({"Message": "Error occured"}, status=status.HTTP_400_BAD_REQUEST)
 
+        error_response_getting_file, cur_file = OwnerCheck.get_file(cur_doc)
+
+        if error_response_getting_file:
+            return error_response_getting_file
+
         # Update the vehicle road fund document and create a new document
         updated_doc = Helper.update_document(
-            cur_vehicle, Doc.ROAD_AUTHORITY, transaction_code)
+            current_vehicle, Doc.ROAD_AUTHORITY, transaction_code, current_user.get_username())
 
         if not updated_doc:
             return Response({"Message": "Error occured"}, status=status.HTTP_400_BAD_REQUEST)

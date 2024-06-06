@@ -67,7 +67,8 @@ class Helper:
             logging.debug(e)
             return None
 
-    def update_document(self, vehicle: Vehicel, document_type: str, transaction_code: str, insurance_company_name=None):
+    @staticmethod
+    def update_document(vehicle: Vehicel, document_type: str, transaction_code: str,  owner_username: str, insurance_company_name=None):
         """
             Update the required type of document.
 
@@ -84,6 +85,7 @@ class Helper:
             """
         renewal_status = True
         renewal_date = timezone.now().date()
+        create_file = ManageFile.create_file(owner_username, document_type)
 
         try:
             cur_document = Document.objects.create(
@@ -95,12 +97,16 @@ class Helper:
                 insurance_company_name=insurance_company_name
             )
 
+            cur_document.files.add(create_file)
+            cur_document.save()
+
             return cur_document
         except Exception as e:
             logging.debug(e)
             return None
 
-    def outdate_document(self, id):
+    @staticmethod
+    def outdate_document(id):
         """
             This is a function to outdate a document when renewing a new document.
 

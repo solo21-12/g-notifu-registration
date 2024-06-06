@@ -1,5 +1,8 @@
 from files.models import Files
 from datetime import datetime
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 class ManageFile:
@@ -35,7 +38,8 @@ class ManageFile:
         '''
         try:
             file = Files.objects.get(id=file_id)
-        except Files.DoesNotExist:
+        except Files.DoesNotExist as e:
+            logging.error(f"File with id {file_id} does not exist.")
             return None
 
         file.current = False
