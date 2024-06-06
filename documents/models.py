@@ -6,26 +6,16 @@ from datetime import timedelta
 from core.utils.custome_primary_key_generate import CustomPrimaryKeyField
 from vehicle.models import Vehicel
 from files.models import Files
-
+from core.utils.document_type import DocumentType
 Key = CustomPrimaryKeyField()
-THIRD_PARTY_INSURANCE = 'Third party insurance'
-ROAD_FUND = 'Road fund'
-ROAD_AUTHORITY = 'Road Authority'
-BOLO = 'Bolo'
-
-document_type_choices = [
-    (THIRD_PARTY_INSURANCE, 'Third party insurance'),
-    (ROAD_FUND, 'Road Fund'),
-    (ROAD_AUTHORITY, 'Road Authority'),
-    (BOLO, 'Bolo')
-]
+Doc = DocumentType()
 
 
 class Document(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4)
     vehicle = models.ForeignKey(Vehicel, on_delete=models.CASCADE)
     document_type = models.CharField(
-        choices=document_type_choices, max_length=100)
+        choices=Doc.document_type_choices, max_length=100)
     renewal_status = models.BooleanField(default=False)
     renewal_date = models.DateField()
     expiry_date = models.DateField(null=True, blank=True)

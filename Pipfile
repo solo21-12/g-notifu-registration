@@ -21,6 +21,7 @@ redis = "*"
 celery = "*"
 flower = "*"
 requests = "*"
+reportlab = "*"
 
 [dev-packages]
 

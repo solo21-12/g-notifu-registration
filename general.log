@@ -11887,3 +11887,151 @@ django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '8acf-37-19-221
 2024-06-05 18:21:43,426 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
 2024-06-05 18:21:43,426 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
 2024-06-05 18:21:43,439 (WARNING) - django.request - Method Not Allowed: /users/co/create/
+2024-06-06 06:43:43,082 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 06:43:50,871 (WARNING) - django.request - Unauthorized: /users/
+2024-06-06 06:43:51,271 (WARNING) - django.request - Not Found: /favicon.ico
+2024-06-06 07:07:27,878 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:07:35,753 (WARNING) - django.request - Not Found: /catalog
+2024-06-06 07:12:10,695 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:12:11,108 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:12:13,330 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:12:13,677 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:12:17,992 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:12:18,376 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:13:27,808 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:13:28,189 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:13:29,326 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:13:29,638 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:13:31,775 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:13:32,137 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:13:33,357 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:13:33,707 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:13:34,845 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:13:35,154 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:13:40,406 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:13:40,799 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:13:41,935 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:13:42,252 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:13:45,509 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:13:45,882 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:13:47,019 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:13:47,328 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:13:50,605 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:13:50,984 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:13:52,121 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:13:52,436 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:13:55,578 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:13:55,928 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:13:58,162 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:13:58,510 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:14:02,767 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:14:03,150 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:14:06,299 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:14:06,622 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:14:10,774 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:14:11,125 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:14:19,297 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:14:19,675 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:14:21,903 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:14:22,289 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:14:23,525 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:14:23,893 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:14:27,040 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:14:27,402 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:14:34,755 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:14:35,135 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:14:42,468 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:14:42,848 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:14:48,110 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:14:48,545 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:14:58,887 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:14:59,288 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:15:00,425 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:15:00,795 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:15:01,932 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:15:02,270 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:15:05,585 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:15:05,943 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:15:44,783 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/models.py changed, reloading.
+2024-06-06 07:15:45,204 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:16:12,962 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/models.py changed, reloading.
+2024-06-06 07:16:13,331 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:16:23,511 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/models.py changed, reloading.
+2024-06-06 07:16:23,861 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:16:24,997 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/models.py changed, reloading.
+2024-06-06 07:16:25,361 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:16:30,519 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/models.py changed, reloading.
+2024-06-06 07:16:30,825 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:16:32,966 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/models.py changed, reloading.
+2024-06-06 07:16:33,304 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:16:37,456 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/models.py changed, reloading.
+2024-06-06 07:16:37,812 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:16:39,953 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/models.py changed, reloading.
+2024-06-06 07:16:40,308 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:16:41,521 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/models.py changed, reloading.
+2024-06-06 07:16:41,905 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:17:10,109 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:18:07,908 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-06 07:18:08,313 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:18:15,548 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-06 07:18:15,930 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:18:18,120 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-06 07:18:18,526 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:18:24,750 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-06 07:18:25,135 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:18:52,677 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-06 07:18:53,042 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:18:56,291 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-06 07:18:56,661 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:19:04,927 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-06 07:19:05,347 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:19:27,068 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:19:46,528 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-06 07:19:46,945 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:19:49,184 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-06 07:19:49,579 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:19:54,792 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-06 07:19:55,207 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:19:56,385 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-06 07:19:56,728 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:20:02,012 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-06 07:20:02,382 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:20:13,753 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-06 07:20:14,133 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:20:25,488 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-06 07:20:25,895 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:20:38,329 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-06 07:20:38,734 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:20:50,121 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-06 07:20:50,560 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:20:59,867 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-06 07:21:00,227 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:21:28,832 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-06 07:21:29,219 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:21:37,500 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-06 07:21:37,868 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:21:52,206 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-06 07:21:52,607 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:21:55,857 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-06 07:21:56,246 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:21:58,471 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-06 07:21:58,866 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:22:12,314 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-06 07:22:12,693 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:22:24,053 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-06 07:22:24,435 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:22:35,701 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:22:52,168 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/admin.py changed, reloading.
+2024-06-06 07:22:52,560 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:23:00,830 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/admin.py changed, reloading.
+2024-06-06 07:23:01,279 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:45:52,573 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/admin.py changed, reloading.
+2024-06-06 07:45:52,966 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:45:54,226 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/admin.py changed, reloading.
+2024-06-06 07:45:54,621 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:45:56,865 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/admin.py changed, reloading.
+2024-06-06 07:45:57,233 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:46:13,777 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/admin.py changed, reloading.
+2024-06-06 07:46:14,185 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-06 07:46:15,456 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/admin.py changed, reloading.
+2024-06-06 07:46:15,801 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader

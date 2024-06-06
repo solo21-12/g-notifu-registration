@@ -8,11 +8,11 @@ from .models import Document
 from .serializers import DocumentSerializer
 from core.utils.Helper import Helper
 from vehicle.models import Vehicel
-from documents.models import ROAD_AUTHORITY, ROAD_FUND, THIRD_PARTY_INSURANCE
+from core.utils.document_type import DocumentType
 
 User = get_user_model()
 helper = Helper()
-
+Doc = DocumentType()
 
 class DocuemntViewSet(viewsets.ModelViewSet):
     queryset = Document.objects.all()
@@ -102,7 +102,7 @@ class RoadFundDocumentRenew(viewsets.ViewSet):
 
         try:
             cur_doc = Document.objects.get(
-                vehicle=cur_vehicle, renewal_status=True, document_type=ROAD_FUND)
+                vehicle=cur_vehicle, renewal_status=True, document_type=Doc.ROAD_FUND)
         except Document.DoesNotExist:
             return Response({"Message": "Current vehicle doesn't have an active document"}, status=status.HTTP_400_BAD_REQUEST)
 
@@ -114,7 +114,7 @@ class RoadFundDocumentRenew(viewsets.ViewSet):
 
         # Update the vehicle road fund document and create a new document
         updated_doc = helper.update_document(
-            cur_vehicle, ROAD_FUND, transaction_code)
+            cur_vehicle, Doc.ROAD_FUND, transaction_code)
 
         if not updated_doc:
             return Response({"Message": "Error occured"}, status=status.HTTP_400_BAD_REQUEST)
@@ -176,7 +176,7 @@ class InsuranceDocumentRenew(viewsets.ViewSet):
 
         try:
             cur_doc = Document.objects.get(
-                vehicle=cur_vehicle, renewal_status=True, document_type=THIRD_PARTY_INSURANCE)
+                vehicle=cur_vehicle, renewal_status=True, document_type=Doc.THIRD_PARTY_INSURANCE)
         except Document.DoesNotExist:
             return Response({"Message": "Current vehicle doesn't have an active document"}, status=status.HTTP_400_BAD_REQUEST)
 
@@ -188,7 +188,7 @@ class InsuranceDocumentRenew(viewsets.ViewSet):
 
         # Update the vehicle road fund document and create a new document
         updated_doc = helper.update_document(
-            cur_vehicle, THIRD_PARTY_INSURANCE, transaction_code, insurance_company_name=cur_doc.insurance_company_name)
+            cur_vehicle, Doc.THIRD_PARTY_INSURANCE, transaction_code, insurance_company_name=cur_doc.insurance_company_name)
 
         if not updated_doc:
             return Response({"Message": "Error occured"}, status=status.HTTP_400_BAD_REQUEST)
@@ -258,7 +258,7 @@ class RoadAuthorityDocumentRenew(viewsets.ViewSet):
 
         try:
             cur_doc = Document.objects.get(
-                vehicle=cur_vehicle, renewal_status=True, document_type=ROAD_AUTHORITY)
+                vehicle=cur_vehicle, renewal_status=True, document_type=Doc.ROAD_AUTHORITY)
         except Document.DoesNotExist:
             return Response({"Message": "Current vehicle doesn't have an active document"}, status=status.HTTP_400_BAD_REQUEST)
 
@@ -270,7 +270,7 @@ class RoadAuthorityDocumentRenew(viewsets.ViewSet):
 
         # Update the vehicle road fund document and create a new document
         updated_doc = helper.update_document(
-            cur_vehicle, RO, transaction_code)
+            cur_vehicle, Doc.ROAD_AUTHORITY, transaction_code)
 
         if not updated_doc:
             return Response({"Message": "Error occured"}, status=status.HTTP_400_BAD_REQUEST)

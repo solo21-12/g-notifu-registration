@@ -8,12 +8,12 @@ from core.utils.Helper import Helper
 from documents.models import Document
 from .serializers import VehicleSerializer, AddVehicleSerlizer
 from .models import Vehicel
-from documents.models import ROAD_AUTHORITY, ROAD_FUND, THIRD_PARTY_INSURANCE
+from core.utils.document_type import DocumentType
 import logging
 
 logger = logging.getLogger(__name__)
 User = get_user_model()
-
+Doc = DocumentType()
 
 class AddVehicleViewSet(mixins.CreateModelMixin,
                         mixins.UpdateModelMixin,
@@ -86,19 +86,19 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
                             renewal_date=renewal_date_road_fund,
                             expiry_date=expiry_date_road_fund,
                             vehicle=vehicle,
-                            document_type=ROAD_FUND)
+                            document_type=Doc.ROAD_FUND)
 
                         create_road_auth = helper.create_document(
                             renewal_date=renewal_date_road_auth,
                             expiry_date=expiry_date_road_auth,
                             vehicle=vehicle,
-                            document_type=ROAD_AUTHORITY)
+                            document_type=Doc.ROAD_AUTHORITY)
 
                         create_insurance = helper.create_document(
                             renewal_date=renewal_date_insurance,
                             expiry_date=expiry_date_insurance,
                             vehicle=vehicle,
-                            document_type=THIRD_PARTY_INSURANCE,
+                            document_type=Doc.THIRD_PARTY_INSURANCE,
                             insurance_company_name=insurance_name
                         )
 

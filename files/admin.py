@@ -5,4 +5,4 @@ from .models import Files
 
 @admin.register(Files)
 class Files(ModelAdmin):
-    list_display = ['id', 'file_name', 'file_address', 'file_type', 'content']
+    list_display = ['file_name', 'file_address', 'file_type', 'current']
