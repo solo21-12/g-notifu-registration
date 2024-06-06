@@ -15,6 +15,7 @@ logger = logging.getLogger(__name__)
 User = get_user_model()
 Doc = DocumentType()
 
+
 class AddVehicleViewSet(mixins.CreateModelMixin,
                         mixins.UpdateModelMixin,
                         mixins.DestroyModelMixin,
@@ -34,11 +35,10 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
         url_road_auth = f'{url}/roadauthrity/{chassis_number}'
         url_road_fund = f'{url}/roadfund/{chassis_number}'
         url_insurance = f'{url}/insurance/{chassis_number}'
-        helper = Helper()
 
-        road_auth_data = helper.make_api_call(url_road_auth)
-        road_fund_data = helper.make_api_call(url_road_fund)
-        insurance_data = helper.make_api_call(url_insurance)
+        road_auth_data = Helper.make_api_call(url_road_auth)
+        road_fund_data = Helper.make_api_call(url_road_fund)
+        insurance_data = Helper.make_api_call(url_insurance)
 
         if road_auth_data and road_auth_data.status_code == 200 and insurance_data and insurance_data.status_code == 200:
             if road_fund_data and road_fund_data.status_code == 200:
@@ -82,24 +82,31 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
                             chassis_number=chassis_number,
                             plate_number=plate_number)
 
-                        create_road_fund = helper.create_document(
-                            renewal_date=renewal_date_road_fund,
-                            expiry_date=expiry_date_road_fund,
-                            vehicle=vehicle,
-                            document_type=Doc.ROAD_FUND)
+                        create_road_fund = Helper.create_document(
+                            vehicle,
+                            Doc.ROAD_FUND,
+                            renewal_date_road_fund,
+                            expiry_date_road_fund,
+                            owner.get_username()
 
-                        create_road_auth = helper.create_document(
-                            renewal_date=renewal_date_road_auth,
-                            expiry_date=expiry_date_road_auth,
-                            vehicle=vehicle,
-                            document_type=Doc.ROAD_AUTHORITY)
+                        )
 
-                        create_insurance = helper.create_document(
-                            renewal_date=renewal_date_insurance,
-                            expiry_date=expiry_date_insurance,
-                            vehicle=vehicle,
-                            document_type=Doc.THIRD_PARTY_INSURANCE,
-                            insurance_company_name=insurance_name
+                        create_road_auth = Helper.create_document(
+                            vehicle,
+                            Doc.ROAD_AUTHORITY,
+                            renewal_date_road_fund,
+                            expiry_date_road_fund,
+                            owner.get_username()
+
+                        )
+
+                        create_insurance = Helper.create_document(
+                            vehicle,
+                            Doc.THIRD_PARTY_INSURANCE,
+                            renewal_date_road_fund,
+                            expiry_date_road_fund,
+                            owner.get_username(),
+                            insurance_name,
                         )
 
                         if not create_road_auth or not create_road_fund or not create_insurance:

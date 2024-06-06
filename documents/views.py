@@ -11,7 +11,7 @@ from vehicle.models import Vehicel
 from core.utils.document_type import DocumentType
 
 User = get_user_model()
-helper = Helper()
+
 Doc = DocumentType()
 
 class DocuemntViewSet(viewsets.ModelViewSet):
@@ -64,7 +64,7 @@ class RoadFundDocumentRenew(viewsets.ViewSet):
 
         url = 'http://localhost:8001'
 
-        result = helper.make_api_call(
+        result = Helper.make_api_call(
             f'{url}/roadfund/get_payment_info/{chassis_number}/')
 
         if result.status_code == 200:
@@ -107,13 +107,13 @@ class RoadFundDocumentRenew(viewsets.ViewSet):
             return Response({"Message": "Current vehicle doesn't have an active document"}, status=status.HTTP_400_BAD_REQUEST)
 
         # Outdate the current active document
-        outdated_success = helper.outdate_document(cur_doc.id)
+        outdated_success = Helper.outdate_document(cur_doc.id)
 
         if not outdated_success:
             return Response({"Message": "Error occured"}, status=status.HTTP_400_BAD_REQUEST)
 
         # Update the vehicle road fund document and create a new document
-        updated_doc = helper.update_document(
+        updated_doc = Helper.update_document(
             cur_vehicle, Doc.ROAD_FUND, transaction_code)
 
         if not updated_doc:
@@ -138,7 +138,7 @@ class InsuranceDocumentRenew(viewsets.ViewSet):
 
         url = 'http://localhost:8001'
 
-        result = helper.make_api_call(
+        result = Helper.make_api_call(
             f'{url}/insurance/get_payment_info/{chassis_number}/')
 
         if result.status_code == 200:
@@ -181,13 +181,13 @@ class InsuranceDocumentRenew(viewsets.ViewSet):
             return Response({"Message": "Current vehicle doesn't have an active document"}, status=status.HTTP_400_BAD_REQUEST)
 
         # Outdate the current active document
-        outdated_success = helper.outdate_document(cur_doc.id)
+        outdated_success = Helper.outdate_document(cur_doc.id)
 
         if not outdated_success:
             return Response({"Message": "Error occured"}, status=status.HTTP_400_BAD_REQUEST)
 
         # Update the vehicle road fund document and create a new document
-        updated_doc = helper.update_document(
+        updated_doc = Helper.update_document(
             cur_vehicle, Doc.THIRD_PARTY_INSURANCE, transaction_code, insurance_company_name=cur_doc.insurance_company_name)
 
         if not updated_doc:
@@ -212,7 +212,7 @@ class RoadAuthorityDocumentRenew(viewsets.ViewSet):
 
         url = 'http://localhost:8001'
 
-        result = helper.make_api_call(
+        result = Helper.make_api_call(
             f'{url}/roadauthrity/get_payment_info/{chassis_number}/')
 
         if result.status_code == 200:
@@ -250,7 +250,7 @@ class RoadAuthorityDocumentRenew(viewsets.ViewSet):
 
         url = 'http://localhost:8001'
 
-        result = helper.make_api_call(
+        result = Helper.make_api_call(
             f'{url}/roadauthrity/get_payment_info/{chassis_number}/')
 
         if result.status_code == 400:
@@ -263,13 +263,13 @@ class RoadAuthorityDocumentRenew(viewsets.ViewSet):
             return Response({"Message": "Current vehicle doesn't have an active document"}, status=status.HTTP_400_BAD_REQUEST)
 
         # Outdate the current active document
-        outdated_success = helper.outdate_document(cur_doc.id)
+        outdated_success = Helper.outdate_document(cur_doc.id)
 
         if not outdated_success:
             return Response({"Message": "Error occured"}, status=status.HTTP_400_BAD_REQUEST)
 
         # Update the vehicle road fund document and create a new document
-        updated_doc = helper.update_document(
+        updated_doc = Helper.update_document(
             cur_vehicle, Doc.ROAD_AUTHORITY, transaction_code)
 
         if not updated_doc:
