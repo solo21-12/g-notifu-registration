@@ -1,10 +1,17 @@
+from rest_framework import viewsets
+from rest_framework.response import Response
+from rest_framework import status
+from vehicle.models import Vehicel
+from documents.models import Document
+from documents.utils.check_owner import OwnerCheck
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
 from django.contrib.auth import get_user_model
 from datetime import datetime
-from vehicle.models import Vehicel
-User = get_user_model()
+from django.http import FileResponse
+import os
 
+User = get_user_model()
 
 class GeneratePdf:
 
@@ -17,7 +24,7 @@ class GeneratePdf:
         expire_date (str): The date the road fund expires.
         chassis_number (str): The chassis number of the vehicle.
         document_id (str): The id of the document.
-        returns True if the file is generated successfully, otherwise None.
+        returns the file path if the file is generated successfully, otherwise None.
         '''
 
         try:
@@ -28,12 +35,13 @@ class GeneratePdf:
         cur_user = User.objects.get(id=cur_vehicle.owner)
 
         filename = f"{cur_user.get_username()}_road_fund_{datetime.now().strftime('%Y%m%d%H%M%S')}.pdf"
+        filepath = os.path.join('/file', filename)  # Save the file to a temporary directory
         first_name = cur_user.first_name
         middle_name = cur_user.middle_name
         last_name = cur_user.last_name
         plate_number = cur_vehicle.plate_number
 
-        c = canvas.Canvas(filename, pagesize=letter)
+        c = canvas.Canvas(filepath, pagesize=letter)
 
         # Define the width and height of the page
         width, height = letter
@@ -70,10 +78,10 @@ class GeneratePdf:
 
         # Issued by
         c.drawString(50, height - 420, "Issued by: Goma Notify")
-        c.drawString(50, height - 420,
+        c.drawString(50, height - 440,
                      f"Issued Date: {datetime.now().strftime('%Y%m%d%H%M%S')}")
 
         # Save the document
         c.save()
 
-        return True
+        return filepath

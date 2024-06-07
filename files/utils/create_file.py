@@ -16,8 +16,7 @@ class ManageFile:
 
         '''
         filename = f"{owner_username}_{file_type}_{datetime.now().strftime('%Y%m%d%H%M%S')}.pdf"
-        file_address = f"files/{filename}"
-
+        file_address = f"file/{filename}"
         new_file = Files.objects.create(
             file_name=filename,
             file_address=file_address,

@@ -24,7 +24,8 @@ urlpatterns = [
     path('notifications/', include('notification.urls')),
     path('api-auth/', include('rest_framework.urls')),
     path('auth/', include('djoser.urls')),
-    path('auth/', include('djoser.urls.jwt'))
-    # new comment
+    path('auth/', include('djoser.urls.jwt')),
+    path('files/', include('files.urls')),
+    # new dvkvskomment
 
 ]
