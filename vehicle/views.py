@@ -3,13 +3,16 @@ from datetime import datetime
 from django.http import JsonResponse
 from django.contrib.auth import get_user_model
 from rest_framework import viewsets, status
-from rest_framework import generics, mixins, views
+from rest_framework import mixins
+from rest_framework.routers import Response
 from core.utils.Helper import Helper
 from documents.models import Document
 from .serializers import VehicleSerializer, AddVehicleSerlizer
 from .models import Vehicel
 from core.utils.document_type import DocumentType
+
 import logging
+
 
 logger = logging.getLogger(__name__)
 User = get_user_model()
@@ -139,5 +142,25 @@ class ManageVehicleViewSet(mixins.DestroyModelMixin,
                            mixins.ListModelMixin,
                            mixins.RetrieveModelMixin,
                            viewsets.GenericViewSet):
+
     queryset = Vehicel.objects.all()
     serializer_class = VehicleSerializer
+
+
+class VehicleListView(mixins.RetrieveModelMixin, viewsets.GenericViewSet):
+
+    queryset = Vehicel.objects.all()
+    serializer_class = AddVehicleSerlizer
+
+    def retrieve(self, request, pk=None):
+        try:
+            cur_user = request.user
+        except User.DoesNotExist:
+            return Response({'message': "No user found with the given information"}, status=status.HTTP_404_NOT_FOUND)
+
+        vehicles = Vehicel.objects.filter(owner=cur_user)
+        if not vehicles.exists():
+            return Response({'message': "No vehicles found with the given information"}, status=status.HTTP_404_NOT_FOUND)
+
+        serializer = VehicleSerializer(vehicles, many=True)
+        return Response(serializer.data)

@@ -14212,3 +14212,1911 @@ AttributeError: 'Files' object has no attribute 'renewal_date'
 2024-06-07 16:19:30,934 (WARNING) - django.request - Not Found: /
 2024-06-07 16:21:04,257 (WARNING) - django.request - Not Found: /
 2024-06-07 16:21:05,262 (WARNING) - django.request - Not Found: /favicon.ico
+2024-06-07 17:05:57,130 (WARNING) - django.request - Unauthorized: /files/gen_files/123456/
+2024-06-07 17:07:08,615 (ERROR) - django.request - Internal Server Error: /files/gen_files/123456/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/files/views.py", line 41, in retrieve
+    renewal_date = cur_file.renewal_date
+                   ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Files' object has no attribute 'renewal_date'
+2024-06-07 17:10:33,807 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 17:10:34,200 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 17:10:36,491 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 17:10:36,877 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 17:11:17,607 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 17:11:18,115 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 17:11:20,410 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 17:11:20,840 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 17:12:13,713 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 17:12:14,126 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 17:12:17,430 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 17:12:17,842 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 17:12:19,119 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 17:12:19,517 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 17:14:23,333 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 17:14:47,685 (ERROR) - django.request - Internal Server Error: /files/gen_files/123456/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/files/views.py", line 42, in retrieve
+    expire_date = cur_doc.expire_date
+                  ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Document' object has no attribute 'expire_date'
+2024-06-07 17:15:39,499 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 17:15:39,897 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 17:15:43,197 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 17:15:43,596 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 17:15:46,895 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 17:15:47,316 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 17:15:51,653 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 17:15:52,059 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 17:15:55,386 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 17:15:55,802 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 17:16:00,005 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 17:16:00,406 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 17:16:01,584 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 17:16:01,977 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 17:16:04,286 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 17:16:04,763 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 17:16:07,015 (ERROR) - django.request - Internal Server Error: /files/gen_files/123456/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'User'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/files/views.py", line 44, in retrieve
+    pdf_path = GeneratePdf.generate_road_fund_file(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/files/utils/generate_pdf.py", line 35, in generate_road_fund_file
+    cur_user = User.objects.get(id=cur_vehicle.owner)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/lookups.py", line 364, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <User: dawitya21@gmail.com>.
+2024-06-07 17:27:00,257 (INFO) - django.utils.autoreload - /home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/requests/__init__.py changed, reloading.
+2024-06-07 17:27:00,764 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 17:29:58,832 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 17:30:16,177 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 17:32:33,174 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 17:32:33,729 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:26:06,052 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-07 19:26:06,842 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:32:55,296 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:32:58,765 (ERROR) - django.request - Internal Server Error: /files/gen_files/123456/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/files/views.py", line 41, in retrieve
+    pdf_path = GeneratePdf.generate_road_fund_file(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/files/utils/generate_pdf.py", line 89, in generate_road_fund_file
+    c.save()
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/reportlab/pdfgen/canvas.py", line 1298, in save
+    self._doc.SaveToFile(self._filename, self)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/reportlab/pdfbase/pdfdoc.py", line 208, in SaveToFile
+    f = open(filename, "wb")
+        ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/file/dawitya21@gmail.com_road_fund_20240607193258.pdf'
+2024-06-07 19:35:52,243 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:35:55,631 (ERROR) - django.request - Internal Server Error: /files/gen_files/123456/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/files/views.py", line 41, in retrieve
+    pdf_path = GeneratePdf.generate_road_fund_file(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/files/utils/generate_pdf.py", line 89, in generate_road_fund_file
+    c.save()
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/reportlab/pdfgen/canvas.py", line 1298, in save
+    self._doc.SaveToFile(self._filename, self)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/reportlab/pdfbase/pdfdoc.py", line 208, in SaveToFile
+    f = open(filename, "wb")
+        ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/file/dawitya21@gmail.com_road_fund_20240607193555.pdf'
+2024-06-07 19:36:14,243 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-07 19:36:14,956 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:37:47,333 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-07 19:37:47,881 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:37:48,705 (ERROR) - django.request - Internal Server Error: /files/gen_files/123456/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/files/views.py", line 41, in retrieve
+    pdf_path = GeneratePdf.generate_road_fund_file(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/files/utils/generate_pdf.py", line 89, in generate_road_fund_file
+    c.save()
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/reportlab/pdfgen/canvas.py", line 1298, in save
+    self._doc.SaveToFile(self._filename, self)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/reportlab/pdfbase/pdfdoc.py", line 208, in SaveToFile
+    f = open(filename, "wb")
+        ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/pdfs/dawitya21@gmail.com_road_fund_20240607193748.pdf'
+2024-06-07 19:37:59,567 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-07 19:38:00,113 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:39:14,067 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/create_file.py changed, reloading.
+2024-06-07 19:39:14,625 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:45:48,850 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 19:45:49,388 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:45:53,909 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 19:45:54,508 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:46:12,263 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 19:46:12,845 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:46:19,410 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 19:46:20,032 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:46:22,356 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 19:46:22,860 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:46:24,380 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 19:46:24,917 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:46:27,412 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 19:46:27,996 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:46:29,475 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 19:46:30,052 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:46:35,623 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 19:46:36,211 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:46:37,752 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 19:46:38,292 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:46:39,804 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 19:46:40,329 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:46:42,823 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 19:46:43,353 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:46:44,834 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 19:46:45,384 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:46:47,894 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 19:46:48,436 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:46:49,949 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 19:46:50,539 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:46:56,102 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 19:46:56,773 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:47:25,742 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 19:47:26,311 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:48:10,599 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 19:48:11,293 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:48:14,824 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 19:48:15,366 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:48:19,908 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 19:48:20,450 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:48:23,964 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 19:48:24,543 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:48:26,028 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 19:48:26,626 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:51:53,461 (WARNING) - django.request - Unauthorized: /documents/renew_road_authority/123456/
+2024-06-07 19:52:13,840 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-07 19:53:01,988 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 19:53:02,583 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:53:08,017 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 19:53:08,538 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:53:15,989 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 19:53:16,710 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:53:22,274 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 19:53:22,974 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:53:41,834 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 19:53:42,546 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:53:45,046 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 19:53:45,742 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:53:50,306 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 19:53:50,823 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:53:52,334 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 19:53:52,900 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:53:56,285 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 19:53:56,831 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:53:59,337 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 19:53:59,886 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:54:02,372 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 19:54:03,055 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:54:05,551 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 19:54:06,077 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 19:54:07,559 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 19:54:08,087 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:15:44,213 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:15:44,920 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:15:49,457 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:15:50,013 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:15:55,539 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:15:56,076 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:15:57,543 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:15:58,083 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:16:00,456 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:16:01,075 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:16:04,613 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:16:05,359 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:16:07,849 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:16:08,374 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:16:12,895 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:16:13,454 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:16:41,456 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:16:42,005 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:16:45,407 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:16:45,963 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:16:47,472 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:16:48,039 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:16:50,147 (WARNING) - django.request - Not Found: /files/gen_files/123456/
+2024-06-07 20:16:58,798 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:16:59,615 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:17:01,103 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:17:01,636 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:17:07,248 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:17:07,831 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:17:12,282 (WARNING) - django.request - Not Found: /files/gen_files/123456/
+2024-06-07 20:17:56,658 (WARNING) - django.request - Unauthorized: /users/
+2024-06-07 20:17:57,069 (WARNING) - django.request - Not Found: /favicon.ico
+2024-06-07 20:18:34,398 (WARNING) - django.request - Bad Request: /documents/renew_road_fund/123456/
+2024-06-07 20:19:00,219 (WARNING) - django.request - Unauthorized: /vehicles/add_vehicle/
+2024-06-07 20:19:15,914 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-07 20:19:15,917 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-07 20:19:15,919 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-07 20:19:15,921 (ERROR) - django.request - Internal Server Error: /vehicles/add_vehicle/
+2024-06-07 20:19:44,258 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-07 20:19:44,310 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/123456 HTTP/1.1" 301 None
+2024-06-07 20:19:44,311 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-07 20:19:44,402 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/123456/ HTTP/1.1" 200 350
+2024-06-07 20:19:44,404 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-07 20:19:44,426 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/123456 HTTP/1.1" 301 None
+2024-06-07 20:19:44,429 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-07 20:19:44,457 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/123456/ HTTP/1.1" 200 350
+2024-06-07 20:19:44,459 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-07 20:19:44,479 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/123456 HTTP/1.1" 301 None
+2024-06-07 20:19:44,481 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-07 20:19:44,505 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/123456/ HTTP/1.1" 200 374
+2024-06-07 20:25:50,843 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 20:25:51,434 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:26:07,138 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 20:26:07,679 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:26:09,224 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 20:26:09,764 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:26:12,288 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 20:26:12,805 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:26:16,320 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 20:26:16,853 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:27:38,548 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-07 20:27:38,580 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/123456 HTTP/1.1" 301 None
+2024-06-07 20:27:38,583 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-07 20:27:38,611 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/123456/ HTTP/1.1" 200 350
+2024-06-07 20:27:38,615 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-07 20:27:38,651 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/123456 HTTP/1.1" 301 None
+2024-06-07 20:27:38,654 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-07 20:27:38,691 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/123456/ HTTP/1.1" 200 350
+2024-06-07 20:27:38,694 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-07 20:27:38,729 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/123456 HTTP/1.1" 301 None
+2024-06-07 20:27:38,731 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-07 20:27:38,764 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/123456/ HTTP/1.1" 200 374
+2024-06-07 20:34:00,976 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-07 20:34:01,584 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:34:07,013 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-07 20:34:07,518 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:42:11,943 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-07 20:42:12,484 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:42:15,028 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-07 20:42:15,619 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:42:26,338 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 20:42:26,870 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:42:33,458 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 20:42:33,982 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:42:40,569 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 20:42:41,200 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:42:42,718 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-07 20:42:43,297 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:45:30,392 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-07 20:45:30,429 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/123456 HTTP/1.1" 301 None
+2024-06-07 20:45:30,431 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-07 20:45:30,466 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/123456/ HTTP/1.1" 200 350
+2024-06-07 20:45:30,468 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-07 20:45:30,495 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/123456 HTTP/1.1" 301 None
+2024-06-07 20:45:30,497 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-07 20:45:30,526 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/123456/ HTTP/1.1" 200 350
+2024-06-07 20:45:30,528 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-07 20:45:30,551 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/123456 HTTP/1.1" 301 None
+2024-06-07 20:45:30,554 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-07 20:45:30,578 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/123456/ HTTP/1.1" 200 374
+2024-06-07 20:47:32,256 (WARNING) - django.request - Not Found: /files/gen_files/123456/
+2024-06-07 20:56:01,862 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:56:02,509 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:56:07,934 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:56:08,466 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:56:09,954 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:56:10,500 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:56:48,848 (ERROR) - django.request - Internal Server Error: /files/gen_files/123456/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/files/views.py", line 42, in retrieve
+    pdf_file_path = os.path.join("pdf", cur_file)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen posixpath>", line 90, in join
+  File "<frozen genericpath>", line 152, in _check_arg_types
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'Files'
+2024-06-07 20:57:57,081 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:57:57,693 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:57:59,113 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:57:59,682 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:58:01,803 (WARNING) - django.request - Not Found: /files/gen_files/123456/
+2024-06-07 20:58:19,586 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:58:20,183 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:58:21,673 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:58:22,222 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:58:23,702 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 20:58:24,300 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 20:58:26,178 (WARNING) - django.request - Not Found: /files/gen_files/123456/
+2024-06-07 21:05:47,940 (WARNING) - django.request - Not Found: /files/gen_files/123456/
+2024-06-07 21:06:00,467 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 21:06:01,244 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 21:15:06,096 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 21:15:06,665 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 21:15:12,086 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 21:15:12,639 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 21:15:16,158 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 21:15:16,705 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 21:15:21,309 (WARNING) - django.request - Not Found: /files/gen_files/123456/
+2024-06-07 21:15:27,566 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
+2024-06-07 21:15:28,131 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-07 21:17:11,485 (WARNING) - django.request - Unauthorized: /files/gen_files/123456/
+2024-06-08 18:51:03,617 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-08 18:52:28,594 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-08 19:25:35,921 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-08 19:28:45,841 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-08 19:29:19,136 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-08 19:32:59,441 (WARNING) - django.request - Unsupported Media Type: /users/verify-email/
+2024-06-08 19:33:00,259 (WARNING) - django.request - Unsupported Media Type: /users/verify-email/
+2024-06-08 19:33:21,081 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-08 19:33:21,939 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-08 19:39:10,954 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-08 19:44:43,817 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-08 19:44:43,819 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-08 19:44:45,093 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-08 19:44:45,303 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-08 19:44:45,813 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-08 19:44:46,028 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-08 19:44:54,514 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-08 19:44:54,926 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-08 19:44:55,195 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-08 19:44:55,322 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-08 19:44:55,641 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-08 19:58:33,113 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-08 19:59:30,967 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-08 19:59:33,936 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-08 19:59:37,318 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-08 19:59:37,930 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-08 19:59:39,063 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-08 20:32:06,191 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-09 08:54:32,393 (WARNING) - django.request - Not Found: /favicon.ico
+2024-06-09 09:01:24,980 (ERROR) - django.request - Internal Server Error: /users/reset-password-request/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/users/views.py", line 79, in put
+    serlizer.update(
+  File "/home/dawit/projects/customer_account_service/users/serializers.py", line 242, in update
+    email_sever.send_password_reset_email(
+  File "/home/dawit/projects/customer_account_service/users/utils/sendmail.py", line 23, in send_password_reset_email
+    send_mail(
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/mail/__init__.py", line 88, in send_mail
+    return mail.send()
+           ^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/mail/message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/mail/backends/smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+2024-06-09 09:04:50,090 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-09 09:05:40,149 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-09 09:05:40,294 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-09 09:05:42,527 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-09 09:05:50,820 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-09 09:05:50,918 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-09 09:05:52,783 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-09 09:05:54,606 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-09 09:05:54,843 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-09 09:05:56,556 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-09 09:05:57,676 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-09 09:48:32,105 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-09 10:01:49,803 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-09 10:02:19,312 (WARNING) - django.request - Unauthorized: /users/in/create/6/
+2024-06-09 10:09:08,975 (WARNING) - django.request - Unauthorized: /users/in/create/6/
+2024-06-09 10:13:59,424 (WARNING) - django.request - Not Found: /users/in/create/6/
+2024-06-09 10:17:22,453 (WARNING) - django.request - Not Found: /users/in/create/6/
+2024-06-09 10:23:58,691 (WARNING) - django.request - Not Found: /users/in/create/6/
+2024-06-09 10:24:43,234 (WARNING) - django.request - Not Found: /users/in/create/6/
+2024-06-09 10:27:01,270 (WARNING) - django.request - Unauthorized: /users/in/create/6/
+2024-06-09 10:27:20,418 (WARNING) - django.request - Unauthorized: /users/in/create/6/
+2024-06-09 10:27:41,125 (WARNING) - django.request - Not Found: /users/in/create/6/
+2024-06-09 10:27:54,562 (WARNING) - django.request - Not Found: /users/in/create/{6}/
+2024-06-09 10:28:04,235 (WARNING) - django.request - Not Found: /users/in/create/6/
+2024-06-09 10:33:07,173 (WARNING) - django.request - Unauthorized: /users/in/create/6/
+2024-06-09 10:33:57,139 (WARNING) - django.request - Not Found: /users/in/create/6/
+2024-06-09 10:35:58,300 (WARNING) - django.request - Unauthorized: /users/in/update/6/
+2024-06-09 10:36:15,802 (ERROR) - django.request - Internal Server Error: /users/in/update/6/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'username' into field. Choices are: contact, contact_id, id, owner_type, user, user_id
+2024-06-09 10:37:20,909 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 10:37:21,700 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 10:37:31,323 (WARNING) - django.request - Not Found: /users/in/update/6/
+2024-06-09 11:01:23,043 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:01:23,454 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:14:03,035 (ERROR) - django.request - Internal Server Error: /users/in/update/6/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'username' into field. Choices are: contact, contact_id, id, owner_type, user, user_id
+2024-06-09 11:14:10,434 (WARNING) - django.request - Not Found: /users/in/create/6/
+2024-06-09 11:14:35,628 (WARNING) - django.request - Unauthorized: /users/in/create/6/
+2024-06-09 11:14:36,829 (WARNING) - django.request - Not Found: /favicon.ico
+2024-06-09 11:14:49,917 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 11:14:49,917 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 11:14:49,922 (WARNING) - django.request - Not Found: /users/in/create/6/
+2024-06-09 11:15:09,191 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:15:09,660 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:15:11,903 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:15:12,296 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:15:14,550 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:15:14,925 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:15:17,128 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 11:15:17,128 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 11:15:17,154 (WARNING) - django.request - Not Found: /users/in/create/6/
+2024-06-09 11:15:24,379 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:15:24,780 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:15:53,833 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 11:15:53,834 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 11:15:53,849 (WARNING) - django.request - Not Found: /users/in/create/6/
+2024-06-09 11:16:06,942 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 11:16:06,942 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 11:16:31,049 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/admin.py changed, reloading.
+2024-06-09 11:16:31,442 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:16:34,771 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/admin.py changed, reloading.
+2024-06-09 11:16:35,150 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:16:36,452 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/admin.py changed, reloading.
+2024-06-09 11:16:36,838 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:18:01,989 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:18:29,633 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/admin.py changed, reloading.
+2024-06-09 11:18:30,015 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:18:32,312 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/admin.py changed, reloading.
+2024-06-09 11:18:32,689 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:18:59,548 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 11:18:59,548 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 11:20:38,442 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:20:38,907 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:20:40,083 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:20:40,499 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:20:42,676 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:20:43,073 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:20:46,313 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:20:46,679 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:20:48,950 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:20:49,296 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:21:09,778 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/urls.py changed, reloading.
+2024-06-09 11:21:10,221 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:21:12,561 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/urls.py changed, reloading.
+2024-06-09 11:21:12,953 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:21:23,340 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/urls.py changed, reloading.
+2024-06-09 11:21:23,734 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:21:55,306 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:21:55,720 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:21:57,911 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:21:58,275 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:22:01,622 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:22:02,014 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:22:04,196 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:22:04,644 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:22:06,260 (WARNING) - django.request - Not Found: /users/get-user-id
+2024-06-09 11:22:17,140 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:22:17,572 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:22:19,887 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:22:20,271 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:22:26,580 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:22:26,957 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:22:28,186 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:22:28,573 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:22:32,912 (WARNING) - django.request - Not Found: /users/get-user-id
+2024-06-09 11:22:32,992 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:22:33,381 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:22:34,992 (WARNING) - django.request - Not Found: /users/get-user-id
+2024-06-09 11:22:35,344 (WARNING) - django.request - Not Found: /users/get-user-id
+2024-06-09 11:22:35,902 (WARNING) - django.request - Not Found: /users/get-user-id
+2024-06-09 11:22:36,840 (WARNING) - django.request - Not Found: /users/get-user-id
+2024-06-09 11:22:54,916 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:22:55,296 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:22:57,613 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:22:58,000 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:23:02,342 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:23:02,782 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:23:04,623 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 11:23:04,623 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 11:24:07,934 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:24:08,334 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:24:17,742 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:24:18,115 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:24:20,486 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:24:20,872 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:24:26,227 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:24:26,611 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:24:30,928 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:24:31,310 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:24:34,635 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:24:35,068 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:24:36,232 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:24:36,655 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:24:44,030 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:24:44,433 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:24:48,616 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:24:48,966 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:24:57,177 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:24:57,551 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:25:02,757 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:25:03,135 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:25:05,301 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:25:05,670 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:25:07,846 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:25:08,270 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:25:10,454 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:25:10,825 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:25:27,183 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:25:27,553 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:25:35,844 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:25:36,258 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:25:44,491 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:25:44,855 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:25:50,201 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:25:50,638 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:25:53,815 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:25:54,171 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:25:56,342 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:25:56,718 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:26:00,045 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:26:00,434 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:26:04,794 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:26:05,192 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:26:07,507 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:26:07,895 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:26:11,215 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:26:11,614 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:26:14,869 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:26:15,286 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:26:18,661 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:26:19,065 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:26:27,478 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:26:27,949 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:26:32,305 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:26:32,689 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:26:35,040 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:26:35,479 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:26:36,796 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:26:37,193 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:26:38,496 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:26:38,937 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:26:40,240 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:26:40,678 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:26:42,051 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 11:26:42,051 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 11:26:56,188 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:26:56,580 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:26:59,911 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:27:00,295 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:27:02,635 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:27:03,049 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:27:05,375 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:27:05,758 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:27:08,067 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:27:08,481 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:27:09,335 (ERROR) - django.request - Internal Server Error: /users/get-user-id/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/users/views.py", line 123, in list
+    return Response({'user_id': ind_user.id, 'owner_type': 'individual'})
+                                ^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+2024-06-09 11:27:22,940 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:27:23,318 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:27:25,621 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:27:26,003 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:27:28,300 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:27:28,698 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:27:30,026 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:27:30,449 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:27:31,612 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:27:32,014 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:27:37,277 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:27:37,656 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:27:40,982 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:27:41,378 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:27:42,547 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:27:42,913 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:27:44,401 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 11:27:44,402 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 11:27:54,390 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:27:54,805 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:27:58,123 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:27:58,506 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:27:59,844 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 11:28:00,281 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 11:28:01,606 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 11:28:01,606 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 12:02:35,834 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-09 12:02:58,350 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-09 12:05:03,735 (WARNING) - django.request - Not Found: /users/in/create/6/
+2024-06-09 12:06:13,762 (WARNING) - django.request - Not Found: /auth/users/get-user-id/
+2024-06-09 12:06:23,403 (WARNING) - django.request - Not Found: /auth/users/get-user-id/
+2024-06-09 12:11:57,896 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 12:11:58,458 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 12:12:00,940 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 12:12:01,542 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 12:35:44,281 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-09 13:32:38,040 (ERROR) - django.request - Internal Server Error: /documents/owner/8acb70fb-f6f9-4755-a57b-7564fb867796/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '8acb70fb-f6f9-4755-a57b-7564fb867796'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/documents/views.py", line 29, in retrieve
+    users_document = Document.objects.filter(vehicle__owner=pk)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got '8acb70fb-f6f9-4755-a57b-7564fb867796'.
+2024-06-09 13:32:53,346 (WARNING) - django.request - Not Found: /documents/owner/6/
+2024-06-09 16:01:53,235 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:01:53,958 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:02:41,348 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:02:42,011 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:04:06,000 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/models.py changed, reloading.
+2024-06-09 16:04:06,642 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:04:15,263 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:04:15,785 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:04:28,466 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:04:29,016 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:04:38,465 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:04:39,015 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:04:45,579 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:04:46,093 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:04:48,591 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:04:49,141 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:04:59,741 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:05:00,275 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:05:04,842 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:05:05,433 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:05:07,876 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:05:08,465 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:05:10,921 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:05:11,472 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:05:14,850 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:05:15,379 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:05:26,983 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:05:27,553 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:05:32,993 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:05:33,506 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:05:54,250 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:05:54,766 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:06:00,265 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:06:00,822 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:06:04,278 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:06:04,790 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:06:09,268 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:06:09,784 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:06:14,303 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:06:14,910 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:13:11,129 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:13:11,720 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:13:21,292 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:13:21,820 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:13:26,113 (WARNING) - django.request - Not Found: /vehicle/owner_vehicle/6
+2024-06-09 16:52:40,514 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/6
+2024-06-09 16:52:49,212 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 16:53:22,723 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 16:53:44,138 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:53:44,675 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:53:52,276 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:53:52,801 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:53:58,161 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:53:58,714 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:54:00,206 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:54:00,741 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:54:02,243 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:54:02,793 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:54:08,087 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 16:54:19,057 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 16:54:27,605 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/1
+2024-06-09 16:55:03,048 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/1
+2024-06-09 16:55:20,948 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:55:21,670 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:55:34,358 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:55:34,911 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:55:38,449 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:55:39,021 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:55:43,413 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/1/
+2024-06-09 16:56:38,816 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 16:56:39,378 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 16:56:42,166 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/1/
+2024-06-09 16:56:50,621 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 16:57:29,024 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/8\7/
+2024-06-09 16:57:32,390 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/8754/
+2024-06-09 16:57:42,274 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 17:10:59,219 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:10:59,858 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:11:43,518 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:12:53,561 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:12:54,175 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:12:55,664 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:12:56,283 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:12:57,757 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:12:58,330 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:13:03,215 (ERROR) - django.request - Internal Server Error: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 04c4-196-189-55-112.ngrok-free.app/users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-06-09 17:13:03,733 (ERROR) - django.request - Internal Server Error: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 04c4-196-189-55-112.ngrok-free.app/users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-06-09 17:13:04,158 (ERROR) - django.request - Internal Server Error: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 04c4-196-189-55-112.ngrok-free.app/users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-06-09 17:13:04,307 (ERROR) - django.request - Internal Server Error: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 04c4-196-189-55-112.ngrok-free.app/users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-06-09 17:13:04,429 (ERROR) - django.request - Internal Server Error: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 04c4-196-189-55-112.ngrok-free.app/users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-06-09 17:13:04,554 (ERROR) - django.request - Internal Server Error: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 04c4-196-189-55-112.ngrok-free.app/users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-06-09 17:15:18,082 (ERROR) - django.request - Internal Server Error: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 04c4-196-189-55-112.ngrok-free.app/users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-06-09 17:15:18,179 (ERROR) - django.request - Internal Server Error: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 04c4-196-189-55-112.ngrok-free.app/users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-06-09 17:15:18,580 (ERROR) - django.request - Internal Server Error: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 04c4-196-189-55-112.ngrok-free.app/users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-06-09 17:21:24,964 (ERROR) - django.request - Internal Server Error: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 04c4-196-189-55-112.ngrok-free.app/users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-06-09 17:21:29,684 (ERROR) - django.request - Internal Server Error: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 04c4-196-189-55-112.ngrok-free.app/users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-06-09 17:23:56,115 (ERROR) - django.request - Internal Server Error: /users/in/update/6/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'username' into field. Choices are: contact, contact_id, id, owner_type, user, user_id
+2024-06-09 17:24:27,327 (ERROR) - django.request - Internal Server Error: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 04c4-196-189-55-112.ngrok-free.app/users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-06-09 17:24:34,489 (ERROR) - django.request - Internal Server Error: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/mixins.py", line 65, in update
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'username' into field. Choices are: contact, contact_id, id, owner_type, user, user_id
+2024-06-09 17:25:21,462 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/users/views.py changed, reloading.
+2024-06-09 17:25:22,039 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:25:30,033 (WARNING) - django.request - Bad Request: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/
+2024-06-09 17:26:19,584 (ERROR) - django.request - Internal Server Error: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 04c4-196-189-55-112.ngrok-free.app/users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-06-09 17:26:22,131 (ERROR) - django.request - Internal Server Error: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 04c4-196-189-55-112.ngrok-free.app/users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-06-09 17:26:38,976 (ERROR) - django.request - Internal Server Error: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 04c4-196-189-55-112.ngrok-free.app/users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-06-09 17:27:16,090 (WARNING) - django.request - Unauthorized: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/
+2024-06-09 17:27:42,778 (WARNING) - django.request - Bad Request: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/
+2024-06-09 17:28:03,077 (ERROR) - django.request - Internal Server Error: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 04c4-196-189-55-112.ngrok-free.app/users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-06-09 17:28:04,893 (ERROR) - django.request - Internal Server Error: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 04c4-196-189-55-112.ngrok-free.app/users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-06-09 17:29:28,170 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/455/
+2024-06-09 17:30:26,967 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/common.py changed, reloading.
+2024-06-09 17:30:27,560 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:30:30,613 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:30:49,595 (WARNING) - django.request - Not Found: /users/in/create/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 17:30:56,185 (WARNING) - django.request - Not Found: /users/in/create/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 17:31:20,693 (WARNING) - django.request - Not Found: /users/in/create/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 17:32:04,225 (WARNING) - django.request - Not Found: /users/in/create/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 17:32:11,494 (WARNING) - django.request - Not Found: /users/in/create/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 17:32:36,893 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/455
+2024-06-09 17:34:02,293 (WARNING) - django.request - Not Found: /users/in/create/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 17:34:09,461 (WARNING) - django.request - Not Found: /users/in/create/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 17:35:21,240 (WARNING) - django.request - Not Found: /users/in/create/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 17:35:33,035 (WARNING) - django.request - Not Found: /users/in/create/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 17:36:34,356 (WARNING) - django.request - Not Found: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 17:36:49,100 (WARNING) - django.request - Not Found: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 17:44:04,098 (WARNING) - django.request - Unauthorized: /users/in/create/8acb70fb-f6f9-4755-a57b-7564fb867796/
+2024-06-09 17:45:22,493 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/455
+2024-06-09 17:46:33,570 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:46:34,190 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:47:24,375 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/455
+2024-06-09 17:47:47,451 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/455/
+2024-06-09 17:48:01,305 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:48:01,921 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:48:05,448 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:48:06,005 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:48:07,333 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/455/
+2024-06-09 17:48:30,849 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:48:31,409 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:48:35,820 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:48:41,058 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/455/
+2024-06-09 17:48:59,300 (WARNING) - django.request - Unauthorized: /vehicles/owner_vehicle/455/
+2024-06-09 17:49:15,721 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 17:49:15,721 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 17:49:15,735 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/455/
+2024-06-09 17:49:30,397 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:49:30,947 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:49:31,625 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 17:49:31,625 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 17:49:31,659 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/455/
+2024-06-09 17:49:35,383 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 17:49:35,383 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 17:49:35,391 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/455/
+2024-06-09 17:49:36,451 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 17:49:36,451 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 17:49:36,459 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/455/
+2024-06-09 17:49:46,666 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:49:47,226 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:49:49,549 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:49:50,099 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:49:50,727 (ERROR) - django.request - Internal Server Error: /vehicles/owner_vehicle/455/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'VehicleListView' should either include a `queryset` attribute, or override the `get_queryset()` method.
+2024-06-09 17:49:58,754 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:49:59,330 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:50:18,149 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/serializers.py changed, reloading.
+2024-06-09 17:50:18,729 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:50:48,657 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:50:49,194 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:50:49,677 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 17:50:49,678 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 17:50:49,709 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/455/
+2024-06-09 17:50:50,838 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 17:50:50,838 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 17:50:50,845 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/455/
+2024-06-09 17:50:51,145 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 17:50:51,145 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 17:50:51,150 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/455/
+2024-06-09 17:50:51,556 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 17:50:51,557 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 17:50:51,563 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/455/
+2024-06-09 17:51:07,973 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:51:08,584 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:51:10,175 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 17:51:10,175 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 17:51:10,204 (WARNING) - django.request - Method Not Allowed: /vehicles/owner_vehicle/455/
+2024-06-09 17:51:22,341 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:51:22,955 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:51:23,804 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 17:51:23,804 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 17:51:23,835 (WARNING) - django.request - Method Not Allowed: /vehicles/owner_vehicle/455/
+2024-06-09 17:51:24,937 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 17:51:24,937 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 17:51:24,942 (WARNING) - django.request - Method Not Allowed: /vehicles/owner_vehicle/455/
+2024-06-09 17:51:26,134 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 17:51:26,134 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 17:51:26,139 (WARNING) - django.request - Method Not Allowed: /vehicles/owner_vehicle/455/
+2024-06-09 17:51:35,616 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:51:36,174 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:51:42,082 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 17:51:42,082 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 17:51:42,106 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/455/
+2024-06-09 17:51:49,225 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-09 17:51:49,225 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-09 17:51:49,228 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 17:52:28,565 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:52:29,151 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:52:41,656 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:52:42,162 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:52:43,454 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:52:43,986 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:52:51,270 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/875421
+2024-06-09 17:53:01,568 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/875421
+2024-06-09 17:53:15,097 (WARNING) - django.request - Method Not Allowed: /vehicles/owner_vehicle/455/
+2024-06-09 17:53:20,692 (ERROR) - django.request - Internal Server Error: /vehicles/owner_vehicle/455/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2752, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/uuid.py", line 178, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/vehicle/views.py", line 156, in retrieve
+    vehicle = Vehicel.objects.get(id=pk)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/lookups.py", line 364, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2736, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2754, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“455” is not a valid UUID.']
+2024-06-09 17:53:57,938 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:53:58,466 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:54:03,988 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:54:04,491 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:54:06,974 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:54:07,499 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:54:11,014 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:54:11,565 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:54:13,034 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:54:13,556 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:54:25,198 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:54:25,768 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:54:27,099 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:54:27,612 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:54:35,989 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:54:36,633 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:54:39,991 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:54:40,524 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:54:49,011 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:54:49,514 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:54:51,810 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:54:52,338 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:54:58,712 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:54:59,212 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:55:00,500 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:55:01,017 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:55:04,341 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:55:04,841 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:55:06,870 (WARNING) - django.request - Method Not Allowed: /users/in/create/8acb70fb-f6f9-4755-a57b-7564fb867796/
+2024-06-09 17:55:09,455 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:55:10,009 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:55:21,716 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:55:22,230 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:55:25,723 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:55:26,242 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:55:28,730 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:55:29,255 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:55:35,659 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/455/
+2024-06-09 17:55:50,179 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:55:50,721 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:55:54,233 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:55:54,790 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:55:57,158 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/455/
+2024-06-09 17:56:06,491 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:56:07,035 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:56:09,517 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:56:10,101 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:56:12,184 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/455/
+2024-06-09 17:56:26,833 (WARNING) - django.request - Method Not Allowed: /users/in/create/8acb70fb-f6f9-4755-a57b-7564fb867796/
+2024-06-09 17:56:55,481 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 17:56:56,095 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 17:56:58,110 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/455/
+2024-06-09 17:57:05,630 (WARNING) - django.request - Method Not Allowed: /users/in/create/8acb70fb-f6f9-4755-a57b-7564fb867796/
+2024-06-09 17:57:43,262 (WARNING) - django.request - Not Found: /users/in/create/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 17:59:19,488 (WARNING) - django.request - Not Found: /users/in/create/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 18:03:06,714 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 18:03:26,348 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:03:26,930 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:03:29,429 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:03:30,043 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:03:31,550 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:03:32,127 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:03:34,288 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 18:03:38,791 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:03:39,380 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:03:55,160 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:03:55,954 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:03:57,862 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 18:03:59,740 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 18:04:17,956 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:04:18,573 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:05:54,231 (WARNING) - django.request - Not Found: /users/in/create/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 18:08:03,312 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 18:10:23,741 (WARNING) - django.request - Not Found: /users/in/create/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 18:11:13,930 (WARNING) - django.request - Not Found: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 18:11:14,027 (WARNING) - django.request - Not Found: /users/in/update/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 18:13:53,772 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:13:54,309 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:13:58,831 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:13:59,410 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:14:01,563 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 18:14:13,215 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:14:13,737 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:14:15,016 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 18:14:16,618 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 18:14:25,427 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle
+2024-06-09 18:14:35,625 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:14:36,153 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:14:37,061 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle
+2024-06-09 18:14:41,913 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle
+2024-06-09 18:14:56,000 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:14:56,516 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:14:57,985 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:14:58,491 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:15:00,781 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle
+2024-06-09 18:15:11,451 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle\
+2024-06-09 18:15:43,095 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 18:15:53,172 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:15:53,767 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:15:55,587 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 18:15:59,684 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 18:16:56,246 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:16:59,991 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 18:17:08,808 (WARNING) - django.request - Method Not Allowed: /vehicles/owner_vehicle/
+2024-06-09 18:17:23,631 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 18:17:30,957 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 18:19:30,703 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:19:31,300 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:19:33,766 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:19:34,339 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:19:36,375 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 18:19:55,195 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:19:55,790 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:20:01,353 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:20:01,934 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:20:05,260 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:20:05,848 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:20:09,241 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 18:20:27,829 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:20:28,548 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:20:57,588 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:20:58,234 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:20:59,732 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:21:00,283 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:21:02,791 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:21:03,511 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:21:06,842 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:21:07,399 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:21:11,750 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:21:12,258 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:21:16,600 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:21:17,172 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:21:18,474 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:21:19,008 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:21:22,340 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:21:22,896 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:21:24,209 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:21:24,771 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:21:29,123 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:21:29,647 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:21:38,264 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:21:38,989 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:21:41,491 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:21:42,070 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:23:22,268 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-09 18:23:22,847 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:23:31,322 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:23:31,986 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:23:40,428 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:23:41,015 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:24:02,738 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:24:03,307 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:24:05,775 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:24:06,321 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:24:16,851 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:24:49,719 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-09 18:24:50,228 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:24:53,608 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-09 18:24:54,252 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:27:28,779 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:27:29,357 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:27:30,682 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:27:31,275 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:27:40,864 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:27:41,413 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:28:35,010 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:28:35,557 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:28:48,252 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:28:49,031 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:28:51,239 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/55/
+2024-06-09 18:28:53,052 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/55/
+2024-06-09 18:28:55,146 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle
+2024-06-09 18:28:58,581 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 18:29:03,953 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:29:04,609 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:29:05,666 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 18:29:09,841 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 18:29:14,266 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:29:14,810 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:29:26,531 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:29:29,803 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/
+2024-06-09 18:29:35,463 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/jdgs
+2024-06-09 18:32:26,584 (WARNING) - django.request - Not Found: /
+2024-06-09 18:33:50,194 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:33:51,010 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:33:52,472 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:33:53,007 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:33:54,489 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/views.py changed, reloading.
+2024-06-09 18:33:55,162 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 18:34:47,712 (WARNING) - django.request - Unauthorized: /vehicles/owner_vehicle/{owner_id}/
+2024-06-09 18:36:29,093 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle//
+2024-06-09 18:36:31,689 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle//
+2024-06-09 18:36:39,651 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle//
+2024-06-09 18:36:54,205 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/kjdfh'
+2024-06-09 18:36:55,708 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/kjdfh
+2024-06-09 18:37:01,456 (WARNING) - django.request - Unauthorized: /vehicles/owner_vehicle/kjdfh/
+2024-06-09 18:37:04,633 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/kjdfh

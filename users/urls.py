@@ -7,7 +7,8 @@ from .views import (
     UserEmailVerificationView,
     UserPasswordResetRequestView,
     UserPasswordResetView,
-    UserPasswordSetView
+    UserPasswordSetView,
+    GetUserId
 )
 from rest_framework.routers import DefaultRouter
 
@@ -19,6 +20,7 @@ router.register('in/update', IndvidualOwnerUpdateDeleteView,
 router.register('co/create', CompanyOwnerCreateView, basename='company-create')
 router.register('co/update', CompanyOwnerUpdateDeleteView,
                 basename='company-update')
+router.register('get-user-id', GetUserId, basename='get-user-id')
 
 urlpatterns = [
     path('verify-email/', UserEmailVerificationView.as_view(), name='verify_email'),

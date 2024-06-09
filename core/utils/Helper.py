@@ -1,3 +1,5 @@
+from typing import Any
+
 import requests
 from datetime import datetime
 from rest_framework import status
@@ -5,6 +7,7 @@ from rest_framework.routers import Response
 from django.utils import timezone
 from django.core.exceptions import ObjectDoesNotExist
 from documents.models import Document
+from files.utils.generate_pdf import GeneratePdf
 from vehicle.models import Vehicel
 from files.utils.create_file import ManageFile
 import logging
@@ -15,7 +18,7 @@ logger = logging.getLogger(__name__)
 class Helper:
     @staticmethod
     def make_api_call(url: str) -> Response:
-        '''This methods make a request to an external site and fetch the required data'''
+        """These methods make a request to an external site and fetch the required data"""
         try:
             response = requests.get(url, verify=False)
             return response
@@ -23,8 +26,8 @@ class Helper:
             return Response({'error': 'something went wrong'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     @staticmethod
-    def create_document(vehicle: Vehicel, document_type: str, renewal_date, expiry_date, owner_username: str, insurance_company_name='') -> Document:
-        '''This method genenerate the required type of document
+    def create_document(vehicle: Vehicel, document_type: str, renewal_date, expiry_date, owner_username: str, insurance_company_name='') -> Any | None:
+        """This method generate the required type of document
 
         Args:
             vehicle (str): The vehicle for which the document is being generated.
@@ -36,7 +39,7 @@ class Helper:
 
         Returns:
         Document: The generated document object.
-        '''
+        """
 
         renewal_status = True
         expiry_date = datetime.strptime(expiry_date, '%Y-%m-%d')
@@ -58,6 +61,9 @@ class Helper:
 
                 created_doc.files.add(create_file)
                 created_doc.save()
+
+                GeneratePdf.generate_road_fund_file(
+                    renewal_date, created_doc.expiry_date, vehicle.chassis_number, created_doc.id, create_file.file_name)
 
                 return created_doc
 
@@ -99,6 +105,9 @@ class Helper:
 
             cur_document.files.add(create_file)
             cur_document.save()
+
+            GeneratePdf.generate_road_fund_file(
+                renewal_date, cur_document.expiry_date, vehicle.chassis_number, cur_document.id, create_file.file_name)
 
             return cur_document
         except Exception as e:

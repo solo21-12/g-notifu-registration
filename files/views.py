@@ -5,9 +5,7 @@ from documents.utils.check_owner import OwnerCheck
 from django.contrib.auth import get_user_model
 from core.utils.document_type import DocumentType
 from django.http import FileResponse
-from files.utils.generate_pdf import GeneratePdf
 import os
-
 
 User = get_user_model()
 
@@ -18,36 +16,43 @@ class FilesViewSet(viewsets.ViewSet):
         chassis_number = pk
         user_id = request.user.id
         doc_type = request.query_params.get('doc_type')
+
+        # Checking ownership
         error_response, current_user, current_vehicle = OwnerCheck.check_owner(
             user_id, chassis_number)
-
         if error_response:
             return error_response
-        
-       
 
+        # Retrieving document based on vehicle and document type
         error_response, cur_doc = OwnerCheck.get_document(
             current_vehicle, DocumentType.ROAD_FUND)
-
         if error_response:
             return error_response
 
+        # Getting the file associated with the document
         error_response, cur_file = OwnerCheck.get_file(cur_doc)
-
         if error_response:
             return error_response
 
-        # Generate PDF
-        renewal_date = cur_file.renewal_date
-        expire_date = cur_file.expire_date
-        document_id = cur_doc.id
-        pdf_path = GeneratePdf.generate_road_fund_file(
-            renewal_date, expire_date, chassis_number, document_id)
-
-        if not pdf_path:
+        if not cur_file:
             return Response({'detail': 'Failed to generate PDF'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-        # Return PDF as response
-        response = FileResponse(
-            open(pdf_path, 'rb'), as_attachment=True, filename=os.path.basename(pdf_path))
-        return response
+        # Extract the filename from cur_file if it's an object, assuming it has a 'name' attribute
+        if hasattr(cur_file, 'name'):
+            file_name = cur_file.name
+        else:
+            file_name = str(cur_file)
+
+        # Constructing file path
+        pdf_file_path = os.path.join("pdfs", file_name)
+
+        try:
+            # Open the file without closing it manually
+            pdf_file = open(pdf_file_path, 'rb')
+            response = FileResponse(
+                pdf_file, as_attachment=True, filename=os.path.basename(pdf_file_path))
+            return response
+        except FileNotFoundError:
+            return Response({'detail': 'PDF file not found'}, status=status.HTTP_404_NOT_FOUND)
+        except Exception as e:
+            return Response({'detail': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

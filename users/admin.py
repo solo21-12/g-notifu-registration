@@ -15,7 +15,7 @@ class CompanyOwners(ModelAdmin):
     list_per_page = 10
     list_select_related = ['user']
     ordering = ['company_name']
-    list_display = ['company_name', 'owner_type',
+    list_display = ['id','company_name', 'owner_type',
                     'contact']
     search_fields = ['company_name', 'contact']
 
@@ -24,7 +24,8 @@ class CompanyOwners(ModelAdmin):
 class IndividualOwners(ModelAdmin):
     list_per_page = 10
     list_select_related = ['user']
-    list_display = ['first_name', 'middle_name', 'last_name',
+    list_display = ['id','first_name', 'middle_name', 'last_name',
                     'owner_type', 'contact']
+    
     search_fields = ['user__first_name__istartswith',
                      'user__last_name__istartswith']

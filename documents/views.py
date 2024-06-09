@@ -210,6 +210,7 @@ class RoadAuthorityDocumentRenew(viewsets.ViewSet):
     '''This is a route to handle the renewal of third party insurance document'''
 
     def retrieve(self, request, pk=None):
+
         user_id = request.user.id
         chassis_number = pk
 

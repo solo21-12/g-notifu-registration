@@ -1,6 +1,5 @@
 from .models import Vehicel
 from rest_framework import serializers
-from documents.models import Document
 
 
 class VehicleSerializer(serializers.ModelSerializer):

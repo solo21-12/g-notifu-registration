@@ -27,8 +27,7 @@ class IndvidualOwnerCreateView(mixins.CreateModelMixin,  mixins.RetrieveModelMix
 class IndvidualOwnerUpdateDeleteView(mixins.DestroyModelMixin, mixins.RetrieveModelMixin, mixins.UpdateModelMixin, viewsets.GenericViewSet):
     queryset = IndividualOwner.objects.all()
     serializer_class = IndividualOwnerUpdateSerializer
-    lookup_field='username'
-
+    # lookup_field = 'username'
 
 
 class CompanyOwnerCreateView(mixins.CreateModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
@@ -111,3 +110,20 @@ class UserPasswordSetView(APIView):
         serlizer.update(serlizer.instance, request.data)
 
         return Response('Password succesfully changed', status=status.HTTP_204_NO_CONTENT)
+
+
+class GetUserId(mixins.ListModelMixin, viewsets.GenericViewSet):
+
+    def list(self, request, *args, **kwargs):
+        user_id = request.user.id
+        ind_user = IndividualOwner.objects.filter(user_id=user_id)
+        comp_user = CompanyOwner.objects.filter(user_id=user_id)
+
+        if ind_user.exists():
+            user_id = ind_user.first().id
+            return Response({'id': user_id, 'owner_type': 'individual'})
+        elif comp_user.exists():
+            user_id = comp_user.first().id
+            return Response({'id': user_id, 'owner_type': 'company'})
+
+        return Response({"message": "User not found"}, status=status.HTTP_404_NOT_FOUND)
