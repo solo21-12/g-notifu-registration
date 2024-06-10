@@ -1,4 +1,4 @@
-from rest_framework import viewsets
+from rest_framework import viewsets, mixins
 from rest_framework.response import Response
 from rest_framework import status
 from documents.utils.check_owner import OwnerCheck
@@ -10,10 +10,12 @@ import os
 User = get_user_model()
 
 
-class FilesViewSet(viewsets.ViewSet):
+# ?doc_type=Road Fund/
 
-    def retrieve(self, request, pk=None):
-        chassis_number = pk
+class FilesViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
+
+    def list(self, request, *args, **kwargs):
+        chassis_number = request.query_params.get('chassis_number')
         user_id = request.user.id
         doc_type = request.query_params.get('doc_type')
 
@@ -23,9 +25,23 @@ class FilesViewSet(viewsets.ViewSet):
         if error_response:
             return error_response
 
+        if not doc_type:
+            return Response({'detail': 'Document type is required'}, status=status.HTTP_400_BAD_REQUEST)
+
+        doc_type_mapping = {
+            '1': DocumentType.ROAD_FUND,
+            '2': DocumentType.ROAD_AUTHORITY,
+            '3': DocumentType.THIRD_PARTY_INSURANCE
+        }
+
+        if doc_type not in doc_type_mapping:
+            return Response({'detail': 'Invalid document type'}, status=status.HTTP_400_BAD_REQUEST)
+
+        selected_doc_type = doc_type_mapping[doc_type]
         # Retrieving document based on vehicle and document type
         error_response, cur_doc = OwnerCheck.get_document(
-            current_vehicle, DocumentType.ROAD_FUND)
+            current_vehicle, selected_doc_type)
+
         if error_response:
             return error_response
 
