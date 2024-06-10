@@ -34,17 +34,17 @@ def check_expiry_date():
             notification_types.create_notification(
                 document_id, 'Low', difference, 'Reminder')
 
-            send_email([email], difference, document_name, car_id)
+            # send_email([email], difference, document_name, car_id)
         elif timezone.timedelta(days=0) <= difference <= timezone.timedelta(days=15):
             notification_types.create_notification(
                 document_id, 'Medium', difference, 'Update')
-            send_email([email], difference, document_name, car_id)
+            # send_email([email], difference, document_name, car_id)
 
         elif timezone.timedelta(days=0) <= difference <= timezone.timedelta(days=30):
             notification_types.create_with_update_notification(
                 document_id, 'High', difference, 'Alert')
 
-            send_email([email], difference, document_name, car_id)
+            # send_email([email], difference, document_name, car_id)
 
         else:
             continue

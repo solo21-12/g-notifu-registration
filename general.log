@@ -16627,3 +16627,1823 @@ def accumulate(self, *args, **kwargs):
 
 2024-06-10 09:05:56,645 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-06-10 09:06:31,341 (WARNING) - django.request - Unauthorized: /users/
+2024-06-10 09:13:47,207 (INFO) - django.utils.autoreload - /app/account_service/settings/common.py changed, reloading.
+2024-06-10 09:13:47,784 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 09:14:26,868 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 09:14:26,871 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 09:14:26,873 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 09:14:26,876 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 09:14:26,879 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 09:14:26,881 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 09:14:26,887 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 09:14:26,891 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 09:14:26,893 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 09:14:26,895 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 09:14:26,897 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 09:14:27,296 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 09:14:27,298 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 09:14:27,301 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 09:14:27,303 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 09:14:27,311 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 09:14:27,314 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 09:14:27,321 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 09:14:27,327 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 09:14:27,329 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 09:14:27,333 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 09:14:27,334 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 09:14:28,152 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 09:15:41,965 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 09:15:41,966 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 09:15:41,966 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 09:15:41,966 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 09:15:41,966 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 09:15:41,967 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 09:15:41,967 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 09:15:41,967 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 09:15:41,968 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 09:15:41,968 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 09:15:41,968 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 09:47:40,747 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 09:47:40,747 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 09:47:40,748 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 09:47:40,748 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 09:47:40,748 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 09:47:40,749 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 09:47:40,749 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 09:47:40,749 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 09:47:40,750 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 09:47:40,750 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 09:47:40,750 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 09:49:37,326 (INFO) - django.utils.autoreload - /app/account_service/settings/common.py changed, reloading.
+2024-06-10 09:49:38,454 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 09:49:43,228 (INFO) - django.utils.autoreload - /app/account_service/settings/common.py changed, reloading.
+2024-06-10 09:49:43,971 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 09:49:49,742 (INFO) - django.utils.autoreload - /app/account_service/settings/common.py changed, reloading.
+2024-06-10 09:49:50,532 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 09:50:13,757 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 09:50:13,760 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 09:50:13,764 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 09:50:13,769 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 09:50:13,779 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 09:50:13,783 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 09:50:13,786 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 09:50:13,789 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 09:50:13,793 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 09:50:13,798 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 09:50:13,800 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 09:50:13,924 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 09:50:13,925 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 09:50:13,927 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 09:50:13,931 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 09:50:13,934 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 09:50:13,935 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 09:50:13,937 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 09:50:13,940 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 09:50:13,943 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 09:50:13,945 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 09:50:13,947 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 09:50:15,021 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 09:55:22,019 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 09:55:22,020 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 09:55:22,021 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 09:55:22,023 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 09:55:22,024 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 09:55:22,025 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 09:55:22,028 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 09:55:22,031 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 09:55:22,033 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 09:55:22,034 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 09:55:22,036 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 09:55:22,169 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 09:55:22,170 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 09:55:22,171 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 09:55:22,174 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 09:55:22,175 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 09:55:22,178 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 09:55:22,181 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 09:55:22,183 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 09:55:22,185 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 09:55:22,187 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 09:55:22,189 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 09:55:23,254 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 09:57:22,695 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 09:57:22,698 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 09:57:22,701 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 09:57:22,705 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 09:57:22,708 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 09:57:22,710 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 09:57:22,713 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 09:57:22,716 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 09:57:22,718 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 09:57:22,720 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 09:57:22,722 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 09:57:22,814 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 09:57:22,817 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 09:57:22,820 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 09:57:22,822 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 09:57:22,824 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 09:57:22,827 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 09:57:22,828 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 09:57:22,831 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 09:57:22,832 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 09:57:22,834 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 09:57:22,835 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 09:57:23,971 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:08:36,463 (WARNING) - django.request - Not Found: /
+2024-06-10 10:11:16,273 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-10 10:11:36,152 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-10 10:11:38,839 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-10 10:12:35,870 (WARNING) - django.request - Not Found: /notifications
+2024-06-10 10:12:43,440 (WARNING) - django.request - Not Found: /notifications
+2024-06-10 10:13:36,399 (WARNING) - django.request - Not Found: /notifications
+2024-06-10 10:14:13,216 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-10 10:14:36,169 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:14:36,924 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:14:54,945 (WARNING) - django.request - Not Found: /admin
+2024-06-10 10:14:55,336 (WARNING) - django.request - Not Found: /favicon.ico
+2024-06-10 10:16:11,486 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:16:12,392 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:16:18,194 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:16:19,070 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:17:01,346 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:17:33,513 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:17:34,066 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:17:35,560 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:17:36,099 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:17:37,578 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:17:37,764 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:17:38,163 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:17:38,596 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:17:40,695 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:17:41,247 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:17:44,380 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:17:45,131 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:17:49,866 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:17:50,483 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:17:50,962 (INFO) - django.utils.autoreload - /app/notification/urls.py changed, reloading.
+2024-06-10 10:17:51,730 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:17:52,871 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/urls.py changed, reloading.
+2024-06-10 10:17:53,428 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:18:55,210 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:18:55,983 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:19:27,336 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 10:19:27,339 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 10:19:27,342 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 10:19:27,345 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 10:19:27,348 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 10:19:27,351 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 10:19:27,354 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 10:19:27,357 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 10:19:27,360 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 10:19:27,362 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 10:19:27,365 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 10:19:27,558 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 10:19:27,559 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 10:19:27,561 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 10:19:27,563 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 10:19:27,565 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 10:19:27,567 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 10:19:27,568 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 10:19:27,570 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 10:19:27,573 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 10:19:27,574 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 10:19:27,576 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 10:19:28,698 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:20:31,181 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:20:31,958 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:20:31,970 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:20:32,766 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:20:39,413 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:20:39,980 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:20:43,513 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:20:44,219 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:20:47,426 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:20:48,114 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:20:49,886 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:20:50,902 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:21:29,058 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:21:29,793 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:21:32,754 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:21:33,160 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:21:33,593 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:21:33,799 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:21:41,267 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:21:41,943 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:21:44,536 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:21:45,554 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:21:50,399 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:21:51,060 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:21:51,181 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:21:51,957 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:21:53,421 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:21:53,976 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:21:55,319 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:21:55,840 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:21:57,557 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:21:58,442 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:01,264 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:22:01,785 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:04,103 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:22:04,847 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:10,603 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:22:11,245 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:22:11,403 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:11,831 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:13,188 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:22:13,707 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:17,060 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:22:17,878 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:19,127 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:22:19,687 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:23,427 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:22:24,216 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:25,123 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:22:25,651 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:26,992 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:22:27,547 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:29,763 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:22:30,480 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:30,941 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:22:31,510 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:33,875 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:22:34,627 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:36,086 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:22:36,839 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:36,998 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:22:37,545 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:42,425 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:22:42,944 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:22:43,216 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:43,539 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:52,013 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:22:52,649 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:54,030 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:22:54,759 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:57,203 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:22:57,784 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:22:59,136 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:22:59,667 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:23:00,538 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:23:01,366 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:23:06,106 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:23:06,836 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:23:07,001 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:23:07,770 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:23:09,218 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:23:09,754 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:23:13,366 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:23:14,082 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:23:14,301 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:23:14,843 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:23:17,334 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:23:17,890 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:23:19,921 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:23:20,665 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:23:21,424 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:23:21,978 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:23:25,510 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:23:26,131 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:23:26,502 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:23:27,361 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:24:09,447 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:24:09,762 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:24:10,000 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:24:10,612 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:24:12,393 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:24:12,991 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:24:14,367 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:24:14,875 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:24:16,262 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:24:16,374 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:24:16,940 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:24:17,055 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:24:25,567 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:24:26,304 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:24:28,049 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:24:28,803 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:24:28,811 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:24:29,359 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:24:34,612 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:24:35,371 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:24:56,795 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:24:57,434 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:24:57,592 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:24:58,019 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:25:00,527 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:25:01,171 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:25:03,459 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:25:04,294 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:25:20,099 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:25:20,580 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:25:20,701 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:25:21,393 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:25:23,237 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:25:23,920 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:25:27,244 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:25:28,087 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:25:29,530 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:25:30,122 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:25:31,605 (ERROR) - django.request - Internal Server Error: /notifications/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Notification is not JSON serializable
+2024-06-10 10:25:33,890 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:25:34,679 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:25:45,595 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:25:46,045 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:25:46,447 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:25:46,624 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:25:48,124 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:25:48,693 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:25:50,195 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:25:50,744 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:25:52,248 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:25:52,989 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:25:55,148 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:25:55,711 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:25:58,072 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:25:58,652 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:25:58,724 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:25:59,548 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:26:02,194 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:26:02,761 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:26:05,371 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:26:06,190 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:26:10,867 (ERROR) - django.request - Internal Server Error: /notifications/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/notification/views.py", line 30, in list
+    return Response(nott)
+           ^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/response.py", line 38, in __init__
+    raise AssertionError(msg)
+AssertionError: You passed a Serializer instance as data, but probably meant to pass serialized `.data` or `.error`. representation.
+2024-06-10 10:26:19,595 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:26:20,241 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:26:22,510 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:26:22,606 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:26:23,178 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:26:23,341 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:26:23,895 (ERROR) - django.request - Internal Server Error: /notifications/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/fields.py", line 439, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/fields.py", line 106, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'document'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/notification/views.py", line 30, in list
+    return Response(nott.data)
+                    ^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/serializers.py", line 571, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/fields.py", line 472, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `document` on serializer `NotificationSerlizer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'document'.
+2024-06-10 10:26:57,287 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:26:57,897 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:27:00,490 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:27:00,499 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:27:01,110 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:27:01,386 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:27:55,860 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:27:56,432 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:27:58,943 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:27:59,433 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:27:59,593 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:28:00,323 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:28:15,744 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:28:16,377 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:28:16,676 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:28:16,962 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:28:44,905 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:28:45,489 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:28:48,601 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:28:48,880 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:28:49,378 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:28:49,423 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:30:15,431 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-10 10:30:15,561 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-10 10:30:15,576 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-10 10:30:15,581 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-10 10:30:15,629 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-10 10:30:15,640 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-10 10:31:59,907 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/47bf7e1b-e414-4430-9c84-4b5f367877cd/
+2024-06-10 10:32:36,446 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 10:32:36,450 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 10:32:36,454 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 10:32:36,456 (ERROR) - django.request - Internal Server Error: /vehicles/add_vehicle/
+2024-06-10 10:32:43,089 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 10:32:43,093 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 10:32:43,096 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 10:32:43,098 (ERROR) - django.request - Internal Server Error: /vehicles/add_vehicle/
+2024-06-10 10:33:13,127 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:33:13,701 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:33:16,319 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:33:17,122 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:33:17,232 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:33:17,794 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:33:19,165 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:33:19,694 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:33:22,712 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:33:23,421 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:33:41,512 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:33:42,055 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:33:44,875 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:33:45,633 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:34:13,003 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:34:13,575 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:34:15,054 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:34:15,663 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:34:17,501 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:34:18,299 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:34:21,271 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:34:21,827 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:34:24,075 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:34:24,789 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:34:26,864 (WARNING) - django.request - Method Not Allowed: /notifications/
+2024-06-10 10:35:27,015 (ERROR) - django.request - Internal Server Error: /notifications/askhfkjh/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/notification/views.py", line 33, in retrieve
+    return super().retrieve(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'NotificationViewSet' should either include a `queryset` attribute, or override the `get_queryset()` method.
+2024-06-10 10:35:41,951 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:35:42,561 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:35:43,161 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:35:43,918 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:35:44,059 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:35:44,702 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:35:49,836 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:35:50,607 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:36:03,567 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:36:04,204 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:36:06,727 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:36:07,484 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:36:09,744 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:36:10,289 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:36:13,276 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:36:13,995 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:36:15,833 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:36:16,401 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:36:19,792 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:36:20,489 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:36:28,045 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:36:28,592 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:36:31,485 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:36:32,297 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:36:34,123 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:36:34,675 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:36:38,090 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:36:38,904 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:36:43,295 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:36:43,892 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:36:44,739 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:36:45,719 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:36:48,428 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:36:49,018 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:36:51,520 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:36:51,829 (ERROR) - django.request - Internal Server Error: /notifications/askhfkjh/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/notification/views.py", line 35, in retrieve
+    print(notification_id, 'kwargs')
+          ^^
+NameError: name 'no' is not defined
+2024-06-10 10:36:52,565 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:37:08,002 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-10 10:37:08,842 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:37:08,905 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:37:09,546 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:37:09,721 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:37:11,384 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-10 10:37:13,133 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-10 10:37:13,841 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-10 10:37:13,990 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-10 10:37:14,660 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-10 10:37:16,286 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:37:16,901 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:37:19,805 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:37:20,532 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:37:23,674 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-10 10:37:25,001 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-10 10:37:30,741 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:37:31,318 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:37:31,549 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:37:32,358 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:37:37,928 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:37:38,169 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:37:38,542 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:37:39,029 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:37:51,083 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:37:51,607 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:37:53,964 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:37:54,537 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:37:54,963 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:37:55,690 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:37:58,949 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:37:59,517 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:01,310 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:38:02,076 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:05,065 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:38:05,640 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:07,869 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:38:08,658 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:09,167 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:38:09,716 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:14,468 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:38:15,260 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:21,080 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:38:21,351 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:38:21,900 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:21,929 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:23,420 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:38:24,045 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:27,689 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:38:28,467 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:28,474 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:38:29,050 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:33,437 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:38:33,969 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:34,117 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:38:34,929 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:38,384 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:38:38,929 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:40,496 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:38:41,295 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:38:41,325 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:41,872 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:43,371 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:38:43,937 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:47,153 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:38:47,468 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:38:47,935 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:48,038 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:50,582 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:38:51,141 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:53,819 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:38:54,659 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:38:58,723 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:38:59,296 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:39:00,464 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:39:01,281 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:39:06,880 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:39:07,122 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:39:07,459 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:39:07,902 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:39:13,032 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:39:13,636 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:39:13,731 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:39:14,522 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:39:15,011 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:39:15,544 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:39:18,060 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:39:18,682 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:39:20,175 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:39:20,403 (ERROR) - django.request - Internal Server Error: /notifications/askhfkjh/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2752, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/uuid.py", line 178, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/notification/views.py", line 35, in retrieve
+    current_notifiaction = Notification.objects.filter(id=notification_id)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/lookups.py", line 364, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2736, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2754, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“askhfkjh” is not a valid UUID.']
+2024-06-10 10:39:21,125 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:39:36,068 (WARNING) - django.request - Not Found: /notifications/d8f6b394-a09f-421c-a890-493a098e362f
+2024-06-10 10:39:38,389 (ERROR) - django.request - Internal Server Error: /notifications/d8f6b394-a09f-421c-a890-493a098e362f/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/notification/views.py", line 41, in retrieve
+    return Response(notification)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/response.py", line 38, in __init__
+    raise AssertionError(msg)
+AssertionError: You passed a Serializer instance as data, but probably meant to pass serialized `.data` or `.error`. representation.
+2024-06-10 10:39:50,782 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:39:51,376 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:39:52,932 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:39:53,719 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:39:54,266 (ERROR) - django.request - Internal Server Error: /notifications/d8f6b394-a09f-421c-a890-493a098e362f/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/notification/views.py", line 40, in retrieve
+    notification = NotificationSerlizer(current_notifiaction.data)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'da'
+2024-06-10 10:39:57,961 (ERROR) - django.request - Internal Server Error: /notifications/d8f6b394-a09f-421c-a890-493a098e362f/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/notification/views.py", line 40, in retrieve
+    notification = NotificationSerlizer(current_notifiaction.data)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'da'
+2024-06-10 10:41:42,625 (INFO) - django.utils.autoreload - /app/account_service/settings/common.py changed, reloading.
+2024-06-10 10:41:42,753 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/common.py changed, reloading.
+2024-06-10 10:41:43,397 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:41:43,511 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:41:47,931 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/common.py changed, reloading.
+2024-06-10 10:41:48,458 (INFO) - django.utils.autoreload - /app/account_service/settings/common.py changed, reloading.
+2024-06-10 10:41:48,512 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:41:49,363 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:42:50,933 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 10:42:50,934 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 10:42:50,936 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 10:42:50,939 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 10:42:50,941 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 10:42:50,942 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 10:42:50,944 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 10:42:50,945 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 10:42:50,947 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 10:42:50,949 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 10:42:50,956 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 10:42:51,006 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 10:42:51,009 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 10:42:51,012 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 10:42:51,014 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 10:42:51,018 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 10:42:51,020 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 10:42:51,023 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 10:42:51,026 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 10:42:51,029 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 10:42:51,032 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 10:42:51,034 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 10:42:52,250 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:44:31,532 (ERROR) - django.request - Internal Server Error: /notifications/d8f6b394-a09f-421c-a890-493a098e362f/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/notification/views.py", line 40, in retrieve
+    notification = NotificationSerlizer(current_notifiaction.data)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'data'
+2024-06-10 10:44:39,062 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:44:39,678 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:44:42,211 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:44:43,029 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:44:45,730 (ERROR) - django.request - Internal Server Error: /notifications/d8f6b394-a09f-421c-a890-493a098e362f/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/notification/views.py", line 40, in retrieve
+    notification = NotificationSerlizer(current_notifiaction.data)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'data'
+2024-06-10 10:44:46,999 (ERROR) - django.request - Internal Server Error: /notifications/d8f6b394-a09f-421c-a890-493a098e362f/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/notification/views.py", line 40, in retrieve
+    notification = NotificationSerlizer(current_notifiaction.data)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'data'
+2024-06-10 10:44:53,992 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:44:54,513 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:44:54,864 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:44:55,150 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:45:02,269 (ERROR) - django.request - Internal Server Error: /notifications/d8f6b394-a09f-421c-a890-493a098e362f/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/notification/views.py", line 41, in retrieve
+    return Response(notification)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/response.py", line 38, in __init__
+    raise AssertionError(msg)
+AssertionError: You passed a Serializer instance as data, but probably meant to pass serialized `.data` or `.error`. representation.
+2024-06-10 10:45:05,196 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-10 10:45:54,677 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:45:55,255 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:45:56,091 (ERROR) - django.request - Internal Server Error: /notifications/d8f6b394-a09f-421c-a890-493a098e362f/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/fields.py", line 439, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/fields.py", line 106, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'document'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/notification/views.py", line 41, in retrieve
+    return Response(notification.data)
+                    ^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/serializers.py", line 571, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/fields.py", line 472, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `document` on serializer `NotificationSerlizer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'document'.
+2024-06-10 10:45:56,774 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:45:57,720 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:48:34,228 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:48:34,669 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:48:35,137 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:48:35,365 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:48:36,911 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:48:37,554 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:48:41,005 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:48:41,079 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:48:41,696 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:48:42,113 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:48:43,334 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:48:43,921 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:48:46,898 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:48:47,618 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:49:22,367 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-10 10:49:30,294 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:49:30,869 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:49:33,385 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:49:33,932 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:49:34,800 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:49:35,757 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:49:50,495 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-10 10:49:50,737 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-10 10:49:52,583 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-10 10:49:53,661 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-10 10:49:54,482 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-10 10:50:00,872 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:50:01,421 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:50:02,466 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:50:03,452 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:50:10,056 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:50:10,602 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:50:14,459 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:50:15,123 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:50:15,204 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:50:15,690 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:50:25,166 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:50:25,731 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:50:25,997 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:50:26,726 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:50:38,415 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:50:39,113 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:50:40,604 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:50:41,189 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:50:42,960 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:50:43,958 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:50:45,747 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:50:46,303 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:50:49,884 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:50:50,607 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:50:50,854 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:50:51,423 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:50:54,955 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:50:55,525 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:50:56,461 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:50:57,022 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:50:57,406 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:50:57,680 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:51:07,319 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:51:07,862 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:51:08,454 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:51:09,233 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:51:39,911 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:51:40,265 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:51:40,475 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:51:41,105 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:51:45,441 (ERROR) - django.request - Internal Server Error: /vehicles/owner_vehicle/e8cfe74c-9691-4408-841c-60d157ee0635/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: disk I/O error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/request.py", line 231, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework_simplejwt/authentication.py", line 51, in authenticate
+    return self.get_user(validated_token), validated_token
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework_simplejwt/authentication.py", line 130, in get_user
+    user = self.user_model.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: disk I/O error
+2024-06-10 10:52:05,770 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 10:52:05,774 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 10:52:05,779 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 10:52:05,782 (ERROR) - django.request - Internal Server Error: /vehicles/add_vehicle/
+2024-06-10 10:53:18,056 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/e8cfe74c-9691-4408-841c-60d157ee0635/
+2024-06-10 10:53:48,629 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 10:53:48,631 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 10:53:48,634 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 10:53:48,636 (ERROR) - django.request - Internal Server Error: /vehicles/add_vehicle/
+2024-06-10 10:54:53,042 (WARNING) - django.request - Method Not Allowed: /notifications/
+2024-06-10 10:55:59,539 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:56:00,076 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:56:00,873 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:56:02,005 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:56:08,698 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:56:09,320 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:56:13,078 (INFO) - django.utils.autoreload - /app/notification/views.py changed, reloading.
+2024-06-10 10:56:13,846 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:56:13,864 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 10:56:14,437 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 10:56:36,316 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 10:56:36,322 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 10:56:36,326 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 10:56:36,330 (ERROR) - django.request - Internal Server Error: /vehicles/add_vehicle/
+2024-06-10 10:56:50,640 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 10:56:50,644 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 10:56:50,648 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 10:56:50,651 (ERROR) - django.request - Internal Server Error: /vehicles/add_vehicle/
+2024-06-10 11:01:11,884 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/dev.py changed, reloading.
+2024-06-10 11:01:12,421 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 11:01:39,513 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 11:02:24,192 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 11:02:24,215 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/895623 HTTP/1.1" 301 None
+2024-06-10 11:02:24,216 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-10 11:02:24,252 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/895623/ HTTP/1.1" 200 337
+2024-06-10 11:02:24,254 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 11:02:24,276 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/895623 HTTP/1.1" 301 None
+2024-06-10 11:02:24,278 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-10 11:02:24,306 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/895623/ HTTP/1.1" 200 337
+2024-06-10 11:02:24,308 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 11:02:24,333 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/895623 HTTP/1.1" 301 None
+2024-06-10 11:02:24,335 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-10 11:02:24,363 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/895623/ HTTP/1.1" 200 361
+2024-06-10 11:02:33,466 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 11:02:33,488 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/895623 HTTP/1.1" 301 None
+2024-06-10 11:02:33,490 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-10 11:02:33,512 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/895623/ HTTP/1.1" 200 337
+2024-06-10 11:02:33,514 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 11:02:33,539 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/895623 HTTP/1.1" 301 None
+2024-06-10 11:02:33,542 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-10 11:02:33,567 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/895623/ HTTP/1.1" 200 337
+2024-06-10 11:02:33,569 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 11:02:33,596 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/895623 HTTP/1.1" 301 None
+2024-06-10 11:02:33,599 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-10 11:02:33,623 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/895623/ HTTP/1.1" 200 361
+2024-06-10 11:02:33,627 (WARNING) - django.request - Bad Request: /vehicles/add_vehicle/
+2024-06-10 11:08:22,224 (ERROR) - django.request - Internal Server Error: /notifications/d8f6b394-a09f-421c-a890-493a098e362f/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/mixins.py", line 90, in destroy
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/generics.py", line 67, in get_queryset
+    assert self.queryset is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'NotificationViewSet' should either include a `queryset` attribute, or override the `get_queryset()` method.
+2024-06-10 11:08:36,086 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 11:08:36,641 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 11:08:39,128 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 11:08:39,673 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 11:08:44,207 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 11:08:44,761 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 11:08:52,387 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 11:08:52,938 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 11:08:56,491 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 11:08:57,055 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 11:09:01,616 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 11:09:02,170 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 11:09:04,673 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 11:09:05,236 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 11:09:11,839 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 11:09:12,398 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 11:09:13,884 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 11:09:14,452 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 11:09:47,231 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 11:09:47,810 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 11:09:49,316 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 11:09:49,842 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 11:09:51,202 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 11:09:51,777 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 11:09:53,277 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 11:09:53,819 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 11:10:37,063 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-10 11:10:37,642 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
