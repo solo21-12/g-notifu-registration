@@ -18640,3 +18640,107 @@ def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
 
 2024-06-10 12:52:02,494 (WARNING) - django.request - Unauthorized: /auth/jwt/create
 2024-06-10 12:52:06,890 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-10 18:46:10,232 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/create_file.py changed, reloading.
+2024-06-10 18:46:10,789 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:52:19,135 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:52:19,533 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:53:40,345 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:53:40,807 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:53:58,348 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:53:58,788 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:54:01,038 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:54:01,410 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:54:05,652 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:54:06,060 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:54:07,272 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:54:07,668 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:54:11,897 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:54:12,334 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:57:06,392 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:57:06,798 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:57:08,119 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:57:08,521 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:57:11,741 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:57:12,145 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:57:14,360 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:57:14,776 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:57:18,000 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:57:18,393 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:57:21,625 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:57:22,028 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:57:25,356 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:57:25,773 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:57:29,186 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:57:29,581 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:57:37,007 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:57:37,443 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:57:38,641 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:57:39,033 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:57:43,281 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:57:43,703 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:57:45,919 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:57:46,280 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:57:51,580 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:57:52,066 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:57:55,432 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:57:55,911 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:57:57,119 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:57:57,521 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:58:03,911 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:58:04,400 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:58:05,715 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:58:06,144 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:58:09,541 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:58:09,964 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:58:12,280 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:58:12,740 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 18:58:14,055 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 18:58:14,444 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:00:18,855 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 19:00:19,274 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:00:58,170 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-10 19:00:58,614 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:01:10,147 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-10 19:01:10,560 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:01:15,917 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-10 19:01:16,378 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:01:21,782 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-10 19:01:22,336 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:01:23,544 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-10 19:01:24,005 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:01:28,276 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-10 19:01:28,675 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:02:06,734 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-10 19:02:07,219 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:02:08,604 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-10 19:02:09,016 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:02:11,448 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-10 19:02:11,850 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:02:13,117 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-10 19:02:13,543 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:02:15,798 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-10 19:02:16,212 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:02:18,605 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-10 19:02:19,027 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:02:23,386 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 19:02:23,835 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:02:45,587 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 19:02:45,990 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:02:49,227 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 19:02:49,668 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:06:30,964 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 19:06:31,401 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:06:37,885 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 19:06:38,380 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:06:43,788 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 19:06:44,186 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:06:47,595 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 19:06:48,028 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:07:19,820 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 19:07:20,245 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:07:27,696 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 19:07:28,134 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:07:29,464 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 19:07:29,846 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:07:59,638 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
+2024-06-10 19:08:00,085 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader

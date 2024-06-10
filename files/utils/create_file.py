@@ -6,6 +6,7 @@ logger = logging.getLogger(__name__)
 
 
 class ManageFile:
+    
     @staticmethod
     def create_file(owner_username: str, file_type: str) -> Files:
         '''

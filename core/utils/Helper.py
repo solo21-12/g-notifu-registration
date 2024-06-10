@@ -62,15 +62,14 @@ class Helper:
                 created_doc.files.add(create_file)
                 created_doc.save()
 
-                GeneratePdf.generate_road_fund_file(
-                    renewal_date, created_doc.expiry_date, vehicle.chassis_number, created_doc.id, create_file.file_name)
+                GeneratePdf.generate_file(
+                    renewal_date, created_doc.expiry_date, vehicle.chassis_number, created_doc.id, create_file.file_name, document_type)
 
                 return created_doc
 
             return None
 
         except Exception as e:
-            logging.debug(e)
             return None
 
     @staticmethod
@@ -106,8 +105,8 @@ class Helper:
             cur_document.files.add(create_file)
             cur_document.save()
 
-            GeneratePdf.generate_road_fund_file(
-                renewal_date, cur_document.expiry_date, vehicle.chassis_number, cur_document.id, create_file.file_name)
+            GeneratePdf.generate_file(
+                renewal_date, cur_document.expiry_date, vehicle.chassis_number, cur_document.id, create_file.file_name, document_type)
 
             return cur_document
         except Exception as e:

@@ -3,7 +3,7 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
 from django.contrib.auth import get_user_model
 from datetime import datetime
-from documents.models import  Document
+from core.utils.document_type import DocumentType
 import os
 
 User = get_user_model()
@@ -34,7 +34,8 @@ class GeneratePdf:
 
         cur_user = User.objects.get(id=cur_user.id)
 
-        filepath = os.path.join('pdfs', filename)  # Save the file to a temporary directory
+        # Save the file to a temporary directory
+        filepath = os.path.join('pdfs', filename)
         first_name = cur_user.first_name
         middle_name = cur_user.middle_name
         last_name = cur_user.last_name
@@ -108,7 +109,8 @@ class GeneratePdf:
 
         cur_user = User.objects.get(id=cur_user.id)
 
-        filepath = os.path.join('pdfs', filename)  # Save the file to a temporary directory
+        # Save the file to a temporary directory
+        filepath = os.path.join('pdfs', filename)
         first_name = cur_user.first_name
         middle_name = cur_user.middle_name
         last_name = cur_user.last_name
@@ -182,7 +184,8 @@ class GeneratePdf:
 
         cur_user = User.objects.get(id=cur_user.id)
 
-        filepath = os.path.join('pdfs', filename)  # Save the file to a temporary directory
+        # Save the file to a temporary directory
+        filepath = os.path.join('pdfs', filename)
         first_name = cur_user.first_name
         middle_name = cur_user.middle_name
         last_name = cur_user.last_name
@@ -233,13 +236,15 @@ class GeneratePdf:
 
         return filepath
 
+    @staticmethod
+    def generate_file(renewal_date, expire_date, chassis_number, document_id, filename, document_type):
 
-    # @staticmethod
-    # def generate_file(renewal_date, expire_date, chassis_number, document_id, filename):
-    #
-    #     try:
-    #         cur_doc = Document.object.get()
-    #     except Document.DoesNotExist as e:
-    #         return None
-    #
-    #
+        if document_type == DocumentType.ROAD_FUND:
+            return GeneratePdf.generate_road_fund_file(
+                renewal_date, expire_date, chassis_number, document_id, filename)
+        elif document_type == DocumentType.ROAD_AUTHORITY:
+            return GeneratePdf.generate_road_authority_file(
+                renewal_date, expire_date, chassis_number, document_id, filename)
+        else:
+            return GeneratePdf.generate_insurance_file(
+                renewal_date, expire_date, chassis_number, document_id, filename)
