@@ -18447,3 +18447,196 @@ AssertionError: 'NotificationViewSet' should either include a `queryset` attribu
 2024-06-10 11:09:53,819 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-06-10 11:10:37,063 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
 2024-06-10 11:10:37,642 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 11:37:17,052 (WARNING) - django.request - Unauthorized: /notifications/
+2024-06-10 11:40:06,733 (WARNING) - django.request - Unauthorized: /notifications/
+2024-06-10 11:40:50,357 (WARNING) - django.request - Unauthorized: /notifications/
+2024-06-10 11:42:23,746 (WARNING) - django.request - Unauthorized: /notifications/
+2024-06-10 11:44:04,610 (WARNING) - django.request - Unauthorized: /notifications/
+2024-06-10 11:58:00,258 (WARNING) - django.request - Unauthorized: /notifications/
+2024-06-10 12:01:52,604 (WARNING) - django.request - Unauthorized: /notifications/
+2024-06-10 12:03:01,064 (WARNING) - django.request - Unauthorized: /notifications/
+2024-06-10 12:03:37,261 (WARNING) - django.request - Unauthorized: /notifications/
+2024-06-10 12:04:47,157 (WARNING) - django.request - Unauthorized: /notifications/
+2024-06-10 12:06:27,495 (WARNING) - django.request - Unauthorized: /notifications/
+2024-06-10 12:12:09,237 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 12:12:09,238 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 12:12:09,238 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 12:12:09,239 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 12:12:09,239 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 12:12:09,240 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 12:12:09,240 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 12:12:09,241 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 12:12:09,241 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 12:12:09,241 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 12:12:09,242 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 12:12:19,112 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 12:12:19,113 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 12:12:19,113 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 12:12:19,114 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 12:12:19,114 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 12:12:19,114 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 12:12:19,115 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 12:12:19,115 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 12:12:19,116 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 12:12:19,116 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 12:12:19,117 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 12:12:44,213 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/common.py changed, reloading.
+2024-06-10 12:12:44,801 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 12:12:47,373 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/common.py changed, reloading.
+2024-06-10 12:12:48,071 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 12:12:52,005 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 12:12:52,005 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 12:12:52,006 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 12:12:52,006 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 12:12:52,007 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 12:12:52,007 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 12:12:52,008 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 12:12:52,008 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 12:12:52,008 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 12:12:52,009 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 12:12:52,009 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 12:13:03,168 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 12:13:03,168 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 12:13:03,169 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 12:13:03,169 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 12:13:03,170 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 12:13:03,170 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 12:13:03,171 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 12:13:03,171 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 12:13:03,172 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 12:13:03,172 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 12:13:03,172 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 12:52:02,494 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-10 12:52:06,890 (WARNING) - django.request - Unauthorized: /auth/jwt/create
