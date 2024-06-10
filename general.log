@@ -18744,3 +18744,35 @@ def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
 2024-06-10 19:07:29,846 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-06-10 19:07:59,638 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/core/utils/Helper.py changed, reloading.
 2024-06-10 19:08:00,085 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 19:11:01,274 (WARNING) - django.request - Unauthorized: /documents/renew_road_fund/123456/
+2024-06-10 19:11:32,398 (WARNING) - django.request - Unauthorized: /documents/renew_road_fund/123456/
+2024-06-10 19:11:43,620 (WARNING) - django.request - Unauthorized: /documents/renew_road_fund/123456/
+2024-06-10 19:11:44,414 (WARNING) - django.request - Unauthorized: /documents/renew_road_fund/123456/
+2024-06-10 19:13:19,661 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 19:13:19,683 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/get_payment_info/123456/ HTTP/1.1" 200 90
+2024-06-10 19:16:35,462 (WARNING) - django.request - Bad Request: /documents/renew_insurance/123456/
+2024-06-10 19:20:29,556 (WARNING) - django.request - Unauthorized: /vehicles/add_vehicle/
+2024-06-10 19:20:51,526 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 19:20:51,544 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/123456 HTTP/1.1" 301 None
+2024-06-10 19:20:51,546 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-10 19:20:51,569 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/123456/ HTTP/1.1" 200 350
+2024-06-10 19:20:51,571 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 19:20:51,585 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/123456 HTTP/1.1" 301 None
+2024-06-10 19:20:51,588 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-10 19:20:51,606 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/123456/ HTTP/1.1" 200 350
+2024-06-10 19:20:51,607 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 19:20:51,622 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/123456 HTTP/1.1" 301 None
+2024-06-10 19:20:51,624 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-10 19:20:51,643 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/123456/ HTTP/1.1" 200 374
+2024-06-10 19:25:11,301 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 19:25:11,320 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/123456 HTTP/1.1" 301 None
+2024-06-10 19:25:11,321 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-10 19:25:11,341 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/123456/ HTTP/1.1" 200 350
+2024-06-10 19:25:11,343 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 19:25:11,362 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/123456 HTTP/1.1" 301 None
+2024-06-10 19:25:11,364 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-10 19:25:11,448 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/123456/ HTTP/1.1" 200 350
+2024-06-10 19:25:11,450 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 19:25:11,470 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/123456 HTTP/1.1" 301 None
+2024-06-10 19:25:11,472 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-10 19:25:11,495 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/123456/ HTTP/1.1" 200 374
