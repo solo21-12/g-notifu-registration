@@ -26,7 +26,12 @@ class VehicleManagementViewUser(viewsets.ViewSet):
     '''This is the route to return the list of documents with the given user '''
 
     def retrieve(self, request, pk=None):
-        users_document = Document.objects.filter(vehicle__owner=pk)
+        try:
+            user = User.objects.get(pk=pk)
+        except User.DoesNotExist:
+            return JsonResponse({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
+        
+        users_document = Document.objects.filter(vehicle__owner=user.id)
         if not users_document:
             return JsonResponse({'error': 'No document found for the given user'}, status=status.HTTP_404_NOT_FOUND)
 

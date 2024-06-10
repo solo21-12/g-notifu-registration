@@ -16120,3 +16120,164 @@ django.core.exceptions.ValidationError: ['“455” is not a valid UUID.']
 2024-06-09 18:36:55,708 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/kjdfh
 2024-06-09 18:37:01,456 (WARNING) - django.request - Unauthorized: /vehicles/owner_vehicle/kjdfh/
 2024-06-09 18:37:04,633 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/kjdfh
+2024-06-09 19:56:46,691 (WARNING) - django.request - Not Found: /documents/owner/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 19:57:40,413 (WARNING) - django.request - Not Found: /add_vehicle/
+2024-06-09 19:57:46,255 (WARNING) - django.request - Not Found: /add_vehicle/
+2024-06-09 20:00:44,686 (WARNING) - django.request - Not Found: /add_vehicle/
+2024-06-09 20:00:48,947 (WARNING) - django.request - Not Found: /add_vehicle/
+2024-06-09 20:01:40,956 (WARNING) - django.request - Not Found: /add_vehicle/
+2024-06-09 20:02:54,568 (WARNING) - django.request - Unauthorized: /vehicles/add_vehicle/
+2024-06-09 20:06:12,034 (WARNING) - django.request - Not Found: /add_vehicle/
+2024-06-09 20:06:20,923 (WARNING) - django.request - Not Found: /add_vehicle/
+2024-06-09 20:07:39,265 (WARNING) - django.request - Not Found: /add_vehicle/
+2024-06-09 20:08:07,632 (WARNING) - django.request - Not Found: /add_vehicle/
+2024-06-09 20:10:16,452 (WARNING) - django.request - Not Found: /add_vehicle/
+2024-06-09 20:11:13,492 (WARNING) - django.request - Not Found: /add_vehicle/
+2024-06-09 20:12:48,427 (WARNING) - django.request - Not Found: /add_vehicle/
+2024-06-09 20:12:53,960 (WARNING) - django.request - Not Found: /add_vehicle/
+2024-06-09 20:12:58,661 (WARNING) - django.request - Not Found: /add_vehicle/
+2024-06-09 20:13:44,581 (WARNING) - django.request - Not Found: /add_vehicle/
+2024-06-09 20:16:14,126 (WARNING) - django.request - Bad Request: /vehicles/add_vehicle/
+2024-06-09 20:17:02,377 (WARNING) - django.request - Not Found: /documents/owner/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 20:17:19,374 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-09 20:17:19,397 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/123456 HTTP/1.1" 301 None
+2024-06-09 20:17:19,399 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-09 20:17:19,432 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/123456/ HTTP/1.1" 200 350
+2024-06-09 20:17:19,434 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-09 20:17:19,467 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/123456 HTTP/1.1" 301 None
+2024-06-09 20:17:19,469 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-09 20:17:19,493 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/123456/ HTTP/1.1" 200 350
+2024-06-09 20:17:19,495 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-09 20:17:19,515 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/123456 HTTP/1.1" 301 None
+2024-06-09 20:17:19,517 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-09 20:17:19,541 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/123456/ HTTP/1.1" 200 374
+2024-06-09 20:17:19,544 (WARNING) - django.request - Bad Request: /vehicles/add_vehicle/
+2024-06-09 20:18:13,338 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-09 20:18:13,359 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/895623 HTTP/1.1" 301 None
+2024-06-09 20:18:13,362 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-09 20:18:13,391 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/895623/ HTTP/1.1" 200 346
+2024-06-09 20:18:13,392 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-09 20:18:13,412 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/895623 HTTP/1.1" 301 None
+2024-06-09 20:18:13,415 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-09 20:18:13,438 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/895623/ HTTP/1.1" 200 346
+2024-06-09 20:18:13,440 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-09 20:18:13,460 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/895623 HTTP/1.1" 301 None
+2024-06-09 20:18:13,462 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-09 20:18:13,492 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/895623/ HTTP/1.1" 200 370
+2024-06-09 20:18:13,494 (WARNING) - django.request - Bad Request: /vehicles/add_vehicle/
+2024-06-09 20:26:49,142 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-09 20:26:49,176 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/895623 HTTP/1.1" 301 None
+2024-06-09 20:26:49,179 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-09 20:26:49,208 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/895623/ HTTP/1.1" 200 337
+2024-06-09 20:26:49,211 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-09 20:26:49,232 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/895623 HTTP/1.1" 301 None
+2024-06-09 20:26:49,235 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-09 20:26:49,259 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/895623/ HTTP/1.1" 200 337
+2024-06-09 20:26:49,261 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-09 20:26:49,283 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/895623 HTTP/1.1" 301 None
+2024-06-09 20:26:49,285 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-09 20:26:49,323 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/895623/ HTTP/1.1" 200 361
+2024-06-09 20:29:31,272 (WARNING) - django.request - Not Found: /documents/owner/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 20:29:57,149 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-09 20:29:57,218 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/895623 HTTP/1.1" 301 None
+2024-06-09 20:29:57,221 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-09 20:29:57,259 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/895623/ HTTP/1.1" 200 337
+2024-06-09 20:29:57,262 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-09 20:29:57,287 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/895623 HTTP/1.1" 301 None
+2024-06-09 20:29:57,290 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-09 20:29:57,310 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/895623/ HTTP/1.1" 200 337
+2024-06-09 20:29:57,312 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-09 20:29:57,332 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/895623 HTTP/1.1" 301 None
+2024-06-09 20:29:57,333 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-09 20:29:57,351 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/895623/ HTTP/1.1" 200 361
+2024-06-09 20:29:57,354 (WARNING) - django.request - Bad Request: /vehicles/add_vehicle/
+2024-06-09 20:31:16,614 (WARNING) - django.request - Not Found: /documents/owner/8acb70fb-f6f9-4755-a57b-7564fb867796
+2024-06-09 20:32:26,403 (WARNING) - django.request - Unauthorized: /documents/owner/8acb70fb-f6f9-4755-a57b-7564fb867796/
+2024-06-09 20:35:11,543 (ERROR) - django.request - Internal Server Error: /documents/owner/8acb70fb-f6f9-4755-a57b-7564fb867796/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '8acb70fb-f6f9-4755-a57b-7564fb867796'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/documents/views.py", line 29, in retrieve
+    users_document = Document.objects.filter(vehicle__owner=pk)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got '8acb70fb-f6f9-4755-a57b-7564fb867796'.
+2024-06-09 20:38:31,656 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-09 20:38:32,261 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 20:38:35,796 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-09 20:38:36,682 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 20:38:38,089 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-09 20:38:38,771 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 20:38:48,279 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-09 20:38:48,820 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 20:38:50,163 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-09 20:38:50,760 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 20:38:57,366 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-09 20:38:57,935 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 20:39:00,308 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-09 20:39:00,820 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-09 20:41:15,125 (WARNING) - django.request - Method Not Allowed: /vehicles/owner_vehicle/{owner_id}/
+2024-06-09 20:45:00,196 (WARNING) - django.request - Unauthorized: /vehicles/owner_vehicle/8acb70fb-f6f9-4755-a57b-7564fb867796/
+2024-06-09 21:22:48,381 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-09 21:34:10,803 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-10 06:22:15,357 (WARNING) - django.request - Unauthorized: /vehicles/owner_vehicle/ownerId/
+2024-06-10 06:55:18,219 (WARNING) - django.request - Not Found: /
+2024-06-10 06:55:43,939 (WARNING) - django.request - Not Found: /admin
+2024-06-10 06:55:49,044 (WARNING) - django.request - Not Found: /admin
