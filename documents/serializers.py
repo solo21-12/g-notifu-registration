@@ -1,6 +1,7 @@
-from .models import Document
 from rest_framework import serializers
+from .models import Document
 from vehicle.serializers import VehicleSerializer
+
 
 
 class DocumentSerializer(serializers.ModelSerializer):

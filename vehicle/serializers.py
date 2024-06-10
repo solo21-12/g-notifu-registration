@@ -1,8 +1,19 @@
 from .models import Vehicel
 from rest_framework import serializers
+from django.contrib.auth import get_user_model
+User = get_user_model()
+
+
+class OwnerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['username', 'email',
+                  'first_name', 'middle_name', 'last_name']
 
 
 class VehicleSerializer(serializers.ModelSerializer):
+    owner = OwnerSerializer()
+
     class Meta:
         model = Vehicel
         fields = ['id', 'chassis_number', 'plate_number', 'owner']

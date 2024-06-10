@@ -16281,3 +16281,349 @@ ValueError: Field 'id' expected a number but got '8acb70fb-f6f9-4755-a57b-7564fb
 2024-06-10 06:55:18,219 (WARNING) - django.request - Not Found: /
 2024-06-10 06:55:43,939 (WARNING) - django.request - Not Found: /admin
 2024-06-10 06:55:49,044 (WARNING) - django.request - Not Found: /admin
+2024-06-10 07:02:41,065 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/serializers.py changed, reloading.
+2024-06-10 07:02:41,663 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:02:49,235 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/serializers.py changed, reloading.
+2024-06-10 07:02:49,841 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:02:51,167 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/serializers.py changed, reloading.
+2024-06-10 07:02:51,680 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:02:55,202 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/serializers.py changed, reloading.
+2024-06-10 07:02:55,749 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:03:01,271 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/serializers.py changed, reloading.
+2024-06-10 07:03:01,809 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:03:06,272 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/serializers.py changed, reloading.
+2024-06-10 07:03:06,825 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:03:08,239 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/serializers.py changed, reloading.
+2024-06-10 07:03:08,829 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:03:11,324 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/serializers.py changed, reloading.
+2024-06-10 07:03:11,902 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:03:13,243 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/serializers.py changed, reloading.
+2024-06-10 07:03:13,776 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:03:16,135 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/serializers.py changed, reloading.
+2024-06-10 07:03:16,656 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:03:19,010 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/serializers.py changed, reloading.
+2024-06-10 07:03:19,524 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:03:28,121 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/serializers.py changed, reloading.
+2024-06-10 07:03:28,627 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:03:33,164 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/serializers.py changed, reloading.
+2024-06-10 07:03:33,721 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:03:40,299 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/serializers.py changed, reloading.
+2024-06-10 07:03:40,840 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:03:54,570 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/serializers.py changed, reloading.
+2024-06-10 07:03:55,189 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:03:57,759 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/serializers.py changed, reloading.
+2024-06-10 07:03:58,312 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:04:03,885 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/serializers.py changed, reloading.
+2024-06-10 07:04:04,411 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:04:10,881 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/serializers.py changed, reloading.
+2024-06-10 07:04:11,425 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:04:12,766 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/serializers.py changed, reloading.
+2024-06-10 07:04:13,287 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:04:18,818 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/serializers.py changed, reloading.
+2024-06-10 07:04:19,360 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:04:21,802 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/serializers.py changed, reloading.
+2024-06-10 07:04:22,341 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:07:28,886 (WARNING) - django.request - Not Found: /documents/vehicle/944a0e9f-4dc4-4cc7-bd10-c5ed39c3cfae
+2024-06-10 07:07:32,181 (WARNING) - django.request - Unauthorized: /documents/vehicle/944a0e9f-4dc4-4cc7-bd10-c5ed39c3cfae/
+2024-06-10 07:08:14,193 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/serializers.py changed, reloading.
+2024-06-10 07:08:14,740 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:08:17,218 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/serializers.py changed, reloading.
+2024-06-10 07:08:17,802 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:08:40,781 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/serializers.py changed, reloading.
+2024-06-10 07:08:41,339 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 07:13:33,940 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 07:13:33,973 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/895623 HTTP/1.1" 301 None
+2024-06-10 07:13:33,976 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-10 07:13:34,005 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/895623/ HTTP/1.1" 200 337
+2024-06-10 07:13:34,008 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 07:13:34,040 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/895623 HTTP/1.1" 301 None
+2024-06-10 07:13:34,043 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-10 07:13:34,074 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/895623/ HTTP/1.1" 200 337
+2024-06-10 07:13:34,077 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 07:13:34,112 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/895623 HTTP/1.1" 301 None
+2024-06-10 07:13:34,115 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-10 07:13:34,144 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/895623/ HTTP/1.1" 200 361
+2024-06-10 07:13:34,147 (WARNING) - django.request - Bad Request: /vehicles/add_vehicle/
+2024-06-10 08:39:59,715 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/dev.py changed, reloading.
+2024-06-10 08:40:00,177 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 08:40:49,255 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/dev.py changed, reloading.
+2024-06-10 08:40:49,952 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 08:40:57,392 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/dev.py changed, reloading.
+2024-06-10 08:40:57,938 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 08:41:02,361 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/dev.py changed, reloading.
+2024-06-10 08:41:02,922 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 08:41:05,270 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/dev.py changed, reloading.
+2024-06-10 08:41:05,759 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 08:41:19,247 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/dev.py changed, reloading.
+2024-06-10 08:41:19,759 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 08:58:42,284 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 08:58:51,340 (WARNING) - django.request - Unauthorized: /users/
+2024-06-10 08:58:51,614 (WARNING) - django.request - Not Found: /favicon.ico
+2024-06-10 09:02:49,913 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 09:02:49,914 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 09:02:49,916 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 09:02:49,918 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 09:02:49,920 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 09:02:49,924 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 09:02:49,925 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 09:02:49,927 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 09:02:49,927 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 09:02:49,930 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 09:02:49,929 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 09:02:49,932 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 09:02:49,936 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 09:02:49,937 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 09:02:49,941 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 09:02:49,940 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 09:02:49,944 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 09:02:49,946 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 09:02:49,947 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 09:02:49,951 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 09:02:49,954 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 09:02:49,958 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 09:02:50,641 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 09:04:17,764 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 09:04:17,765 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 09:04:17,766 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 09:04:17,768 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 09:04:17,769 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 09:04:17,771 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 09:04:17,773 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 09:04:17,775 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 09:04:17,778 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 09:04:17,779 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 09:04:17,781 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 09:04:18,006 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 09:04:18,007 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 09:04:18,009 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 09:04:18,012 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 09:04:18,013 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 09:04:18,018 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 09:04:18,020 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 09:04:18,021 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 09:04:18,023 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 09:04:18,029 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 09:04:18,030 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 09:04:18,887 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 09:05:55,588 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 09:05:55,588 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 09:05:55,591 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 09:05:55,597 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 09:05:55,598 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 09:05:55,599 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 09:05:55,600 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 09:05:55,601 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 09:05:55,602 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 09:05:55,603 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 09:05:55,603 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 09:05:55,617 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-10 09:05:55,620 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-10 09:05:55,622 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-10 09:05:55,623 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-10 09:05:55,626 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-10 09:05:55,627 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-10 09:05:55,634 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-10 09:05:55,640 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-10 09:05:55,642 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-10 09:05:55,644 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-10 09:05:55,646 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-10 09:05:56,645 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 09:06:31,341 (WARNING) - django.request - Unauthorized: /users/
