@@ -18963,3 +18963,376 @@ def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
 2024-06-10 19:56:10,085 (WARNING) - django.request - Bad Request: /files/gen_files/
 2024-06-10 19:56:18,949 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/views.py changed, reloading.
 2024-06-10 19:56:19,531 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-10 21:17:06,355 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-10 21:17:06,373 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/get_payment_info/123456/ HTTP/1.1" 200 90
+2024-06-12 05:46:21,337 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-12 05:46:52,185 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-12 05:46:52,186 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-12 05:46:52,187 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-12 05:46:52,187 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-12 05:46:52,188 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-12 05:46:52,188 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-12 05:46:52,189 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-12 05:46:52,189 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-12 05:46:52,190 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-12 05:46:52,190 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-12 05:46:52,191 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-12 05:48:11,123 (WARNING) - django.request - Not Found: /
+2024-06-12 08:19:39,503 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 08:19:47,694 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 08:19:48,062 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 08:19:48,617 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 08:19:51,542 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 08:20:02,852 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 08:20:03,276 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 08:20:03,636 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 08:20:03,875 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 08:21:44,819 (ERROR) - django.request - Internal Server Error: /users/in/create/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/users/serializers.py", line 55, in create
+    mail_server.send_welcome_email([username], verification_pin)
+  File "/home/dawit/projects/customer_account_service/users/utils/sendmail.py", line 17, in send_welcome_email
+    message.send(recipient_list)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/templated_mail/mail.py", line 78, in send
+    super(BaseEmailMessage, self).send(*args, **kwargs)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/mail/message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/mail/backends/smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+2024-06-12 08:21:59,968 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-12 08:22:20,070 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 08:22:41,732 (WARNING) - django.request - Not Found: /favicon.ico
+2024-06-12 08:22:49,969 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 08:23:44,034 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 08:23:50,792 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 08:24:34,006 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 08:25:32,135 (ERROR) - django.request - Internal Server Error: /users/in/create/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/users/serializers.py", line 55, in create
+    mail_server.send_welcome_email([username], verification_pin)
+  File "/home/dawit/projects/customer_account_service/users/utils/sendmail.py", line 17, in send_welcome_email
+    message.send(recipient_list)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/templated_mail/mail.py", line 78, in send
+    super(BaseEmailMessage, self).send(*args, **kwargs)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/mail/message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/mail/backends/smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+2024-06-12 08:25:42,799 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 08:40:01,922 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 08:40:06,460 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 08:40:08,281 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 08:40:12,564 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 08:40:34,445 (ERROR) - django.request - Internal Server Error: /users/in/create/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/users/serializers.py", line 55, in create
+    mail_server.send_welcome_email([username], verification_pin)
+  File "/home/dawit/projects/customer_account_service/users/utils/sendmail.py", line 17, in send_welcome_email
+    message.send(recipient_list)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/templated_mail/mail.py", line 78, in send
+    super(BaseEmailMessage, self).send(*args, **kwargs)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/mail/message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/mail/backends/smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+2024-06-12 08:40:47,497 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 08:40:52,699 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-12 09:33:25,603 (ERROR) - django.request - Internal Server Error: /users/in/create/
+Traceback (most recent call last):
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/projects/customer_account_service/users/serializers.py", line 55, in create
+    mail_server.send_welcome_email([username], verification_pin)
+  File "/home/dawit/projects/customer_account_service/users/utils/sendmail.py", line 17, in send_welcome_email
+    message.send(recipient_list)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/templated_mail/mail.py", line 78, in send
+    super(BaseEmailMessage, self).send(*args, **kwargs)
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/mail/message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "/home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/django/core/mail/backends/smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+2024-06-14 06:28:28,752 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 06:31:58,288 (WARNING) - django.request - Not Found: /
+2024-06-14 11:33:26,499 (WARNING) - django.request - Unauthorized: /documents/owner/
+2024-06-14 11:33:41,968 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle//
+2024-06-14 11:35:13,856 (WARNING) - django.request - Unauthorized: /documents/owner/
+2024-06-14 11:35:34,092 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle//
+2024-06-14 11:36:49,587 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle//
+2024-06-14 11:38:43,332 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle//
+2024-06-14 11:38:47,842 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4NDUxMzA2LCJpYXQiOjE3MTgzNjQ5MDYsImp0aSI6ImQ2Yjc2NjE0YjBkNjQ0ZmRiMTFkZWVlOTY2YTg0YjgzIiwidXNlcl9pZCI6OX0.GYbUPwWgmwkhBrDMtgf_QkkYuu2ihoxzkGM0aoE-wKo/
+2024-06-14 11:38:53,684 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle//
+2024-06-14 11:38:53,687 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4NDUxMzA2LCJpYXQiOjE3MTgzNjQ5MDYsImp0aSI6ImQ2Yjc2NjE0YjBkNjQ0ZmRiMTFkZWVlOTY2YTg0YjgzIiwidXNlcl9pZCI6OX0.GYbUPwWgmwkhBrDMtgf_QkkYuu2ihoxzkGM0aoE-wKo/
+2024-06-14 11:40:38,329 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4NDUxMzA2LCJpYXQiOjE3MTgzNjQ5MDYsImp0aSI6ImQ2Yjc2NjE0YjBkNjQ0ZmRiMTFkZWVlOTY2YTg0YjgzIiwidXNlcl9pZCI6OX0.GYbUPwWgmwkhBrDMtgf_QkkYuu2ihoxzkGM0aoE-wKo/
+2024-06-14 11:53:32,302 (WARNING) - django.request - Unauthorized: /documents/owner/
+2024-06-14 12:13:42,807 (WARNING) - django.request - Unauthorized: /documents/owner/
+2024-06-14 12:15:05,018 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:15:05,874 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:15:19,417 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:15:19,938 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:15:22,257 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:15:22,815 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:15:29,209 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:15:29,730 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:15:34,084 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:15:34,659 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:15:37,051 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:15:37,564 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:15:41,937 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:15:42,631 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:15:44,937 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:15:45,444 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:16:01,291 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:16:02,110 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:16:06,472 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:16:07,084 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:16:10,464 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:16:11,027 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:16:22,465 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:16:23,026 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:16:25,525 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:16:26,082 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:16:50,975 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:16:51,502 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:16:58,125 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:16:58,682 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:18:18,646 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:18:19,212 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:18:28,646 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:18:29,280 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:18:33,914 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:18:34,534 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:19:40,261 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:19:40,858 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:19:48,351 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:19:49,001 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:19:51,459 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:19:51,980 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:20:01,672 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:20:02,229 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:20:05,829 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:20:06,440 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 12:20:10,046 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-14 12:20:10,717 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader

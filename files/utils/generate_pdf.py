@@ -1,9 +1,14 @@
 from vehicle.models import Vehicel
-from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
 from django.contrib.auth import get_user_model
 from datetime import datetime
 from core.utils.document_type import DocumentType
+from reportlab.lib.pagesizes import letter
+from reportlab.lib import colors
+from reportlab.lib.units import inch
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
+from datetime import datetime
 import os
 
 User = get_user_model()
@@ -41,48 +46,74 @@ class GeneratePdf:
         last_name = cur_user.last_name
         plate_number = cur_vehicle.plate_number
 
-        c = canvas.Canvas(filepath, pagesize=letter)
+        doc = SimpleDocTemplate(filepath, pagesize=letter)
+        elements = []
 
-        # Define the width and height of the page
-        width, height = letter
+        styles = getSampleStyleSheet()
+        title_style = styles['Title']
+        title_style.textColor = colors.darkblue
+        header_style = ParagraphStyle(
+            name='Header', fontSize=14, textColor=colors.darkred, spaceAfter=10, leading=18)
+        normal_style = styles['Normal']
 
-        # Set the title of the document
-        c.setTitle("Vehicle Information Document")
+        # Title and header
+        elements.append(Paragraph("FDRE Ministry of Transport", title_style))
+        elements.append(Paragraph("Road Fund Office", header_style))
+        elements.append(Spacer(1, 12))
 
-        # Draw the header
-        c.setFont("Helvetica-Bold", 14)
-        c.drawCentredString(width / 2, height - 50,
-                            "FDRE Ministry of Transport")
-        c.drawCentredString(width / 2, height - 70, "Road Fund Office")
+        # Document ID and dates
+        elements.append(Paragraph(f"ID: {document_id}", normal_style))
+        elements.append(
+            Paragraph(f"Renewal Date: {renewal_date}", normal_style))
+        elements.append(Paragraph(f"Expire Date: {expire_date}", normal_style))
+        elements.append(Spacer(1, 12))
 
-        # Set the font for the content
-        c.setFont("Helvetica", 12)
+        # Owner Information
+        elements.append(Paragraph("Owner Information:", header_style))
+        owner_info = [
+            ["First Name", first_name],
+            ["Middle Name", middle_name],
+            ["Last Name", last_name],
+            ["City", "Addis Abeba"],
+            ["Country", "Ethiopia"]
+        ]
+        table = Table(owner_info, hAlign='LEFT', colWidths=[100, 200])
+        table.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (1, 0), colors.lightgrey),
+            ('TEXTCOLOR', (0, 0), (1, 0), colors.black),
+            ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+            ('FONTNAME', (0, 0), (-1, -1), 'Helvetica'),
+            ('FONTSIZE', (0, 0), (-1, -1), 10),
+            ('BOTTOMPADDING', (0, 0), (-1, -1), 6),
+        ]))
+        elements.append(table)
+        elements.append(Spacer(1, 12))
 
-        # Dynamic information
-        c.drawString(50, height - 100, f"ID: {document_id}")
-        c.drawString(50, height - 120, f"Renewal Date: {renewal_date}")
-        c.drawString(50, height - 140, f"Expire Date: {expire_date}")
-
-        # Owner information
-        c.drawString(50, height - 180, "Owner Information:")
-        c.drawString(70, height - 200, f"First Name: {first_name}")
-        c.drawString(70, height - 220, f"Middle Name: {middle_name}")
-        c.drawString(70, height - 240, f"Last Name: {last_name}")
-        c.drawString(70, height - 260, "City: Addis Abeba")
-        c.drawString(70, height - 280, "Country: Ethiopia")
-
-        # Vehicle information
-        c.drawString(50, height - 320, "Vehicle Information:")
-        c.drawString(70, height - 340, f"Plate Number: {plate_number}")
-        c.drawString(70, height - 380, f"Chassis Number: {chassis_number}")
+        # Vehicle Information
+        elements.append(Paragraph("Vehicle Information:", header_style))
+        vehicle_info = [
+            ["Plate Number", plate_number],
+            ["Chassis Number", chassis_number]
+        ]
+        table = Table(vehicle_info, hAlign='LEFT', colWidths=[100, 200])
+        table.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (1, 0), colors.lightgrey),
+            ('TEXTCOLOR', (0, 0), (1, 0), colors.black),
+            ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+            ('FONTNAME', (0, 0), (-1, -1), 'Helvetica'),
+            ('FONTSIZE', (0, 0), (-1, -1), 10),
+            ('BOTTOMPADDING', (0, 0), (-1, -1), 6),
+        ]))
+        elements.append(table)
+        elements.append(Spacer(1, 12))
 
         # Issued by
-        c.drawString(50, height - 420, "Issued by: Goma Notify")
-        c.drawString(50, height - 440,
-                     f"Issued Date: {datetime.now().strftime('%Y%m%d%H%M%S')}")
+        elements.append(Paragraph("Issued by: Goma Notify", normal_style))
+        elements.append(Paragraph(
+            f"Issued Date: {datetime.now().strftime('%Y%m%d%H%M%S')}", normal_style))
 
-        # Save the document
-        c.save()
+        # Build the PDF
+        doc.build(elements)
 
         return filepath
 
@@ -116,48 +147,74 @@ class GeneratePdf:
         last_name = cur_user.last_name
         plate_number = cur_vehicle.plate_number
 
-        c = canvas.Canvas(filepath, pagesize=letter)
+        doc = SimpleDocTemplate(filepath, pagesize=letter)
+        elements = []
 
-        # Define the width and height of the page
-        width, height = letter
+        styles = getSampleStyleSheet()
+        title_style = styles['Title']
+        title_style.textColor = colors.darkblue
+        header_style = ParagraphStyle(
+            name='Header', fontSize=14, textColor=colors.darkred, spaceAfter=10, leading=18)
+        normal_style = styles['Normal']
 
-        # Set the title of the document
-        c.setTitle("Vehicle Information Document")
+        # Title and header
+        elements.append(Paragraph("FDRE Ministry of Transport", title_style))
+        elements.append(Paragraph("Road Authority Office", header_style))
+        elements.append(Spacer(1, 12))
 
-        # Draw the header
-        c.setFont("Helvetica-Bold", 14)
-        c.drawCentredString(width / 2, height - 50,
-                            "FDRE Ministry of Transport")
-        c.drawCentredString(width / 2, height - 70, "Road Authority Office")
+        # Document ID and dates
+        elements.append(Paragraph(f"ID: {document_id}", normal_style))
+        elements.append(
+            Paragraph(f"Renewal Date: {renewal_date}", normal_style))
+        elements.append(Paragraph(f"Expire Date: {expire_date}", normal_style))
+        elements.append(Spacer(1, 12))
 
-        # Set the font for the content
-        c.setFont("Helvetica", 12)
+        # Owner Information
+        elements.append(Paragraph("Owner Information:", header_style))
+        owner_info = [
+            ["First Name", first_name],
+            ["Middle Name", middle_name],
+            ["Last Name", last_name],
+            ["City", "Addis Abeba"],
+            ["Country", "Ethiopia"]
+        ]
+        table = Table(owner_info, hAlign='LEFT', colWidths=[100, 200])
+        table.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (1, 0), colors.lightgrey),
+            ('TEXTCOLOR', (0, 0), (1, 0), colors.black),
+            ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+            ('FONTNAME', (0, 0), (-1, -1), 'Helvetica'),
+            ('FONTSIZE', (0, 0), (-1, -1), 10),
+            ('BOTTOMPADDING', (0, 0), (-1, -1), 6),
+        ]))
+        elements.append(table)
+        elements.append(Spacer(1, 12))
 
-        # Dynamic information
-        c.drawString(50, height - 100, f"ID: {document_id}")
-        c.drawString(50, height - 120, f"Renewal Date: {renewal_date}")
-        c.drawString(50, height - 140, f"Expire Date: {expire_date}")
-
-        # Owner information
-        c.drawString(50, height - 180, "Owner Information:")
-        c.drawString(70, height - 200, f"First Name: {first_name}")
-        c.drawString(70, height - 220, f"Middle Name: {middle_name}")
-        c.drawString(70, height - 240, f"Last Name: {last_name}")
-        c.drawString(70, height - 260, "City: Addis Abeba")
-        c.drawString(70, height - 280, "Country: Ethiopia")
-
-        # Vehicle information
-        c.drawString(50, height - 320, "Vehicle Information:")
-        c.drawString(70, height - 340, f"Plate Number: {plate_number}")
-        c.drawString(70, height - 380, f"Chassis Number: {chassis_number}")
+        # Vehicle Information
+        elements.append(Paragraph("Vehicle Information:", header_style))
+        vehicle_info = [
+            ["Plate Number", plate_number],
+            ["Chassis Number", chassis_number]
+        ]
+        table = Table(vehicle_info, hAlign='LEFT', colWidths=[100, 200])
+        table.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (1, 0), colors.lightgrey),
+            ('TEXTCOLOR', (0, 0), (1, 0), colors.black),
+            ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+            ('FONTNAME', (0, 0), (-1, -1), 'Helvetica'),
+            ('FONTSIZE', (0, 0), (-1, -1), 10),
+            ('BOTTOMPADDING', (0, 0), (-1, -1), 6),
+        ]))
+        elements.append(table)
+        elements.append(Spacer(1, 12))
 
         # Issued by
-        c.drawString(50, height - 420, "Issued by: Goma Notify")
-        c.drawString(50, height - 440,
-                     f"Issued Date: {datetime.now().strftime('%Y%m%d%H%M%S')}")
+        elements.append(Paragraph("Issued by: Goma Notify", normal_style))
+        elements.append(Paragraph(
+            f"Issued Date: {datetime.now().strftime('%Y%m%d%H%M%S')}", normal_style))
 
-        # Save the document
-        c.save()
+        # Build the PDF
+        doc.build(elements)
 
         return filepath
 
@@ -191,54 +248,79 @@ class GeneratePdf:
         last_name = cur_user.last_name
         plate_number = cur_vehicle.plate_number
 
-        c = canvas.Canvas(filepath, pagesize=letter)
+        doc = SimpleDocTemplate(filepath, pagesize=letter)
+        elements = []
 
-        # Define the width and height of the page
-        width, height = letter
+        styles = getSampleStyleSheet()
+        title_style = styles['Title']
+        title_style.textColor = colors.darkblue
+        header_style = ParagraphStyle(
+            name='Header', fontSize=14, textColor=colors.darkred, spaceAfter=10, leading=18)
+        normal_style = styles['Normal']
 
-        # Set the title of the document
-        c.setTitle("Vehicle Information Document")
+        # Title and header
+        elements.append(Paragraph("FDRE Ministry of Transport", title_style))
+        elements.append(Paragraph("Insurance Office", header_style))
+        elements.append(Spacer(1, 12))
 
-        # Draw the header
-        c.setFont("Helvetica-Bold", 14)
-        c.drawCentredString(width / 2, height - 50,
-                            "FDRE Ministry of Transport")
-        c.drawCentredString(width / 2, height - 70, "Insurance Office")
+        # Document ID and dates
+        elements.append(Paragraph(f"ID: {document_id}", normal_style))
+        elements.append(
+            Paragraph(f"Renewal Date: {renewal_date}", normal_style))
+        elements.append(Paragraph(f"Expire Date: {expire_date}", normal_style))
+        elements.append(Spacer(1, 12))
 
-        # Set the font for the content
-        c.setFont("Helvetica", 12)
+        # Owner Information
+        elements.append(Paragraph("Owner Information:", header_style))
+        owner_info = [
+            ["First Name", first_name],
+            ["Middle Name", middle_name],
+            ["Last Name", last_name],
+            ["City", "Addis Abeba"],
+            ["Country", "Ethiopia"]
+        ]
+        table = Table(owner_info, hAlign='LEFT', colWidths=[100, 200])
+        table.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (1, 0), colors.lightgrey),
+            ('TEXTCOLOR', (0, 0), (1, 0), colors.black),
+            ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+            ('FONTNAME', (0, 0), (-1, -1), 'Helvetica'),
+            ('FONTSIZE', (0, 0), (-1, -1), 10),
+            ('BOTTOMPADDING', (0, 0), (-1, -1), 6),
+        ]))
+        elements.append(table)
+        elements.append(Spacer(1, 12))
 
-        # Dynamic information
-        c.drawString(50, height - 100, f"ID: {document_id}")
-        c.drawString(50, height - 120, f"Renewal Date: {renewal_date}")
-        c.drawString(50, height - 140, f"Expire Date: {expire_date}")
-
-        # Owner information
-        c.drawString(50, height - 180, "Owner Information:")
-        c.drawString(70, height - 200, f"First Name: {first_name}")
-        c.drawString(70, height - 220, f"Middle Name: {middle_name}")
-        c.drawString(70, height - 240, f"Last Name: {last_name}")
-        c.drawString(70, height - 260, "City: Addis Abeba")
-        c.drawString(70, height - 280, "Country: Ethiopia")
-
-        # Vehicle information
-        c.drawString(50, height - 320, "Vehicle Information:")
-        c.drawString(70, height - 340, f"Plate Number: {plate_number}")
-        c.drawString(70, height - 380, f"Chassis Number: {chassis_number}")
+        # Vehicle Information
+        elements.append(Paragraph("Vehicle Information:", header_style))
+        vehicle_info = [
+            ["Plate Number", plate_number],
+            ["Chassis Number", chassis_number]
+        ]
+        table = Table(vehicle_info, hAlign='LEFT', colWidths=[100, 200])
+        table.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (1, 0), colors.lightgrey),
+            ('TEXTCOLOR', (0, 0), (1, 0), colors.black),
+            ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+            ('FONTNAME', (0, 0), (-1, -1), 'Helvetica'),
+            ('FONTSIZE', (0, 0), (-1, -1), 10),
+            ('BOTTOMPADDING', (0, 0), (-1, -1), 6),
+        ]))
+        elements.append(table)
+        elements.append(Spacer(1, 12))
 
         # Issued by
-        c.drawString(50, height - 420, "Issued by: Goma Notify")
-        c.drawString(50, height - 440,
-                     f"Issued Date: {datetime.now().strftime('%Y%m%d%H%M%S')}")
+        elements.append(Paragraph("Issued by: Goma Notify", normal_style))
+        elements.append(Paragraph(
+            f"Issued Date: {datetime.now().strftime('%Y%m%d%H%M%S')}", normal_style))
 
-        # Save the document
-        c.save()
+        # Build the PDF
+        doc.build(elements)
 
         return filepath
 
     @staticmethod
     def generate_file(renewal_date, expire_date, chassis_number, document_id, filename, document_type):
-
         if document_type == DocumentType.ROAD_FUND:
             return GeneratePdf.generate_road_fund_file(
                 renewal_date, expire_date, chassis_number, document_id, filename)
