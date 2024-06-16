@@ -19336,3 +19336,60 @@ OSError: [Errno 101] Network is unreachable
 2024-06-14 12:20:06,440 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-06-14 12:20:10,046 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
 2024-06-14 12:20:10,717 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 13:17:22,639 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/vehicle/urls.py changed, reloading.
+2024-06-14 13:17:23,323 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-14 13:32:47,218 (WARNING) - django.request - Unauthorized: /documents/owner/
+2024-06-14 13:47:07,376 (WARNING) - django.request - Unauthorized: /documents/owner/
+2024-06-14 13:47:15,279 (WARNING) - django.request - Not Found: /documents/renew_road_fund/895623
+2024-06-14 13:47:32,716 (WARNING) - django.request - Not Found: /documents/renew_road_fund/895623
+2024-06-14 13:50:13,868 (WARNING) - django.request - Not Found: /documents/renew_road_fund/895623
+2024-06-14 13:51:51,545 (WARNING) - django.request - Not Found: /documents/renew_road_fund/895623
+2024-06-14 13:52:01,067 (WARNING) - django.request - Not Found: /documents/renew_road_fund/895623
+2024-06-14 13:53:54,213 (WARNING) - django.request - Not Found: /documents/renew_road_fund/895623
+2024-06-14 13:54:03,316 (WARNING) - django.request - Not Found: /documents/renew_road_fund/895623
+2024-06-14 13:56:46,771 (WARNING) - django.request - Not Found: /documents/renew_road_fund/895623
+2024-06-14 13:57:35,926 (WARNING) - django.request - Not Found: /document/renew_road_fund/895623
+2024-06-14 13:58:27,940 (WARNING) - django.request - Not Found: /docuemnt/renew_road_fund/895623
+2024-06-14 14:01:56,632 (WARNING) - django.request - Not Found: /docuemnt/renew_road_fund/895623
+2024-06-14 14:02:22,023 (WARNING) - django.request - Not Found: /document/renew_road_fund/895623
+2024-06-14 14:02:37,696 (WARNING) - django.request - Not Found: /documents/renew_road_fund/895623
+2024-06-14 14:06:59,536 (WARNING) - django.request - Not Found: /documents/renew_road_fund/895623
+2024-06-14 14:09:34,151 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-14 14:09:34,226 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/get_payment_info/895623/ HTTP/1.1" 200 90
+2024-06-14 14:12:38,573 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-14 14:12:38,584 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/get_payment_info/895623/ HTTP/1.1" 200 90
+2024-06-14 14:14:43,700 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-14 14:14:43,710 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/get_payment_info/895623/ HTTP/1.1" 200 90
+2024-06-14 14:17:34,704 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-14 14:17:34,714 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/get_payment_info/895623/ HTTP/1.1" 200 90
+2024-06-15 06:32:27,988 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-15 06:32:57,667 (WARNING) - django.request - Not Found: /
+2024-06-15 06:37:20,815 (WARNING) - django.request - Unauthorized: /documents/owner/
+2024-06-15 06:37:26,548 (WARNING) - django.request - Unauthorized: /documents/owner/
+2024-06-15 06:37:36,586 (WARNING) - django.request - Unauthorized: /documents/owner/
+2024-06-15 06:37:42,536 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-15 06:37:42,599 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/get_payment_info/895623/ HTTP/1.1" 200 90
+2024-06-15 06:37:52,321 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-15 06:37:52,343 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/get_payment_info/895623/ HTTP/1.1" 200 90
+2024-06-15 06:44:57,459 (WARNING) - django.request - Unauthorized: /documents/owner/
+2024-06-15 06:45:03,674 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-15 06:45:03,694 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/get_payment_info/895623/ HTTP/1.1" 200 90
+2024-06-15 06:46:31,308 (WARNING) - django.request - Unauthorized: /documents/owner/
+2024-06-15 06:46:46,285 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-15 06:46:46,313 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/get_payment_info/895623/ HTTP/1.1" 200 90
+2024-06-15 06:53:04,150 (WARNING) - django.request - Unauthorized: /documents/owner/
+2024-06-15 06:53:10,506 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-15 06:53:10,532 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/get_payment_info/895623/ HTTP/1.1" 200 90
+2024-06-15 07:00:12,802 (WARNING) - django.request - Unauthorized: /documents/owner/
+2024-06-15 07:00:17,724 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-15 07:00:17,745 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/get_payment_info/895623/ HTTP/1.1" 200 90
+2024-06-16 06:52:32,285 (WARNING) - django.request - Unauthorized: /documents/owner/
+2024-06-16 06:52:38,025 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-16 06:52:38,057 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/get_payment_info/895623/ HTTP/1.1" 200 90
+2024-06-16 06:56:37,678 (WARNING) - django.request - Unauthorized: /documents/owner/
+2024-06-16 06:57:30,107 (WARNING) - django.request - Unauthorized: /documents/owner/
+2024-06-16 06:57:35,326 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-16 06:57:35,350 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/get_payment_info/895623/ HTTP/1.1" 200 90
+2024-06-16 06:58:25,514 (WARNING) - django.request - Unsupported Media Type: /documents/renew_road_authority/895623/
+2024-06-16 07:02:01,246 (WARNING) - django.request - Not Found: /favicon.ico
+2024-06-16 07:07:38,151 (WARNING) - django.request - Not Found: /catalog
