@@ -68,5 +68,19 @@ class OwnerCheck:
             return Response({"Message": "Current document doesn't have a file"}, status=status.HTTP_400_BAD_REQUEST), None
 
         return None, cur_file
-    
 
+    @staticmethod
+    def get_generated_documet(doc_id):
+        '''This method gets the document of the current vehicle.
+         Args:
+             current_vehicle (Vehicel): The current vehicle.
+             doc_type (str): The type of the document.
+         returns:
+             tuple: A tuple containing the response (if error) and the document object.
+         '''
+        try:
+            cur_doc = Document.objects.get(id=doc_id)
+        except Document.DoesNotExist:
+            return Response({"Message": "Current vehicle doesn't have an active document"}, status=status.HTTP_400_BAD_REQUEST), None
+
+        return None, cur_doc

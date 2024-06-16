@@ -30,8 +30,6 @@ class VehicleManagementViewUser(viewsets.ViewSet):
     def retrieve(self, request, pk=None):
         user = None
 
-        print(pk)
-
         try:
             ind_user = IndividualOwner.objects.get(pk=pk)
 
@@ -48,7 +46,6 @@ class VehicleManagementViewUser(viewsets.ViewSet):
         if not users_document:
             return JsonResponse({'error': 'No document found for the given user'}, status=status.HTTP_404_NOT_FOUND)
 
-        print(users_document, "users_document")
         serlizer = DocumentSerializer(users_document, many=True)
         return JsonResponse(serlizer.data, status=status.HTTP_200_OK, safe=False)
 
@@ -301,6 +298,12 @@ class RoadAuthorityDocumentRenew(viewsets.ViewSet):
 
         if error_response_getting_doc:
             return error_response_getting_doc
+
+        result, msg = Helper.update_third_party_documents(
+            'road_auth', chassis_number)
+
+        if not result:
+            return Response({"Message": msg}, status=status.HTTP_400_BAD_REQUEST)
 
         # Outdate the current active document
         outdated_success = Helper.outdate_document(cur_doc.id)

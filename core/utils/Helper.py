@@ -11,6 +11,7 @@ from files.utils.generate_pdf import GeneratePdf
 from vehicle.models import Vehicel
 from files.utils.create_file import ManageFile
 from .get_transaction_number import GetTransaction
+from core.utils.document_type import DocumentType
 import logging
 
 logger = logging.getLogger(__name__)
@@ -22,6 +23,15 @@ class Helper:
         """These methods make a request to an external site and fetch the required data"""
         try:
             response = requests.get(url, verify=False)
+            return response
+        except Exception as e:
+            return Response({'error': 'something went wrong'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+    @staticmethod
+    def make_put_api_call(url: str) -> Response:
+        """These methods make a request to an external site and fetch the required data"""
+        try:
+            response = requests.put(url, verify=False)
             return response
         except Exception as e:
             return Response({'error': 'something went wrong'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
@@ -142,7 +152,42 @@ class Helper:
             logging.debug(e)
             return None
 
-    
     @staticmethod
-    def update_third_party_documents(doc_type:str, chassis_number):
-        pass
+    def update_third_party_documents(doc_type: str, chassis_number):
+        """
+            This is a function to update the third party documents.
+
+            Args:
+                doc_type (str): The type of document to be updated.
+                chassis_number (str): The chassis number of the vehicle.
+
+            Returns:
+                Document: The updated document object.
+                str: Error message if the update fails.
+            """
+
+        document_types = {
+            'road_auth': 'roadauthrity',
+            'road_fund': "roadfund",
+            'third_party': "insurance"
+        }
+
+        url = 'http://localhost:8001'
+        doc_type = document_types.get(doc_type)
+
+        if not doc_type:
+            return False, 'Invalid document type'
+
+        result = Helper.make_put_api_call(
+            f'{url}/{doc_type}/{chassis_number}/')
+
+        print(result, 'result')
+
+        if result.status_code == 200:
+            return True, 'Document updated successfully'
+        else:
+            try:
+                error_message = result.json().get('Error', 'Unknown error occurred')
+            except ValueError:
+                error_message = 'Unknown error occurred'
+            return False, error_message
