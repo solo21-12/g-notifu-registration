@@ -26,6 +26,7 @@ urlpatterns = [
     path('auth/', include('djoser.urls')),
     path('auth/', include('djoser.urls.jwt')),
     path('files/', include('files.urls')),
+    path('guests/', include('guest.urls')),
     # new dvkvskomment
 
 ]
