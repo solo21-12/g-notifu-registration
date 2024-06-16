@@ -10,6 +10,7 @@ from documents.models import Document
 from files.utils.generate_pdf import GeneratePdf
 from vehicle.models import Vehicel
 from files.utils.create_file import ManageFile
+from .get_transaction_number import GetTransaction
 import logging
 
 logger = logging.getLogger(__name__)
@@ -26,7 +27,7 @@ class Helper:
             return Response({'error': 'something went wrong'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     @staticmethod
-    def create_document(vehicle: Vehicel, document_type: str, renewal_date, expiry_date, owner_username: str, insurance_company_name='') -> Any | None:
+    def create_document(vehicle: Vehicel, document_type: str, renewal_date, expiry_date, owner_username: str, insurance_company_name='', transaction_number=None) -> Any | None:
         """This method generate the required type of document
 
         Args:
@@ -61,9 +62,12 @@ class Helper:
 
                 created_doc.files.add(create_file)
                 created_doc.save()
+                if transaction_number:
+                    transaction_number = GetTransaction.get_transaction_number(
+                        tranasction_number=transaction_number)
 
                 GeneratePdf.generate_file(
-                    renewal_date, created_doc.expiry_date, vehicle.chassis_number, created_doc.id, create_file.file_name, document_type)
+                    renewal_date, created_doc.expiry_date, vehicle.chassis_number, created_doc.id, create_file.file_name, document_type, transaction_number=transaction_number)
 
                 return created_doc
 
@@ -73,7 +77,7 @@ class Helper:
             return None
 
     @staticmethod
-    def update_document(vehicle: Vehicel, document_type: str, transaction_code: str,  owner_username: str, insurance_company_name=None):
+    def update_document(vehicle: Vehicel, document_type: str, transaction_code: str,  owner_username: str, insurance_company_name=None, transaction_number=None) -> Any | None:
         """
             Update the required type of document.
 
@@ -105,8 +109,12 @@ class Helper:
             cur_document.files.add(create_file)
             cur_document.save()
 
+            if transaction_number:
+                transaction_number = GetTransaction.get_transaction_number(
+                    tranasction_number=transaction_number)
+
             GeneratePdf.generate_file(
-                renewal_date, cur_document.expiry_date, vehicle.chassis_number, cur_document.id, create_file.file_name, document_type)
+                renewal_date, cur_document.expiry_date, vehicle.chassis_number, cur_document.id, create_file.file_name, document_type, transaction_number=transaction_number)
 
             return cur_document
         except Exception as e:
@@ -133,3 +141,8 @@ class Helper:
         except ObjectDoesNotExist as e:
             logging.debug(e)
             return None
+
+    
+    @staticmethod
+    def update_third_party_documents(doc_type:str, chassis_number):
+        pass

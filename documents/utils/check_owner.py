@@ -68,3 +68,5 @@ class OwnerCheck:
             return Response({"Message": "Current document doesn't have a file"}, status=status.HTTP_400_BAD_REQUEST), None
 
         return None, cur_file
+    
+

@@ -10,6 +10,8 @@ from core.utils.Helper import Helper
 from core.utils.document_type import DocumentType
 from files.utils.create_file import ManageFile
 from .utils.check_owner import OwnerCheck
+from django.db.models import Max
+from users.models import IndividualOwner, CompanyOwner
 import logging
 
 User = get_user_model()
@@ -26,15 +28,27 @@ class VehicleManagementViewUser(viewsets.ViewSet):
     '''This is the route to return the list of documents with the given user '''
 
     def retrieve(self, request, pk=None):
+        user = None
+
+        print(pk)
+
         try:
-            user = User.objects.get(pk=pk)
-        except User.DoesNotExist:
-            return JsonResponse({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
-        
-        users_document = Document.objects.filter(vehicle__owner=user.id)
+            ind_user = IndividualOwner.objects.get(pk=pk)
+
+            user = ind_user
+        except IndividualOwner.DoesNotExist:
+            try:
+                com_user = CompanyOwner.objects.get(pk=pk)
+            except CompanyOwner.DoesNotExist:
+                return JsonResponse({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
+            else:
+                user = com_user
+
+        users_document = Document.objects.filter(vehicle__owner=user.user)
         if not users_document:
             return JsonResponse({'error': 'No document found for the given user'}, status=status.HTTP_404_NOT_FOUND)
 
+        print(users_document, "users_document")
         serlizer = DocumentSerializer(users_document, many=True)
         return JsonResponse(serlizer.data, status=status.HTTP_200_OK, safe=False)
 
@@ -48,10 +62,28 @@ class VehicleWithUser(viewsets.ViewSet):
         # Filter documents based on both user_id and vehicle_id
         user_documents = Document.objects.filter(
             vehicle__owner=user_id, vehicle_id=pk)
+
         if not user_documents:
             return JsonResponse({'error': 'No document found for the given user and vehicle'}, status=status.HTTP_404_NOT_FOUND)
 
-        serializer = DocumentSerializer(user_documents, many=True)
+        # Group documents by document_type and get the most recent 3 for each type
+        grouped_documents = user_documents.values('document_type').annotate(
+            max_expiry_date=Max('expiry_date')
+        ).order_by('document_type', '-max_expiry_date')
+
+        recent_documents = []
+        for entry in grouped_documents:
+            document_type = entry['document_type']
+            max_expiry_date = entry['max_expiry_date']
+
+            # Get the top 3 documents for this document_type based on expiry_date
+            top_three_documents = Document.objects.filter(
+                vehicle__owner=user_id, vehicle_id=pk, document_type=document_type, expiry_date=max_expiry_date
+            ).order_by('-expiry_date')[:1]
+
+            recent_documents.extend(top_three_documents)
+
+        serializer = DocumentSerializer(recent_documents, many=True)
         return JsonResponse(serializer.data, status=status.HTTP_200_OK, safe=False)
 
 

@@ -1,12 +1,9 @@
-import requests
-from datetime import datetime
 from django.http import JsonResponse
 from django.contrib.auth import get_user_model
 from rest_framework import viewsets, status
 from rest_framework import mixins
 from rest_framework.routers import Response
 from core.utils.Helper import Helper
-from documents.models import Document
 from .serializers import VehicleSerializer, AddVehicleSerlizer
 from .models import Vehicel
 from core.utils.document_type import DocumentType
@@ -19,15 +16,16 @@ User = get_user_model()
 Doc = DocumentType()
 
 
-class AddVehicleViewSet(mixins.CreateModelMixin,
-                        mixins.UpdateModelMixin,
-                        mixins.DestroyModelMixin,
-                        viewsets.GenericViewSet):
+class AddVehicleViewSet(
+        mixins.UpdateModelMixin,
+        mixins.DestroyModelMixin,
+        mixins.CreateModelMixin,
+        viewsets.GenericViewSet):
 
     queryset = Vehicel.objects.all()
     serializer_class = AddVehicleSerlizer
 
-    def create(self, request):
+    def create(self, request, *args, **kwargs):
         url = 'http://localhost:8001'
         serlizer = AddVehicleSerlizer(data=request.data)
         serlizer.is_valid(raise_exception=True)
@@ -97,8 +95,8 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
                         create_road_auth = Helper.create_document(
                             vehicle,
                             Doc.ROAD_AUTHORITY,
-                            renewal_date_road_fund,
-                            expiry_date_road_fund,
+                            renewal_date_road_auth,
+                            expiry_date_road_auth,
                             owner.get_username()
 
                         )
@@ -106,8 +104,8 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
                         create_insurance = Helper.create_document(
                             vehicle,
                             Doc.THIRD_PARTY_INSURANCE,
-                            renewal_date_road_fund,
-                            expiry_date_road_fund,
+                            renewal_date_insurance,
+                            expiry_date_insurance,
                             owner.get_username(),
                             insurance_name,
                         )
@@ -126,16 +124,15 @@ class AddVehicleViewSet(mixins.CreateModelMixin,
         else:
             return JsonResponse({'status': 'failed', 'message': 'Invalid chassis number'}, status=status.HTTP_400_BAD_REQUEST)
 
-    def delete(self, request, id=None):
-
+    def destroy(self, request, *args, **kwargs):
+        vehicle_id = kwargs.get('pk')
         try:
-            vehicle = Vehicel.objects.get(id=id)
+            vehicle = Vehicel.objects.get(id=vehicle_id)
         except Vehicel.DoesNotExist:
-            return JsonResponse({'message': "No vehicel found with the given information"}, status=status.HTTP_404_NOT_FOUND)
+            return JsonResponse({'message': "No vehicle found with the given information"}, status=status.HTTP_404_NOT_FOUND)
 
         vehicle.delete()
-
-        return JsonResponse({'message': "sucess"}, status=status.HTTP_204_NO_CONTENT)
+        return JsonResponse({'message': "Success"}, status=status.HTTP_204_NO_CONTENT)
 
 
 class ManageVehicleViewSet(mixins.DestroyModelMixin,

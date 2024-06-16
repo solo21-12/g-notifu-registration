@@ -16,8 +16,7 @@ User = get_user_model()
 
 class GeneratePdf:
 
-    @staticmethod
-    def generate_road_fund_file(renewal_date, expire_date, chassis_number, document_id, filename):
+    def generate_road_fund_file(renewal_date, expire_date, chassis_number, document_id, filename, transaction_number=None):
         """
         This is a method to generate a road fund file.
         It accepts the following arguments:
@@ -25,6 +24,8 @@ class GeneratePdf:
         expire_date (str): The date the road fund expires.
         chassis_number (str): The chassis number of the vehicle.
         document_id (str): The id of the document.
+        filename (str): The name of the file to be generated.
+        transaction_number (str, optional): The transaction number. Defaults to None.
         returns the file path if the file is generated successfully, otherwise None.
         """
 
@@ -108,7 +109,14 @@ class GeneratePdf:
         elements.append(Spacer(1, 12))
 
         # Issued by
-        elements.append(Paragraph("Issued by: Goma Notify", normal_style))
+        if transaction_number:
+            elements.append(
+                Paragraph(f"Transaction Number: {transaction_number}", normal_style))
+            issued_by = "Goma Notify"
+        else:
+            issued_by = "Road Fond Office"
+
+        elements.append(Paragraph(f"Issued by: {issued_by}", normal_style))
         elements.append(Paragraph(
             f"Issued Date: {datetime.now().strftime('%Y%m%d%H%M%S')}", normal_style))
 
@@ -118,7 +126,7 @@ class GeneratePdf:
         return filepath
 
     @staticmethod
-    def generate_road_authority_file(renewal_date, expire_date, chassis_number, document_id, filename):
+    def generate_road_authority_file(renewal_date, expire_date, chassis_number, document_id, filename, transaction_number=None):
         """
         This is a method to generate a road authority file.
         It accepts the following arguments:
@@ -219,7 +227,7 @@ class GeneratePdf:
         return filepath
 
     @staticmethod
-    def generate_insurance_file(renewal_date, expire_date, chassis_number, document_id, filename):
+    def generate_insurance_file(renewal_date, expire_date, chassis_number, document_id, filename, transaction_number=None):
         """
         This is a method to generate a road fund file.
         It accepts the following arguments:
@@ -320,13 +328,13 @@ class GeneratePdf:
         return filepath
 
     @staticmethod
-    def generate_file(renewal_date, expire_date, chassis_number, document_id, filename, document_type):
+    def generate_file(renewal_date, expire_date, chassis_number, document_id, filename, document_type, transaction_number=None):
         if document_type == DocumentType.ROAD_FUND:
             return GeneratePdf.generate_road_fund_file(
-                renewal_date, expire_date, chassis_number, document_id, filename)
+                renewal_date, expire_date, chassis_number, document_id, filename, transaction_number=transaction_number)
         elif document_type == DocumentType.ROAD_AUTHORITY:
             return GeneratePdf.generate_road_authority_file(
-                renewal_date, expire_date, chassis_number, document_id, filename)
+                renewal_date, expire_date, chassis_number, document_id, filename, transaction_number=transaction_number)
         else:
             return GeneratePdf.generate_insurance_file(
-                renewal_date, expire_date, chassis_number, document_id, filename)
+                renewal_date, expire_date, chassis_number, document_id, filename, transaction_number=transaction_number)
