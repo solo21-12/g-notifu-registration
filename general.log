@@ -24477,3 +24477,428 @@ django.core.exceptions.ValidationError: ['“725be374-a668-4f20-bac3-c4c6793527f
 2024-06-16 14:26:28,564 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-06-16 17:25:17,636 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-06-16 17:26:28,031 (WARNING) - django.request - Not Found: /
+2024-06-16 17:28:57,356 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-16 17:28:58,027 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-16 17:29:01,621 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-16 17:29:02,154 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-16 17:29:09,788 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/notification/views.py changed, reloading.
+2024-06-16 17:29:10,384 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-16 18:30:37,726 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-16 18:40:35,952 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-16 18:40:35,952 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-16 18:40:35,953 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-16 18:40:35,953 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-16 18:40:35,954 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-16 18:40:35,954 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-16 18:40:35,954 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-16 18:40:35,955 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-16 18:40:35,955 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-16 18:40:35,956 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-16 18:40:35,956 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-16 18:43:55,584 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-16 18:43:55,584 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-16 18:43:55,585 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-16 18:43:55,585 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-16 18:43:55,586 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-16 18:43:55,586 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-16 18:43:55,586 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-16 18:43:55,587 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-16 18:43:55,587 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-16 18:43:55,588 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-16 18:43:55,588 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-16 19:03:46,756 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/common.py changed, reloading.
+2024-06-16 19:03:47,391 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-16 19:03:48,934 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/common.py changed, reloading.
+2024-06-16 19:03:49,500 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-16 19:04:07,951 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-16 19:04:07,952 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-16 19:04:07,952 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-16 19:04:07,953 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-16 19:04:07,953 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-16 19:04:07,954 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-16 19:04:07,954 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-16 19:04:07,955 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-16 19:04:07,955 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-16 19:04:07,956 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-16 19:04:07,956 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-16 19:04:43,269 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-16 19:04:43,269 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-16 19:04:43,270 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-16 19:04:43,270 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-16 19:04:43,270 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-16 19:04:43,271 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-16 19:04:43,271 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-16 19:04:43,272 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-16 19:04:43,272 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-16 19:04:43,272 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-16 19:04:43,273 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-16 19:05:21,126 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-16 19:05:21,127 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-16 19:05:21,127 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-16 19:05:21,128 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-16 19:05:21,128 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-16 19:05:21,128 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-16 19:05:21,129 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-16 19:05:21,129 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-16 19:05:21,130 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-16 19:05:21,130 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-16 19:05:21,131 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-16 19:06:52,007 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-16 19:06:52,007 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-16 19:06:52,007 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-16 19:06:52,008 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-16 19:06:52,008 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-16 19:06:52,009 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-16 19:06:52,009 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-16 19:06:52,009 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-16 19:06:52,010 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-16 19:06:52,010 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-16 19:06:52,011 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-16 19:10:15,557 (WARNING) - django.request - Unauthorized: /vehicles/add_vehicle/
+2024-06-16 19:14:01,297 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-16 19:14:25,790 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-16 19:15:02,076 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-16 19:15:04,153 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-16 19:15:06,150 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-16 19:15:33,396 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-16 19:15:35,008 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-16 19:16:39,743 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-16 19:17:44,201 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-16 19:18:12,251 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-16 19:18:26,657 (WARNING) - django.request - Unauthorized: /auth/jwt/create
+2024-06-16 19:19:04,574 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-16 19:19:04,574 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-16 19:19:04,575 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-16 19:19:04,575 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-16 19:19:04,575 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-16 19:19:04,576 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-16 19:19:04,576 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-16 19:19:04,577 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-16 19:19:04,577 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-16 19:19:04,578 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-16 19:19:04,578 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-16 19:19:16,245 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-16 19:19:16,245 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-16 19:19:16,246 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-16 19:19:16,246 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-16 19:19:16,247 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-16 19:19:16,247 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-16 19:19:16,247 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-16 19:19:16,248 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-16 19:19:16,248 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-16 19:19:16,249 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-16 19:19:16,249 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-16 19:19:34,482 (WARNING) - django.request - Bad Request: /users/in/create/
+2024-06-16 19:20:24,553 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-16 19:20:26,397 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-16 19:20:28,232 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-16 19:20:28,648 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-16 19:20:35,383 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-16 19:20:35,419 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/123456 HTTP/1.1" 301 None
+2024-06-16 19:20:35,422 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-16 19:20:35,477 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/123456/ HTTP/1.1" 200 350
+2024-06-16 19:20:35,480 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-16 19:20:35,518 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/123456 HTTP/1.1" 301 None
+2024-06-16 19:20:35,521 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-16 19:20:35,553 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/123456/ HTTP/1.1" 200 350
+2024-06-16 19:20:35,556 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-16 19:20:35,585 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/123456 HTTP/1.1" 301 None
+2024-06-16 19:20:35,588 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-16 19:20:35,623 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/123456/ HTTP/1.1" 200 374
+2024-06-16 19:22:01,935 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/1326ece6-b368-4a93-ba20-77b74d1a17d7/
+2024-06-16 19:24:16,364 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-16 19:24:18,532 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-16 19:24:20,990 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-16 19:24:22,974 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-16 19:24:26,542 (WARNING) - django.request - Bad Request: /users/verify-email/
+2024-06-16 19:25:33,898 (WARNING) - django.request - Not Found: /vehicles/owner_vehicle/3605c908-8f66-4da7-9f2a-53392fb923b2/
+2024-06-16 19:28:09,486 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-16 19:28:09,507 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/963258 HTTP/1.1" 301 None
+2024-06-16 19:28:09,509 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-16 19:28:09,538 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/963258/ HTTP/1.1" 200 337
+2024-06-16 19:28:09,542 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-16 19:28:09,563 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/963258 HTTP/1.1" 301 None
+2024-06-16 19:28:09,565 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-16 19:28:09,601 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/963258/ HTTP/1.1" 200 337
+2024-06-16 19:28:09,603 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-16 19:28:09,624 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/963258 HTTP/1.1" 301 None
+2024-06-16 19:28:09,625 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-16 19:28:09,649 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/963258/ HTTP/1.1" 200 359
+2024-06-16 19:28:45,280 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-16 19:28:45,309 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/963258 HTTP/1.1" 301 None
+2024-06-16 19:28:45,311 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-16 19:28:45,343 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/963258/ HTTP/1.1" 200 337
+2024-06-16 19:28:45,346 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-16 19:28:45,371 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/963258 HTTP/1.1" 301 None
+2024-06-16 19:28:45,373 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-16 19:28:45,398 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/963258/ HTTP/1.1" 200 337
+2024-06-16 19:28:45,400 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-16 19:28:45,424 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/963258 HTTP/1.1" 301 None
+2024-06-16 19:28:45,427 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-16 19:28:45,453 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/963258/ HTTP/1.1" 200 359
+2024-06-16 19:28:45,458 (WARNING) - django.request - Bad Request: /vehicles/add_vehicle/
+2024-06-16 19:29:33,825 (WARNING) - django.request - Not Found: /files/gen_files/83d05a0b-95e6-4e39-9a82-5d31494d237f

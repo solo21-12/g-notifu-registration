@@ -1,6 +1,5 @@
 from typing import List
 from django.core.mail import BadHeaderError
-from django.core.mail import send_mass_mail, send_mail
 from templated_mail.mail import BaseEmailMessage
 
 import logging

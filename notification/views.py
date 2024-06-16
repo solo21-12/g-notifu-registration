@@ -29,6 +29,7 @@ class NotificationViewSet(
 
         notifications = NotificationSerlizer(cur_notifications, many=True)
         return Response(notifications.data)
+    
 
     def retrieve(self, request, *args, **kwargs):
         notification_id = kwargs.get('pk')
@@ -40,6 +41,7 @@ class NotificationViewSet(
 
         notification_serializer = NotificationSerlizer(current_notification)
         return Response(notification_serializer.data)
+    
 
     def update(self, request, *args, **kwargs):
         notification_id = kwargs.get('pk')
@@ -55,6 +57,7 @@ class NotificationViewSet(
         notification = NotificationSerlizer(current_notification)
 
         return Response(notification.data)
+    
 
     def destroy(self, request, *args, **kwargs):
         notification_id = kwargs.get('pk')

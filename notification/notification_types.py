@@ -1,70 +1,51 @@
-from django.core.exceptions import ObjectDoesNotExist
+from django.shortcuts import get_object_or_404
+from django.core.mail import send_mail
 from notification.models import Notification
 from documents.models import Document
 import logging
+from django.conf import settings
 
 logger = logging.getLogger(__name__)
 
 
 class NotificationTypes:
-    def create_notification(self, document_id, priority_level, days_left, notification_type):
+    def create_notification(self, document_id, priority_level, days_left, notification_type, recurring=False):
+        document = get_object_or_404(Document, pk=document_id)
+
+        if not recurring:
+            cur_notification = Notification.objects.filter(
+                document=document,
+                priority_level=priority_level
+            ).first()
+
+            if cur_notification:
+                logger.info(
+                    f'Notification already exists: {cur_notification.id}')
+                return
+
+        message_content = f'{days_left} days left for your deadline'
+
+        new_notification = Notification.objects.create(
+            message_content=message_content,
+            notification_type=notification_type,
+            priority_level=priority_level,
+            document=document
+        )
+        new_notification.save()
+
+        logger.info(f'Notification created: {new_notification.id}')
+
+        self.send_email([document.vehicle.owner.email], days_left,
+                        document.document_type, document.vehicle.chassis_number)
+
+    def send_email(self, recipients, days_left, document_name, chassis_number):
+        subject = f"Reminder: {document_name} expiry in {days_left} days"
+        message = f"Your {document_name} for vehicle with chassis number {chassis_number} will expire in {days_left} days. Please take necessary action."
+        # Ensure you have this set in your Django settings
+        from_email = settings.EMAIL_HOST_USER
 
         try:
-            cur_notification = Notification.objects.filter(
-                document=document_id, priority_level=priority_level)
-
-            if not cur_notification.exists():
-                docs = Document.objects.filter(pk=document_id)
-
-                for doc in docs:
-                    new_notification = Notification.objects.create(
-                        message_content=f'{days_left} days have left for your deadline',
-                        notification_type=notification_type,
-                        priority_level=priority_level,
-                        document=doc
-                    )
-
-                    new_notification.save()  # Save the notification
-
-                # Log the notification id
-                logger.info('Notification created', new_notification.id)
-            else:
-                logger.info('Notification already exists')
-
-        except ObjectDoesNotExist:
-            logger.error('Document not found')
-
-    def create_with_update_notification(self, document_id, priority_level, days_left, notification_type):
-
-        try:
-            cur_notification = Notification.objects.filter(
-                document=document_id, priority_level=priority_level)
-
-            if not cur_notification.exists():
-                docs = Document.objects.filter(pk=document_id)
-
-                for doc in docs:
-                    new_notification = Notification.objects.create(
-                        message_content=f'{days_left} days have left for your deadline',
-                        notification_type=notification_type,
-                        priority_level=priority_level,
-                        document=doc
-                    )
-
-                    new_notification.save()  # Save the notification
-
-                # Log the notification id
-                    logger.info(
-                        f'Notification updated : {cur_notification.id}')
-
-            else:
-                cur_notification.update(
-                    message_content=f'{days_left} days have left for your deadline',
-                    notification_type=notification_type,
-                    priority_level=priority_level
-                )
-
-                logger.info(f'Notification updated : {cur_notification.id}')
-
-        except ObjectDoesNotExist:
-            logger.error('Document not found')
+            send_mail(subject, message, from_email, recipients)
+            logger.info(f'Email sent to {recipients} with subject "{subject}"')
+        except Exception as e:
+            logger.error(f'Failed to send email to {recipients}: {e}')
