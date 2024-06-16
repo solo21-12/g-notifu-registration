@@ -40,9 +40,8 @@ INSTALLED_APPS = [
     'notification.apps.NotificationConfig',
     'documents.apps.DocumentsConfig',
     'vehicle.apps.VehicleConfig',
-    'files.apps.FilesConfig'
-
-
+    'files.apps.FilesConfig',
+    'guest.apps.GuestConfig',
 ]
 
 MIDDLEWARE = [
@@ -123,7 +122,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
-APPEND_SLASH=False
+APPEND_SLASH = False
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'core.User'
 REST_FRAMEWORK = {

@@ -24904,3 +24904,22 @@ def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
 2024-06-16 19:29:33,825 (WARNING) - django.request - Not Found: /files/gen_files/83d05a0b-95e6-4e39-9a82-5d31494d237f
 2024-06-16 19:30:34,533 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/common.py changed, reloading.
 2024-06-16 19:30:35,129 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-16 19:30:53,390 (WARNING) - django.request - Not Found: /files/gen_files/83d05a0b-95e6-4e39-9a82-5d31494d237f
+2024-06-16 19:56:44,728 (WARNING) - django.request - Not Found: /files/gen_files/83d05a0b-95e6-4e39-9a82-5d31494d237f
+2024-06-16 19:58:06,046 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/common.py changed, reloading.
+2024-06-16 19:58:06,429 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-16 19:58:07,562 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/common.py changed, reloading.
+2024-06-16 19:58:07,889 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-16 19:58:11,038 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/common.py changed, reloading.
+2024-06-16 19:58:11,465 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-16 19:58:12,864 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/common.py changed, reloading.
+2024-06-16 19:58:13,404 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-16 19:58:14,541 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/common.py changed, reloading.
+2024-06-16 19:58:14,870 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-16 19:58:19,015 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/common.py changed, reloading.
+2024-06-16 19:58:19,346 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-16 19:58:20,479 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/common.py changed, reloading.
+2024-06-16 19:58:20,848 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-16 19:58:39,485 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-16 19:58:43,634 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/account_service/settings/common.py changed, reloading.
+2024-06-16 19:58:44,027 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
