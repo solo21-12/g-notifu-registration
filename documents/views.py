@@ -1,3 +1,5 @@
+from django.utils import timezone
+from datetime import timedelta, datetime
 from rest_framework import status
 from rest_framework import viewsets, status
 from django.http import JsonResponse
@@ -123,6 +125,7 @@ class RoadFundDocumentRenew(viewsets.ViewSet):
         chassis_number = pk
         transaction_code = request.data.get("transaction_code")
         user_id = request.user.id
+        now = timezone.now().date()
 
         # Check if the user owns the vehicle
         error_response, current_user, current_vehicle = OwnerCheck.check_owner(
@@ -136,6 +139,23 @@ class RoadFundDocumentRenew(viewsets.ViewSet):
             current_vehicle, Doc.ROAD_FUND)
         if error_response_getting_doc:
             return error_response_getting_doc
+
+        result, msg = Helper.update_third_party_documents(
+            'road_fund', chassis_number)
+
+        if not result:
+            return Response({"Message": msg}, status=status.HTTP_400_BAD_REQUEST)
+
+        expiry_date = cur_doc.expiry_date
+
+        now = datetime.now().date()
+
+        # Calculate the timedelta between expiry_date and now
+        time_until_expiry = expiry_date - now
+
+        # Check if the timedelta is greater than 61 days
+        if time_until_expiry > timedelta(days=61):
+            return Response({"Message": "You can only renew the road fund document 2 months before the expiry date"}, status=status.HTTP_400_BAD_REQUEST)
 
         # Outdate the current active document
         outdated_success = Helper.outdate_document(id=cur_doc.id)
@@ -200,6 +220,7 @@ class InsuranceDocumentRenew(viewsets.ViewSet):
         chassis_number = pk
         transaction_code = request.data.get("transaction_code")
         user_id = request.user.id
+        now = timezone.now().date()
 
         error_response, current_user, current_vehicle = OwnerCheck.check_owner(
             user_id, chassis_number)
@@ -212,6 +233,23 @@ class InsuranceDocumentRenew(viewsets.ViewSet):
 
         if error_response_getting_doc:
             return error_response_getting_doc
+
+        result, msg = Helper.update_third_party_documents(
+            'third_party', chassis_number)
+
+        if not result:
+            return Response({"Message": msg}, status=status.HTTP_400_BAD_REQUEST)
+
+        expiry_date = cur_doc.expiry_date
+
+        now = datetime.now().date()
+
+        # Calculate the timedelta between expiry_date and now
+        time_until_expiry = expiry_date - now
+
+        # Check if the timedelta is greater than 61 days
+        if time_until_expiry > timedelta(days=61):
+            return Response({"Message": "You can only renew the road fund document 2 months before the expiry date"}, status=status.HTTP_400_BAD_REQUEST)
 
         # Outdate the current active document
         outdated_success = Helper.outdate_document(cur_doc.id)
@@ -278,6 +316,7 @@ class RoadAuthorityDocumentRenew(viewsets.ViewSet):
         chassis_number = pk
         transaction_code = request.data.get("transaction_code")
         user_id = request.user.id
+        now = timezone.now().date()
 
         error_response, current_user, current_vehicle = OwnerCheck.check_owner(
             user_id, chassis_number)
@@ -305,7 +344,19 @@ class RoadAuthorityDocumentRenew(viewsets.ViewSet):
         if not result:
             return Response({"Message": msg}, status=status.HTTP_400_BAD_REQUEST)
 
-        # Outdate the current active document
+        # Assuming expiry_date is a datetime.date object
+        expiry_date = cur_doc.expiry_date
+
+        now = datetime.now().date()
+
+        # Calculate the timedelta between expiry_date and now
+        time_until_expiry = expiry_date - now
+
+        # Check if the timedelta is greater than 61 days
+        if time_until_expiry > timedelta(days=61):
+            return Response({"Message": "You can only renew the road fund document 2 months before the expiry date"}, status=status.HTTP_400_BAD_REQUEST)
+
+            # Outdate the current active document
         outdated_success = Helper.outdate_document(cur_doc.id)
 
         if not outdated_success:
