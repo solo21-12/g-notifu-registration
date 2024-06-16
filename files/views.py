@@ -1,9 +1,9 @@
+import uuid
 from rest_framework import viewsets, mixins
 from rest_framework.response import Response
 from rest_framework import status
 from documents.utils.check_owner import OwnerCheck
 from django.contrib.auth import get_user_model
-from core.utils.document_type import DocumentType
 from django.http import FileResponse
 from documents.models import Document
 import os
@@ -11,17 +11,21 @@ import os
 User = get_user_model()
 
 
-# ?doc_type=Road Fund/
-
 class FilesViewSet(mixins.RetrieveModelMixin, viewsets.GenericViewSet):
 
     def retrieve(self, request, *args, **kwargs):
         doc_id = kwargs.get('pk')
 
+        # Attempt to convert doc_id to UUID
         try:
-            cur_doc = Document.objects.get(id=doc_id)
+            uuid_obj = uuid.UUID(doc_id)
+        except ValueError:
+            return Response({"detail": f"{doc_id} is not a valid UUID."}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            cur_doc = Document.objects.get(id=uuid_obj)
         except Document.DoesNotExist:
-            return Response({"Message": "Current vehicle doesn't have an active document"}, status=status.HTTP_400_BAD_REQUEST), None
+            return Response({"Message": "Current vehicle doesn't have an active document"}, status=status.HTTP_400_BAD_REQUEST)
 
         # Getting the file associated with the document
         error_response, cur_file = OwnerCheck.get_file(cur_doc)
@@ -38,7 +42,7 @@ class FilesViewSet(mixins.RetrieveModelMixin, viewsets.GenericViewSet):
             file_name = str(cur_file)
 
         # Constructing file path
-        pdf_file_path = os.path.join("pdfs", file_name)
+        pdf_file_path = os.path.join("pdfs/", file_name)
 
         try:
             # Open the file without closing it manually
