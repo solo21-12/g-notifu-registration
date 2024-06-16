@@ -22,6 +22,9 @@ class IndvidualOwnerCreateView(mixins.CreateModelMixin,  mixins.RetrieveModelMix
         if self.request.method == 'POST':
             return [AllowAny()]
         return [IsAuthenticated()]
+    
+    # def create(self, request, *args, **kwargs):
+        
 
 
 class IndvidualOwnerUpdateDeleteView(mixins.DestroyModelMixin, mixins.RetrieveModelMixin, mixins.UpdateModelMixin, viewsets.GenericViewSet):
