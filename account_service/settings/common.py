@@ -183,10 +183,10 @@ CORS_ORIGIN_ALLOW_ALL = True
 CELERY_BEAT_SCHEDULE = {
     'check_expiry_date': {
         'task': "notification.tasks.check_expiry_date",
-        "schedule": 5
+        "schedule": 30
     },
     'clean_unverfied_user': {
         'task': "notification.tasks.clean_unverfied_user",
-        "schedule": 5
+        "schedule": 30
     }
 }
