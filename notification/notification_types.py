@@ -15,7 +15,8 @@ class NotificationTypes:
         if not recurring:
             cur_notification = Notification.objects.filter(
                 document=document,
-                priority_level=priority_level
+                priority_level=priority_level,
+                document__vehicle=document.vehicle,
             ).first()
 
             if cur_notification:

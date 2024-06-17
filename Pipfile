@@ -22,6 +22,9 @@ celery = "*"
 flower = "*"
 requests = "*"
 reportlab = "*"
+twilio = "*"
+python-dotenv = "*"
+phonenumbers = "*"
 
 [dev-packages]
 
