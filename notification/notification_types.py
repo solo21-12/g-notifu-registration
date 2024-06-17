@@ -16,7 +16,7 @@ class NotificationTypes:
             cur_notification = Notification.objects.filter(
                 document=document,
                 priority_level=priority_level,
-                document__vehicle=document.vehicle,
+                # document__vehicle=document.vehicle,
             ).first()
 
             if cur_notification:

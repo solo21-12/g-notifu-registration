@@ -25,6 +25,9 @@ reportlab = "*"
 twilio = "*"
 python-dotenv = "*"
 phonenumbers = "*"
+python-barcode = "*"
+pillow = "*"
+firebase-admin = "*"
 
 [dev-packages]
 

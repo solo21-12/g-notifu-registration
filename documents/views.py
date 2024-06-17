@@ -248,8 +248,8 @@ class InsuranceDocumentRenew(viewsets.ViewSet):
         time_until_expiry = expiry_date - now
 
         # Check if the timedelta is greater than 61 days
-        if time_until_expiry > timedelta(days=61):
-            return Response({"Message": "You can only renew the road fund document 2 months before the expiry date"}, status=status.HTTP_400_BAD_REQUEST)
+        # if time_until_expiry > timedelta(days=61):
+        #     return Response({"Message": "You can only renew the Insurance document 2 months before the expiry date"}, status=status.HTTP_400_BAD_REQUEST)
 
         # Outdate the current active document
         outdated_success = Helper.outdate_document(cur_doc.id)

@@ -26376,3 +26376,885 @@ def check_expiry_date():
 def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
     return 1
 
+2024-06-17 08:04:07,171 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:04:07,760 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:04:10,347 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:04:10,948 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:04:14,587 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:04:15,415 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:04:17,998 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:04:18,563 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:04:23,077 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:04:23,535 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:04:28,997 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:04:29,460 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:04:35,944 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:04:36,499 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:04:38,920 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:04:39,451 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:04:44,974 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:04:45,491 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:04:46,963 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:04:47,396 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:05:14,207 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:05:14,729 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:05:23,156 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:05:23,662 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:05:28,221 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:05:28,822 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:05:30,389 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:05:30,875 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:05:38,379 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:05:38,935 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:05:40,564 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:05:41,141 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:05:42,592 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:05:43,113 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:10:24,522 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:10:25,069 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:10:38,854 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:10:39,418 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:10:40,956 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:10:41,481 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:11:06,003 (WARNING) - django.request - Unauthorized: /files/gen_files/725be374-a668-4f20-bac3-c4c6793527f2/
+2024-06-17 08:13:10,979 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:13:11,028 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:13:11,029 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 08:13:41,418 (WARNING) - django.request - Bad Request: /documents/renew_insurance/741852/
+2024-06-17 08:14:55,110 (WARNING) - django.request - Bad Request: /documents/renew_insurance/741852/
+2024-06-17 08:15:26,033 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:15:26,088 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/741852/ HTTP/1.1" 200 374
+2024-06-17 08:15:26,145 (DEBUG) - PIL.Image - Importing BlpImagePlugin
+2024-06-17 08:15:26,148 (DEBUG) - PIL.Image - Importing BmpImagePlugin
+2024-06-17 08:15:26,148 (DEBUG) - PIL.Image - Importing BufrStubImagePlugin
+2024-06-17 08:15:26,148 (DEBUG) - PIL.Image - Importing CurImagePlugin
+2024-06-17 08:15:26,148 (DEBUG) - PIL.Image - Importing DcxImagePlugin
+2024-06-17 08:15:26,149 (DEBUG) - PIL.Image - Importing DdsImagePlugin
+2024-06-17 08:15:26,156 (DEBUG) - PIL.Image - Importing EpsImagePlugin
+2024-06-17 08:15:26,157 (DEBUG) - PIL.Image - Importing FitsImagePlugin
+2024-06-17 08:15:26,157 (DEBUG) - PIL.Image - Importing FliImagePlugin
+2024-06-17 08:15:26,158 (DEBUG) - PIL.Image - Importing FpxImagePlugin
+2024-06-17 08:15:26,159 (DEBUG) - PIL.Image - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-06-17 08:15:26,159 (DEBUG) - PIL.Image - Importing FtexImagePlugin
+2024-06-17 08:15:26,160 (DEBUG) - PIL.Image - Importing GbrImagePlugin
+2024-06-17 08:15:26,160 (DEBUG) - PIL.Image - Importing GifImagePlugin
+2024-06-17 08:15:26,161 (DEBUG) - PIL.Image - Importing GribStubImagePlugin
+2024-06-17 08:15:26,162 (DEBUG) - PIL.Image - Importing Hdf5StubImagePlugin
+2024-06-17 08:15:26,162 (DEBUG) - PIL.Image - Importing IcnsImagePlugin
+2024-06-17 08:15:26,164 (DEBUG) - PIL.Image - Importing IcoImagePlugin
+2024-06-17 08:15:26,165 (DEBUG) - PIL.Image - Importing ImImagePlugin
+2024-06-17 08:15:26,166 (DEBUG) - PIL.Image - Importing ImtImagePlugin
+2024-06-17 08:15:26,167 (DEBUG) - PIL.Image - Importing IptcImagePlugin
+2024-06-17 08:15:26,167 (DEBUG) - PIL.Image - Importing JpegImagePlugin
+2024-06-17 08:15:26,167 (DEBUG) - PIL.Image - Importing Jpeg2KImagePlugin
+2024-06-17 08:15:26,167 (DEBUG) - PIL.Image - Importing McIdasImagePlugin
+2024-06-17 08:15:26,168 (DEBUG) - PIL.Image - Importing MicImagePlugin
+2024-06-17 08:15:26,168 (DEBUG) - PIL.Image - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-06-17 08:15:26,168 (DEBUG) - PIL.Image - Importing MpegImagePlugin
+2024-06-17 08:15:26,169 (DEBUG) - PIL.Image - Importing MpoImagePlugin
+2024-06-17 08:15:26,171 (DEBUG) - PIL.Image - Importing MspImagePlugin
+2024-06-17 08:15:26,171 (DEBUG) - PIL.Image - Importing PalmImagePlugin
+2024-06-17 08:15:26,172 (DEBUG) - PIL.Image - Importing PcdImagePlugin
+2024-06-17 08:15:26,173 (DEBUG) - PIL.Image - Importing PcxImagePlugin
+2024-06-17 08:15:26,173 (DEBUG) - PIL.Image - Importing PdfImagePlugin
+2024-06-17 08:15:26,179 (DEBUG) - PIL.Image - Importing PixarImagePlugin
+2024-06-17 08:15:26,180 (DEBUG) - PIL.Image - Importing PngImagePlugin
+2024-06-17 08:15:26,180 (DEBUG) - PIL.Image - Importing PpmImagePlugin
+2024-06-17 08:15:26,180 (DEBUG) - PIL.Image - Importing PsdImagePlugin
+2024-06-17 08:15:26,181 (DEBUG) - PIL.Image - Importing QoiImagePlugin
+2024-06-17 08:15:26,181 (DEBUG) - PIL.Image - Importing SgiImagePlugin
+2024-06-17 08:15:26,182 (DEBUG) - PIL.Image - Importing SpiderImagePlugin
+2024-06-17 08:15:26,183 (DEBUG) - PIL.Image - Importing SunImagePlugin
+2024-06-17 08:15:26,183 (DEBUG) - PIL.Image - Importing TgaImagePlugin
+2024-06-17 08:15:26,184 (DEBUG) - PIL.Image - Importing TiffImagePlugin
+2024-06-17 08:15:26,184 (DEBUG) - PIL.Image - Importing WebPImagePlugin
+2024-06-17 08:15:26,187 (DEBUG) - PIL.Image - Importing WmfImagePlugin
+2024-06-17 08:15:26,187 (DEBUG) - PIL.Image - Importing XbmImagePlugin
+2024-06-17 08:15:26,188 (DEBUG) - PIL.Image - Importing XpmImagePlugin
+2024-06-17 08:15:26,189 (DEBUG) - PIL.Image - Importing XVThumbImagePlugin
+2024-06-17 08:15:26,190 (DEBUG) - root - 
+fileName=<_io.BytesIO object at 0x7f5eb45351c0> identity=[ImageReader@0x7f5eb5969c90] cannot identify image file <_io.BytesIO object at 0x7f5eb45351c0>
+2024-06-17 08:15:26,190 (WARNING) - django.request - Bad Request: /documents/renew_insurance/741852/
+2024-06-17 08:15:43,013 (WARNING) - django.request - Bad Request: /documents/renew_insurance/741852/
+2024-06-17 08:16:05,374 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:16:05,423 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:16:05,425 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 08:17:34,870 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-17 08:17:35,480 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:17:40,818 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:17:40,854 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:17:40,856 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 08:17:48,335 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-17 08:17:48,988 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:17:56,712 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-17 08:17:57,371 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:18:01,009 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:18:01,045 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:18:01,048 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 08:18:02,162 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:18:02,201 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:18:02,203 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 08:18:19,566 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-17 08:18:20,157 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:18:31,914 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-17 08:18:32,475 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:18:34,038 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/documents/views.py changed, reloading.
+2024-06-17 08:18:34,699 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:18:36,954 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:18:36,984 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:18:37,026 (DEBUG) - PIL.Image - Importing BlpImagePlugin
+2024-06-17 08:18:37,027 (DEBUG) - PIL.Image - Importing BmpImagePlugin
+2024-06-17 08:18:37,027 (DEBUG) - PIL.Image - Importing BufrStubImagePlugin
+2024-06-17 08:18:37,028 (DEBUG) - PIL.Image - Importing CurImagePlugin
+2024-06-17 08:18:37,028 (DEBUG) - PIL.Image - Importing DcxImagePlugin
+2024-06-17 08:18:37,028 (DEBUG) - PIL.Image - Importing DdsImagePlugin
+2024-06-17 08:18:37,033 (DEBUG) - PIL.Image - Importing EpsImagePlugin
+2024-06-17 08:18:37,034 (DEBUG) - PIL.Image - Importing FitsImagePlugin
+2024-06-17 08:18:37,034 (DEBUG) - PIL.Image - Importing FliImagePlugin
+2024-06-17 08:18:37,034 (DEBUG) - PIL.Image - Importing FpxImagePlugin
+2024-06-17 08:18:37,035 (DEBUG) - PIL.Image - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-06-17 08:18:37,035 (DEBUG) - PIL.Image - Importing FtexImagePlugin
+2024-06-17 08:18:37,035 (DEBUG) - PIL.Image - Importing GbrImagePlugin
+2024-06-17 08:18:37,036 (DEBUG) - PIL.Image - Importing GifImagePlugin
+2024-06-17 08:18:37,036 (DEBUG) - PIL.Image - Importing GribStubImagePlugin
+2024-06-17 08:18:37,036 (DEBUG) - PIL.Image - Importing Hdf5StubImagePlugin
+2024-06-17 08:18:37,036 (DEBUG) - PIL.Image - Importing IcnsImagePlugin
+2024-06-17 08:18:37,037 (DEBUG) - PIL.Image - Importing IcoImagePlugin
+2024-06-17 08:18:37,038 (DEBUG) - PIL.Image - Importing ImImagePlugin
+2024-06-17 08:18:37,039 (DEBUG) - PIL.Image - Importing ImtImagePlugin
+2024-06-17 08:18:37,040 (DEBUG) - PIL.Image - Importing IptcImagePlugin
+2024-06-17 08:18:37,040 (DEBUG) - PIL.Image - Importing JpegImagePlugin
+2024-06-17 08:18:37,040 (DEBUG) - PIL.Image - Importing Jpeg2KImagePlugin
+2024-06-17 08:18:37,040 (DEBUG) - PIL.Image - Importing McIdasImagePlugin
+2024-06-17 08:18:37,040 (DEBUG) - PIL.Image - Importing MicImagePlugin
+2024-06-17 08:18:37,041 (DEBUG) - PIL.Image - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-06-17 08:18:37,041 (DEBUG) - PIL.Image - Importing MpegImagePlugin
+2024-06-17 08:18:37,041 (DEBUG) - PIL.Image - Importing MpoImagePlugin
+2024-06-17 08:18:37,043 (DEBUG) - PIL.Image - Importing MspImagePlugin
+2024-06-17 08:18:37,043 (DEBUG) - PIL.Image - Importing PalmImagePlugin
+2024-06-17 08:18:37,044 (DEBUG) - PIL.Image - Importing PcdImagePlugin
+2024-06-17 08:18:37,044 (DEBUG) - PIL.Image - Importing PcxImagePlugin
+2024-06-17 08:18:37,044 (DEBUG) - PIL.Image - Importing PdfImagePlugin
+2024-06-17 08:18:37,050 (DEBUG) - PIL.Image - Importing PixarImagePlugin
+2024-06-17 08:18:37,051 (DEBUG) - PIL.Image - Importing PngImagePlugin
+2024-06-17 08:18:37,051 (DEBUG) - PIL.Image - Importing PpmImagePlugin
+2024-06-17 08:18:37,051 (DEBUG) - PIL.Image - Importing PsdImagePlugin
+2024-06-17 08:18:37,051 (DEBUG) - PIL.Image - Importing QoiImagePlugin
+2024-06-17 08:18:37,051 (DEBUG) - PIL.Image - Importing SgiImagePlugin
+2024-06-17 08:18:37,052 (DEBUG) - PIL.Image - Importing SpiderImagePlugin
+2024-06-17 08:18:37,052 (DEBUG) - PIL.Image - Importing SunImagePlugin
+2024-06-17 08:18:37,052 (DEBUG) - PIL.Image - Importing TgaImagePlugin
+2024-06-17 08:18:37,053 (DEBUG) - PIL.Image - Importing TiffImagePlugin
+2024-06-17 08:18:37,053 (DEBUG) - PIL.Image - Importing WebPImagePlugin
+2024-06-17 08:18:37,054 (DEBUG) - PIL.Image - Importing WmfImagePlugin
+2024-06-17 08:18:37,054 (DEBUG) - PIL.Image - Importing XbmImagePlugin
+2024-06-17 08:18:37,056 (DEBUG) - PIL.Image - Importing XpmImagePlugin
+2024-06-17 08:18:37,056 (DEBUG) - PIL.Image - Importing XVThumbImagePlugin
+2024-06-17 08:18:37,057 (DEBUG) - root - 
+fileName=<_io.BytesIO object at 0x7f594e142bb0> identity=[ImageReader@0x7f594e132390] cannot identify image file <_io.BytesIO object at 0x7f594e142bb0>
+2024-06-17 08:18:37,058 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 08:26:53,612 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:26:54,163 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:26:57,768 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:26:58,383 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:27:08,255 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:27:08,289 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:27:08,331 (DEBUG) - PIL.Image - Importing BlpImagePlugin
+2024-06-17 08:27:08,332 (DEBUG) - PIL.Image - Importing BmpImagePlugin
+2024-06-17 08:27:08,332 (DEBUG) - PIL.Image - Importing BufrStubImagePlugin
+2024-06-17 08:27:08,332 (DEBUG) - PIL.Image - Importing CurImagePlugin
+2024-06-17 08:27:08,332 (DEBUG) - PIL.Image - Importing DcxImagePlugin
+2024-06-17 08:27:08,333 (DEBUG) - PIL.Image - Importing DdsImagePlugin
+2024-06-17 08:27:08,337 (DEBUG) - PIL.Image - Importing EpsImagePlugin
+2024-06-17 08:27:08,338 (DEBUG) - PIL.Image - Importing FitsImagePlugin
+2024-06-17 08:27:08,338 (DEBUG) - PIL.Image - Importing FliImagePlugin
+2024-06-17 08:27:08,338 (DEBUG) - PIL.Image - Importing FpxImagePlugin
+2024-06-17 08:27:08,339 (DEBUG) - PIL.Image - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-06-17 08:27:08,339 (DEBUG) - PIL.Image - Importing FtexImagePlugin
+2024-06-17 08:27:08,339 (DEBUG) - PIL.Image - Importing GbrImagePlugin
+2024-06-17 08:27:08,340 (DEBUG) - PIL.Image - Importing GifImagePlugin
+2024-06-17 08:27:08,340 (DEBUG) - PIL.Image - Importing GribStubImagePlugin
+2024-06-17 08:27:08,340 (DEBUG) - PIL.Image - Importing Hdf5StubImagePlugin
+2024-06-17 08:27:08,340 (DEBUG) - PIL.Image - Importing IcnsImagePlugin
+2024-06-17 08:27:08,341 (DEBUG) - PIL.Image - Importing IcoImagePlugin
+2024-06-17 08:27:08,341 (DEBUG) - PIL.Image - Importing ImImagePlugin
+2024-06-17 08:27:08,342 (DEBUG) - PIL.Image - Importing ImtImagePlugin
+2024-06-17 08:27:08,342 (DEBUG) - PIL.Image - Importing IptcImagePlugin
+2024-06-17 08:27:08,343 (DEBUG) - PIL.Image - Importing JpegImagePlugin
+2024-06-17 08:27:08,343 (DEBUG) - PIL.Image - Importing Jpeg2KImagePlugin
+2024-06-17 08:27:08,343 (DEBUG) - PIL.Image - Importing McIdasImagePlugin
+2024-06-17 08:27:08,343 (DEBUG) - PIL.Image - Importing MicImagePlugin
+2024-06-17 08:27:08,343 (DEBUG) - PIL.Image - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-06-17 08:27:08,343 (DEBUG) - PIL.Image - Importing MpegImagePlugin
+2024-06-17 08:27:08,344 (DEBUG) - PIL.Image - Importing MpoImagePlugin
+2024-06-17 08:27:08,345 (DEBUG) - PIL.Image - Importing MspImagePlugin
+2024-06-17 08:27:08,345 (DEBUG) - PIL.Image - Importing PalmImagePlugin
+2024-06-17 08:27:08,346 (DEBUG) - PIL.Image - Importing PcdImagePlugin
+2024-06-17 08:27:08,346 (DEBUG) - PIL.Image - Importing PcxImagePlugin
+2024-06-17 08:27:08,347 (DEBUG) - PIL.Image - Importing PdfImagePlugin
+2024-06-17 08:27:08,352 (DEBUG) - PIL.Image - Importing PixarImagePlugin
+2024-06-17 08:27:08,352 (DEBUG) - PIL.Image - Importing PngImagePlugin
+2024-06-17 08:27:08,353 (DEBUG) - PIL.Image - Importing PpmImagePlugin
+2024-06-17 08:27:08,353 (DEBUG) - PIL.Image - Importing PsdImagePlugin
+2024-06-17 08:27:08,353 (DEBUG) - PIL.Image - Importing QoiImagePlugin
+2024-06-17 08:27:08,353 (DEBUG) - PIL.Image - Importing SgiImagePlugin
+2024-06-17 08:27:08,353 (DEBUG) - PIL.Image - Importing SpiderImagePlugin
+2024-06-17 08:27:08,354 (DEBUG) - PIL.Image - Importing SunImagePlugin
+2024-06-17 08:27:08,354 (DEBUG) - PIL.Image - Importing TgaImagePlugin
+2024-06-17 08:27:08,354 (DEBUG) - PIL.Image - Importing TiffImagePlugin
+2024-06-17 08:27:08,354 (DEBUG) - PIL.Image - Importing WebPImagePlugin
+2024-06-17 08:27:08,356 (DEBUG) - PIL.Image - Importing WmfImagePlugin
+2024-06-17 08:27:08,356 (DEBUG) - PIL.Image - Importing XbmImagePlugin
+2024-06-17 08:27:08,357 (DEBUG) - PIL.Image - Importing XpmImagePlugin
+2024-06-17 08:27:08,357 (DEBUG) - PIL.Image - Importing XVThumbImagePlugin
+2024-06-17 08:27:08,358 (DEBUG) - root - 
+fileName='/tmp/tmpv_duvcsa.png' identity=[ImageReader@0x7fdcd01cbe10 filename='/tmp/tmpv_duvcsa.png'] cannot identify image file <_io.BytesIO object at 0x7fdcd01cc540>
+2024-06-17 08:27:08,359 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 08:29:01,872 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:29:01,917 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:29:01,951 (DEBUG) - root - 
+fileName='/tmp/tmpkzitd4ot.png' identity=[ImageReader@0x7fdcd01cb550 filename='/tmp/tmpkzitd4ot.png'] cannot identify image file <_io.BytesIO object at 0x7fdcd00d89f0>
+2024-06-17 08:29:01,952 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 08:30:46,213 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:30:46,251 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:30:46,293 (DEBUG) - root - 
+fileName='/tmp/tmpu13ajjxi.png' identity=[ImageReader@0x7fdcd009bfd0 filename='/tmp/tmpu13ajjxi.png'] cannot identify image file <_io.BytesIO object at 0x7fdcd00dbc90>
+2024-06-17 08:30:46,293 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 08:32:37,089 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:32:37,663 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:32:41,246 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:32:41,861 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:32:47,884 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:32:47,925 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:32:47,983 (DEBUG) - PIL.Image - Importing BlpImagePlugin
+2024-06-17 08:32:47,984 (DEBUG) - PIL.Image - Importing BmpImagePlugin
+2024-06-17 08:32:47,984 (DEBUG) - PIL.Image - Importing BufrStubImagePlugin
+2024-06-17 08:32:47,985 (DEBUG) - PIL.Image - Importing CurImagePlugin
+2024-06-17 08:32:47,985 (DEBUG) - PIL.Image - Importing DcxImagePlugin
+2024-06-17 08:32:47,985 (DEBUG) - PIL.Image - Importing DdsImagePlugin
+2024-06-17 08:32:47,990 (DEBUG) - PIL.Image - Importing EpsImagePlugin
+2024-06-17 08:32:47,992 (DEBUG) - PIL.Image - Importing FitsImagePlugin
+2024-06-17 08:32:47,993 (DEBUG) - PIL.Image - Importing FliImagePlugin
+2024-06-17 08:32:47,993 (DEBUG) - PIL.Image - Importing FpxImagePlugin
+2024-06-17 08:32:47,994 (DEBUG) - PIL.Image - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-06-17 08:32:47,994 (DEBUG) - PIL.Image - Importing FtexImagePlugin
+2024-06-17 08:32:47,994 (DEBUG) - PIL.Image - Importing GbrImagePlugin
+2024-06-17 08:32:47,995 (DEBUG) - PIL.Image - Importing GifImagePlugin
+2024-06-17 08:32:47,995 (DEBUG) - PIL.Image - Importing GribStubImagePlugin
+2024-06-17 08:32:47,995 (DEBUG) - PIL.Image - Importing Hdf5StubImagePlugin
+2024-06-17 08:32:47,995 (DEBUG) - PIL.Image - Importing IcnsImagePlugin
+2024-06-17 08:32:47,996 (DEBUG) - PIL.Image - Importing IcoImagePlugin
+2024-06-17 08:32:47,997 (DEBUG) - PIL.Image - Importing ImImagePlugin
+2024-06-17 08:32:47,997 (DEBUG) - PIL.Image - Importing ImtImagePlugin
+2024-06-17 08:32:47,998 (DEBUG) - PIL.Image - Importing IptcImagePlugin
+2024-06-17 08:32:47,998 (DEBUG) - PIL.Image - Importing JpegImagePlugin
+2024-06-17 08:32:47,998 (DEBUG) - PIL.Image - Importing Jpeg2KImagePlugin
+2024-06-17 08:32:47,998 (DEBUG) - PIL.Image - Importing McIdasImagePlugin
+2024-06-17 08:32:47,999 (DEBUG) - PIL.Image - Importing MicImagePlugin
+2024-06-17 08:32:47,999 (DEBUG) - PIL.Image - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-06-17 08:32:47,999 (DEBUG) - PIL.Image - Importing MpegImagePlugin
+2024-06-17 08:32:47,999 (DEBUG) - PIL.Image - Importing MpoImagePlugin
+2024-06-17 08:32:48,001 (DEBUG) - PIL.Image - Importing MspImagePlugin
+2024-06-17 08:32:48,002 (DEBUG) - PIL.Image - Importing PalmImagePlugin
+2024-06-17 08:32:48,003 (DEBUG) - PIL.Image - Importing PcdImagePlugin
+2024-06-17 08:32:48,003 (DEBUG) - PIL.Image - Importing PcxImagePlugin
+2024-06-17 08:32:48,003 (DEBUG) - PIL.Image - Importing PdfImagePlugin
+2024-06-17 08:32:48,010 (DEBUG) - PIL.Image - Importing PixarImagePlugin
+2024-06-17 08:32:48,011 (DEBUG) - PIL.Image - Importing PngImagePlugin
+2024-06-17 08:32:48,011 (DEBUG) - PIL.Image - Importing PpmImagePlugin
+2024-06-17 08:32:48,011 (DEBUG) - PIL.Image - Importing PsdImagePlugin
+2024-06-17 08:32:48,012 (DEBUG) - PIL.Image - Importing QoiImagePlugin
+2024-06-17 08:32:48,012 (DEBUG) - PIL.Image - Importing SgiImagePlugin
+2024-06-17 08:32:48,012 (DEBUG) - PIL.Image - Importing SpiderImagePlugin
+2024-06-17 08:32:48,013 (DEBUG) - PIL.Image - Importing SunImagePlugin
+2024-06-17 08:32:48,013 (DEBUG) - PIL.Image - Importing TgaImagePlugin
+2024-06-17 08:32:48,013 (DEBUG) - PIL.Image - Importing TiffImagePlugin
+2024-06-17 08:32:48,013 (DEBUG) - PIL.Image - Importing WebPImagePlugin
+2024-06-17 08:32:48,014 (DEBUG) - PIL.Image - Importing WmfImagePlugin
+2024-06-17 08:32:48,015 (DEBUG) - PIL.Image - Importing XbmImagePlugin
+2024-06-17 08:32:48,015 (DEBUG) - PIL.Image - Importing XpmImagePlugin
+2024-06-17 08:32:48,016 (DEBUG) - PIL.Image - Importing XVThumbImagePlugin
+2024-06-17 08:32:48,017 (DEBUG) - root - cannot identify image file <_io.BytesIO object at 0x7f5ecbf3aac0>
+2024-06-17 08:32:48,017 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 08:33:08,996 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:33:09,584 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:33:10,609 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:33:10,641 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:33:10,685 (DEBUG) - PIL.Image - Importing BlpImagePlugin
+2024-06-17 08:33:10,686 (DEBUG) - PIL.Image - Importing BmpImagePlugin
+2024-06-17 08:33:10,687 (DEBUG) - PIL.Image - Importing BufrStubImagePlugin
+2024-06-17 08:33:10,687 (DEBUG) - PIL.Image - Importing CurImagePlugin
+2024-06-17 08:33:10,687 (DEBUG) - PIL.Image - Importing DcxImagePlugin
+2024-06-17 08:33:10,688 (DEBUG) - PIL.Image - Importing DdsImagePlugin
+2024-06-17 08:33:10,692 (DEBUG) - PIL.Image - Importing EpsImagePlugin
+2024-06-17 08:33:10,693 (DEBUG) - PIL.Image - Importing FitsImagePlugin
+2024-06-17 08:33:10,693 (DEBUG) - PIL.Image - Importing FliImagePlugin
+2024-06-17 08:33:10,693 (DEBUG) - PIL.Image - Importing FpxImagePlugin
+2024-06-17 08:33:10,694 (DEBUG) - PIL.Image - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-06-17 08:33:10,694 (DEBUG) - PIL.Image - Importing FtexImagePlugin
+2024-06-17 08:33:10,694 (DEBUG) - PIL.Image - Importing GbrImagePlugin
+2024-06-17 08:33:10,694 (DEBUG) - PIL.Image - Importing GifImagePlugin
+2024-06-17 08:33:10,694 (DEBUG) - PIL.Image - Importing GribStubImagePlugin
+2024-06-17 08:33:10,695 (DEBUG) - PIL.Image - Importing Hdf5StubImagePlugin
+2024-06-17 08:33:10,695 (DEBUG) - PIL.Image - Importing IcnsImagePlugin
+2024-06-17 08:33:10,696 (DEBUG) - PIL.Image - Importing IcoImagePlugin
+2024-06-17 08:33:10,696 (DEBUG) - PIL.Image - Importing ImImagePlugin
+2024-06-17 08:33:10,697 (DEBUG) - PIL.Image - Importing ImtImagePlugin
+2024-06-17 08:33:10,698 (DEBUG) - PIL.Image - Importing IptcImagePlugin
+2024-06-17 08:33:10,698 (DEBUG) - PIL.Image - Importing JpegImagePlugin
+2024-06-17 08:33:10,698 (DEBUG) - PIL.Image - Importing Jpeg2KImagePlugin
+2024-06-17 08:33:10,698 (DEBUG) - PIL.Image - Importing McIdasImagePlugin
+2024-06-17 08:33:10,699 (DEBUG) - PIL.Image - Importing MicImagePlugin
+2024-06-17 08:33:10,699 (DEBUG) - PIL.Image - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-06-17 08:33:10,699 (DEBUG) - PIL.Image - Importing MpegImagePlugin
+2024-06-17 08:33:10,699 (DEBUG) - PIL.Image - Importing MpoImagePlugin
+2024-06-17 08:33:10,702 (DEBUG) - PIL.Image - Importing MspImagePlugin
+2024-06-17 08:33:10,703 (DEBUG) - PIL.Image - Importing PalmImagePlugin
+2024-06-17 08:33:10,704 (DEBUG) - PIL.Image - Importing PcdImagePlugin
+2024-06-17 08:33:10,704 (DEBUG) - PIL.Image - Importing PcxImagePlugin
+2024-06-17 08:33:10,704 (DEBUG) - PIL.Image - Importing PdfImagePlugin
+2024-06-17 08:33:10,710 (DEBUG) - PIL.Image - Importing PixarImagePlugin
+2024-06-17 08:33:10,710 (DEBUG) - PIL.Image - Importing PngImagePlugin
+2024-06-17 08:33:10,710 (DEBUG) - PIL.Image - Importing PpmImagePlugin
+2024-06-17 08:33:10,710 (DEBUG) - PIL.Image - Importing PsdImagePlugin
+2024-06-17 08:33:10,711 (DEBUG) - PIL.Image - Importing QoiImagePlugin
+2024-06-17 08:33:10,711 (DEBUG) - PIL.Image - Importing SgiImagePlugin
+2024-06-17 08:33:10,711 (DEBUG) - PIL.Image - Importing SpiderImagePlugin
+2024-06-17 08:33:10,711 (DEBUG) - PIL.Image - Importing SunImagePlugin
+2024-06-17 08:33:10,712 (DEBUG) - PIL.Image - Importing TgaImagePlugin
+2024-06-17 08:33:10,712 (DEBUG) - PIL.Image - Importing TiffImagePlugin
+2024-06-17 08:33:10,712 (DEBUG) - PIL.Image - Importing WebPImagePlugin
+2024-06-17 08:33:10,713 (DEBUG) - PIL.Image - Importing WmfImagePlugin
+2024-06-17 08:33:10,714 (DEBUG) - PIL.Image - Importing XbmImagePlugin
+2024-06-17 08:33:10,715 (DEBUG) - PIL.Image - Importing XpmImagePlugin
+2024-06-17 08:33:10,715 (DEBUG) - PIL.Image - Importing XVThumbImagePlugin
+2024-06-17 08:33:10,716 (DEBUG) - root - cannot identify image file <_io.BytesIO object at 0x7f5f457b5990>
+2024-06-17 08:33:10,717 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 08:33:25,434 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:33:26,117 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:33:26,820 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:33:26,864 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:33:26,932 (DEBUG) - PIL.Image - Importing BlpImagePlugin
+2024-06-17 08:33:26,933 (DEBUG) - PIL.Image - Importing BmpImagePlugin
+2024-06-17 08:33:26,942 (DEBUG) - PIL.Image - Importing BufrStubImagePlugin
+2024-06-17 08:33:26,943 (DEBUG) - PIL.Image - Importing CurImagePlugin
+2024-06-17 08:33:26,943 (DEBUG) - PIL.Image - Importing DcxImagePlugin
+2024-06-17 08:33:26,944 (DEBUG) - PIL.Image - Importing DdsImagePlugin
+2024-06-17 08:33:26,948 (DEBUG) - PIL.Image - Importing EpsImagePlugin
+2024-06-17 08:33:26,950 (DEBUG) - PIL.Image - Importing FitsImagePlugin
+2024-06-17 08:33:26,950 (DEBUG) - PIL.Image - Importing FliImagePlugin
+2024-06-17 08:33:26,955 (DEBUG) - PIL.Image - Importing FpxImagePlugin
+2024-06-17 08:33:26,959 (DEBUG) - PIL.Image - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-06-17 08:33:26,959 (DEBUG) - PIL.Image - Importing FtexImagePlugin
+2024-06-17 08:33:26,959 (DEBUG) - PIL.Image - Importing GbrImagePlugin
+2024-06-17 08:33:26,960 (DEBUG) - PIL.Image - Importing GifImagePlugin
+2024-06-17 08:33:26,960 (DEBUG) - PIL.Image - Importing GribStubImagePlugin
+2024-06-17 08:33:26,960 (DEBUG) - PIL.Image - Importing Hdf5StubImagePlugin
+2024-06-17 08:33:26,960 (DEBUG) - PIL.Image - Importing IcnsImagePlugin
+2024-06-17 08:33:26,961 (DEBUG) - PIL.Image - Importing IcoImagePlugin
+2024-06-17 08:33:26,964 (DEBUG) - PIL.Image - Importing ImImagePlugin
+2024-06-17 08:33:26,966 (DEBUG) - PIL.Image - Importing ImtImagePlugin
+2024-06-17 08:33:26,967 (DEBUG) - PIL.Image - Importing IptcImagePlugin
+2024-06-17 08:33:26,970 (DEBUG) - PIL.Image - Importing JpegImagePlugin
+2024-06-17 08:33:26,970 (DEBUG) - PIL.Image - Importing Jpeg2KImagePlugin
+2024-06-17 08:33:26,970 (DEBUG) - PIL.Image - Importing McIdasImagePlugin
+2024-06-17 08:33:26,971 (DEBUG) - PIL.Image - Importing MicImagePlugin
+2024-06-17 08:33:26,971 (DEBUG) - PIL.Image - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-06-17 08:33:26,971 (DEBUG) - PIL.Image - Importing MpegImagePlugin
+2024-06-17 08:33:26,971 (DEBUG) - PIL.Image - Importing MpoImagePlugin
+2024-06-17 08:33:26,975 (DEBUG) - PIL.Image - Importing MspImagePlugin
+2024-06-17 08:33:26,975 (DEBUG) - PIL.Image - Importing PalmImagePlugin
+2024-06-17 08:33:26,976 (DEBUG) - PIL.Image - Importing PcdImagePlugin
+2024-06-17 08:33:26,977 (DEBUG) - PIL.Image - Importing PcxImagePlugin
+2024-06-17 08:33:26,977 (DEBUG) - PIL.Image - Importing PdfImagePlugin
+2024-06-17 08:33:26,994 (DEBUG) - PIL.Image - Importing PixarImagePlugin
+2024-06-17 08:33:26,995 (DEBUG) - PIL.Image - Importing PngImagePlugin
+2024-06-17 08:33:26,995 (DEBUG) - PIL.Image - Importing PpmImagePlugin
+2024-06-17 08:33:26,995 (DEBUG) - PIL.Image - Importing PsdImagePlugin
+2024-06-17 08:33:26,995 (DEBUG) - PIL.Image - Importing QoiImagePlugin
+2024-06-17 08:33:26,996 (DEBUG) - PIL.Image - Importing SgiImagePlugin
+2024-06-17 08:33:26,996 (DEBUG) - PIL.Image - Importing SpiderImagePlugin
+2024-06-17 08:33:26,997 (DEBUG) - PIL.Image - Importing SunImagePlugin
+2024-06-17 08:33:26,997 (DEBUG) - PIL.Image - Importing TgaImagePlugin
+2024-06-17 08:33:26,998 (DEBUG) - PIL.Image - Importing TiffImagePlugin
+2024-06-17 08:33:26,998 (DEBUG) - PIL.Image - Importing WebPImagePlugin
+2024-06-17 08:33:26,999 (DEBUG) - PIL.Image - Importing WmfImagePlugin
+2024-06-17 08:33:27,000 (DEBUG) - PIL.Image - Importing XbmImagePlugin
+2024-06-17 08:33:27,001 (DEBUG) - PIL.Image - Importing XpmImagePlugin
+2024-06-17 08:33:27,002 (DEBUG) - PIL.Image - Importing XVThumbImagePlugin
+2024-06-17 08:33:27,004 (DEBUG) - root - cannot identify image file <_io.BytesIO object at 0x7fe6631ad850>
+2024-06-17 08:33:27,006 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 08:33:31,143 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:33:31,177 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:33:31,210 (DEBUG) - root - cannot identify image file <_io.BytesIO object at 0x7fe6627f7330>
+2024-06-17 08:33:31,210 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 08:34:12,633 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:34:13,232 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:36:10,873 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:36:11,426 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:36:14,850 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:36:15,367 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:36:16,913 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:36:17,505 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:36:20,058 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:36:20,095 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:36:20,156 (DEBUG) - PIL.Image - Importing BlpImagePlugin
+2024-06-17 08:36:20,158 (DEBUG) - PIL.Image - Importing BmpImagePlugin
+2024-06-17 08:36:20,159 (DEBUG) - PIL.Image - Importing BufrStubImagePlugin
+2024-06-17 08:36:20,159 (DEBUG) - PIL.Image - Importing CurImagePlugin
+2024-06-17 08:36:20,160 (DEBUG) - PIL.Image - Importing DcxImagePlugin
+2024-06-17 08:36:20,161 (DEBUG) - PIL.Image - Importing DdsImagePlugin
+2024-06-17 08:36:20,165 (DEBUG) - PIL.Image - Importing EpsImagePlugin
+2024-06-17 08:36:20,167 (DEBUG) - PIL.Image - Importing FitsImagePlugin
+2024-06-17 08:36:20,168 (DEBUG) - PIL.Image - Importing FliImagePlugin
+2024-06-17 08:36:20,168 (DEBUG) - PIL.Image - Importing FpxImagePlugin
+2024-06-17 08:36:20,169 (DEBUG) - PIL.Image - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-06-17 08:36:20,169 (DEBUG) - PIL.Image - Importing FtexImagePlugin
+2024-06-17 08:36:20,171 (DEBUG) - PIL.Image - Importing GbrImagePlugin
+2024-06-17 08:36:20,171 (DEBUG) - PIL.Image - Importing GifImagePlugin
+2024-06-17 08:36:20,171 (DEBUG) - PIL.Image - Importing GribStubImagePlugin
+2024-06-17 08:36:20,172 (DEBUG) - PIL.Image - Importing Hdf5StubImagePlugin
+2024-06-17 08:36:20,172 (DEBUG) - PIL.Image - Importing IcnsImagePlugin
+2024-06-17 08:36:20,175 (DEBUG) - PIL.Image - Importing IcoImagePlugin
+2024-06-17 08:36:20,176 (DEBUG) - PIL.Image - Importing ImImagePlugin
+2024-06-17 08:36:20,176 (DEBUG) - PIL.Image - Importing ImtImagePlugin
+2024-06-17 08:36:20,177 (DEBUG) - PIL.Image - Importing IptcImagePlugin
+2024-06-17 08:36:20,177 (DEBUG) - PIL.Image - Importing JpegImagePlugin
+2024-06-17 08:36:20,177 (DEBUG) - PIL.Image - Importing Jpeg2KImagePlugin
+2024-06-17 08:36:20,177 (DEBUG) - PIL.Image - Importing McIdasImagePlugin
+2024-06-17 08:36:20,178 (DEBUG) - PIL.Image - Importing MicImagePlugin
+2024-06-17 08:36:20,179 (DEBUG) - PIL.Image - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-06-17 08:36:20,179 (DEBUG) - PIL.Image - Importing MpegImagePlugin
+2024-06-17 08:36:20,180 (DEBUG) - PIL.Image - Importing MpoImagePlugin
+2024-06-17 08:36:20,181 (DEBUG) - PIL.Image - Importing MspImagePlugin
+2024-06-17 08:36:20,182 (DEBUG) - PIL.Image - Importing PalmImagePlugin
+2024-06-17 08:36:20,183 (DEBUG) - PIL.Image - Importing PcdImagePlugin
+2024-06-17 08:36:20,183 (DEBUG) - PIL.Image - Importing PcxImagePlugin
+2024-06-17 08:36:20,183 (DEBUG) - PIL.Image - Importing PdfImagePlugin
+2024-06-17 08:36:20,191 (DEBUG) - PIL.Image - Importing PixarImagePlugin
+2024-06-17 08:36:20,192 (DEBUG) - PIL.Image - Importing PngImagePlugin
+2024-06-17 08:36:20,192 (DEBUG) - PIL.Image - Importing PpmImagePlugin
+2024-06-17 08:36:20,192 (DEBUG) - PIL.Image - Importing PsdImagePlugin
+2024-06-17 08:36:20,192 (DEBUG) - PIL.Image - Importing QoiImagePlugin
+2024-06-17 08:36:20,193 (DEBUG) - PIL.Image - Importing SgiImagePlugin
+2024-06-17 08:36:20,194 (DEBUG) - PIL.Image - Importing SpiderImagePlugin
+2024-06-17 08:36:20,194 (DEBUG) - PIL.Image - Importing SunImagePlugin
+2024-06-17 08:36:20,195 (DEBUG) - PIL.Image - Importing TgaImagePlugin
+2024-06-17 08:36:20,195 (DEBUG) - PIL.Image - Importing TiffImagePlugin
+2024-06-17 08:36:20,195 (DEBUG) - PIL.Image - Importing WebPImagePlugin
+2024-06-17 08:36:20,196 (DEBUG) - PIL.Image - Importing WmfImagePlugin
+2024-06-17 08:36:20,197 (DEBUG) - PIL.Image - Importing XbmImagePlugin
+2024-06-17 08:36:20,198 (DEBUG) - PIL.Image - Importing XpmImagePlugin
+2024-06-17 08:36:20,198 (DEBUG) - PIL.Image - Importing XVThumbImagePlugin
+2024-06-17 08:36:20,200 (DEBUG) - root - cannot identify image file <_io.BytesIO object at 0x7fcb4e526f70>
+2024-06-17 08:36:20,201 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 08:37:53,045 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:37:53,649 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:37:54,952 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:37:55,534 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:38:08,292 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:38:08,853 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:38:12,196 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:38:12,748 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:38:15,323 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:38:15,955 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:39:04,319 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:39:04,924 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:39:07,237 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:39:07,806 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:39:10,399 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:39:11,070 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:39:19,827 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:39:19,876 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:39:19,954 (DEBUG) - PIL.Image - Importing BlpImagePlugin
+2024-06-17 08:39:19,957 (DEBUG) - PIL.Image - Importing BmpImagePlugin
+2024-06-17 08:39:19,957 (DEBUG) - PIL.Image - Importing BufrStubImagePlugin
+2024-06-17 08:39:19,958 (DEBUG) - PIL.Image - Importing CurImagePlugin
+2024-06-17 08:39:19,958 (DEBUG) - PIL.Image - Importing DcxImagePlugin
+2024-06-17 08:39:19,959 (DEBUG) - PIL.Image - Importing DdsImagePlugin
+2024-06-17 08:39:19,964 (DEBUG) - PIL.Image - Importing EpsImagePlugin
+2024-06-17 08:39:19,965 (DEBUG) - PIL.Image - Importing FitsImagePlugin
+2024-06-17 08:39:19,965 (DEBUG) - PIL.Image - Importing FliImagePlugin
+2024-06-17 08:39:19,965 (DEBUG) - PIL.Image - Importing FpxImagePlugin
+2024-06-17 08:39:19,966 (DEBUG) - PIL.Image - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-06-17 08:39:19,966 (DEBUG) - PIL.Image - Importing FtexImagePlugin
+2024-06-17 08:39:19,966 (DEBUG) - PIL.Image - Importing GbrImagePlugin
+2024-06-17 08:39:19,967 (DEBUG) - PIL.Image - Importing GifImagePlugin
+2024-06-17 08:39:19,967 (DEBUG) - PIL.Image - Importing GribStubImagePlugin
+2024-06-17 08:39:19,967 (DEBUG) - PIL.Image - Importing Hdf5StubImagePlugin
+2024-06-17 08:39:19,967 (DEBUG) - PIL.Image - Importing IcnsImagePlugin
+2024-06-17 08:39:19,968 (DEBUG) - PIL.Image - Importing IcoImagePlugin
+2024-06-17 08:39:19,969 (DEBUG) - PIL.Image - Importing ImImagePlugin
+2024-06-17 08:39:19,969 (DEBUG) - PIL.Image - Importing ImtImagePlugin
+2024-06-17 08:39:19,970 (DEBUG) - PIL.Image - Importing IptcImagePlugin
+2024-06-17 08:39:19,970 (DEBUG) - PIL.Image - Importing JpegImagePlugin
+2024-06-17 08:39:19,970 (DEBUG) - PIL.Image - Importing Jpeg2KImagePlugin
+2024-06-17 08:39:19,970 (DEBUG) - PIL.Image - Importing McIdasImagePlugin
+2024-06-17 08:39:19,971 (DEBUG) - PIL.Image - Importing MicImagePlugin
+2024-06-17 08:39:19,971 (DEBUG) - PIL.Image - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-06-17 08:39:19,971 (DEBUG) - PIL.Image - Importing MpegImagePlugin
+2024-06-17 08:39:19,972 (DEBUG) - PIL.Image - Importing MpoImagePlugin
+2024-06-17 08:39:19,974 (DEBUG) - PIL.Image - Importing MspImagePlugin
+2024-06-17 08:39:19,975 (DEBUG) - PIL.Image - Importing PalmImagePlugin
+2024-06-17 08:39:19,976 (DEBUG) - PIL.Image - Importing PcdImagePlugin
+2024-06-17 08:39:19,976 (DEBUG) - PIL.Image - Importing PcxImagePlugin
+2024-06-17 08:39:19,976 (DEBUG) - PIL.Image - Importing PdfImagePlugin
+2024-06-17 08:39:19,983 (DEBUG) - PIL.Image - Importing PixarImagePlugin
+2024-06-17 08:39:19,984 (DEBUG) - PIL.Image - Importing PngImagePlugin
+2024-06-17 08:39:19,984 (DEBUG) - PIL.Image - Importing PpmImagePlugin
+2024-06-17 08:39:19,984 (DEBUG) - PIL.Image - Importing PsdImagePlugin
+2024-06-17 08:39:19,984 (DEBUG) - PIL.Image - Importing QoiImagePlugin
+2024-06-17 08:39:19,984 (DEBUG) - PIL.Image - Importing SgiImagePlugin
+2024-06-17 08:39:19,985 (DEBUG) - PIL.Image - Importing SpiderImagePlugin
+2024-06-17 08:39:19,985 (DEBUG) - PIL.Image - Importing SunImagePlugin
+2024-06-17 08:39:19,985 (DEBUG) - PIL.Image - Importing TgaImagePlugin
+2024-06-17 08:39:19,986 (DEBUG) - PIL.Image - Importing TiffImagePlugin
+2024-06-17 08:39:19,986 (DEBUG) - PIL.Image - Importing WebPImagePlugin
+2024-06-17 08:39:19,987 (DEBUG) - PIL.Image - Importing WmfImagePlugin
+2024-06-17 08:39:19,988 (DEBUG) - PIL.Image - Importing XbmImagePlugin
+2024-06-17 08:39:19,990 (DEBUG) - PIL.Image - Importing XpmImagePlugin
+2024-06-17 08:39:19,991 (DEBUG) - PIL.Image - Importing XVThumbImagePlugin
+2024-06-17 08:39:19,992 (DEBUG) - root - 
+fileName='pdfs/963258_fitaawd@gmail.com_Third party insurance_20240617083919.pdf_barcode.png' identity=[ImageReader@0x7f0de869fa50 filename='pdfs/963258_fitaawd@gmail.com_Third party insurance_20240617083919.pdf_barcode.png'] cannot identify image file <_io.BytesIO object at 0x7f0de86a0360>
+2024-06-17 08:39:19,993 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 08:40:09,389 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:41:00,402 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:48:37,646 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:48:38,172 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:48:39,729 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:48:40,299 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:48:41,933 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:48:41,958 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:48:42,009 (DEBUG) - PIL.Image - Importing BlpImagePlugin
+2024-06-17 08:48:42,010 (DEBUG) - PIL.Image - Importing BmpImagePlugin
+2024-06-17 08:48:42,010 (DEBUG) - PIL.Image - Importing BufrStubImagePlugin
+2024-06-17 08:48:42,011 (DEBUG) - PIL.Image - Importing CurImagePlugin
+2024-06-17 08:48:42,011 (DEBUG) - PIL.Image - Importing DcxImagePlugin
+2024-06-17 08:48:42,012 (DEBUG) - PIL.Image - Importing DdsImagePlugin
+2024-06-17 08:48:42,016 (DEBUG) - PIL.Image - Importing EpsImagePlugin
+2024-06-17 08:48:42,017 (DEBUG) - PIL.Image - Importing FitsImagePlugin
+2024-06-17 08:48:42,017 (DEBUG) - PIL.Image - Importing FliImagePlugin
+2024-06-17 08:48:42,017 (DEBUG) - PIL.Image - Importing FpxImagePlugin
+2024-06-17 08:48:42,018 (DEBUG) - PIL.Image - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-06-17 08:48:42,018 (DEBUG) - PIL.Image - Importing FtexImagePlugin
+2024-06-17 08:48:42,019 (DEBUG) - PIL.Image - Importing GbrImagePlugin
+2024-06-17 08:48:42,019 (DEBUG) - PIL.Image - Importing GifImagePlugin
+2024-06-17 08:48:42,019 (DEBUG) - PIL.Image - Importing GribStubImagePlugin
+2024-06-17 08:48:42,019 (DEBUG) - PIL.Image - Importing Hdf5StubImagePlugin
+2024-06-17 08:48:42,020 (DEBUG) - PIL.Image - Importing IcnsImagePlugin
+2024-06-17 08:48:42,021 (DEBUG) - PIL.Image - Importing IcoImagePlugin
+2024-06-17 08:48:42,022 (DEBUG) - PIL.Image - Importing ImImagePlugin
+2024-06-17 08:48:42,023 (DEBUG) - PIL.Image - Importing ImtImagePlugin
+2024-06-17 08:48:42,023 (DEBUG) - PIL.Image - Importing IptcImagePlugin
+2024-06-17 08:48:42,024 (DEBUG) - PIL.Image - Importing JpegImagePlugin
+2024-06-17 08:48:42,024 (DEBUG) - PIL.Image - Importing Jpeg2KImagePlugin
+2024-06-17 08:48:42,024 (DEBUG) - PIL.Image - Importing McIdasImagePlugin
+2024-06-17 08:48:42,024 (DEBUG) - PIL.Image - Importing MicImagePlugin
+2024-06-17 08:48:42,024 (DEBUG) - PIL.Image - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-06-17 08:48:42,024 (DEBUG) - PIL.Image - Importing MpegImagePlugin
+2024-06-17 08:48:42,025 (DEBUG) - PIL.Image - Importing MpoImagePlugin
+2024-06-17 08:48:42,026 (DEBUG) - PIL.Image - Importing MspImagePlugin
+2024-06-17 08:48:42,027 (DEBUG) - PIL.Image - Importing PalmImagePlugin
+2024-06-17 08:48:42,028 (DEBUG) - PIL.Image - Importing PcdImagePlugin
+2024-06-17 08:48:42,028 (DEBUG) - PIL.Image - Importing PcxImagePlugin
+2024-06-17 08:48:42,028 (DEBUG) - PIL.Image - Importing PdfImagePlugin
+2024-06-17 08:48:42,034 (DEBUG) - PIL.Image - Importing PixarImagePlugin
+2024-06-17 08:48:42,034 (DEBUG) - PIL.Image - Importing PngImagePlugin
+2024-06-17 08:48:42,035 (DEBUG) - PIL.Image - Importing PpmImagePlugin
+2024-06-17 08:48:42,035 (DEBUG) - PIL.Image - Importing PsdImagePlugin
+2024-06-17 08:48:42,035 (DEBUG) - PIL.Image - Importing QoiImagePlugin
+2024-06-17 08:48:42,035 (DEBUG) - PIL.Image - Importing SgiImagePlugin
+2024-06-17 08:48:42,036 (DEBUG) - PIL.Image - Importing SpiderImagePlugin
+2024-06-17 08:48:42,036 (DEBUG) - PIL.Image - Importing SunImagePlugin
+2024-06-17 08:48:42,036 (DEBUG) - PIL.Image - Importing TgaImagePlugin
+2024-06-17 08:48:42,037 (DEBUG) - PIL.Image - Importing TiffImagePlugin
+2024-06-17 08:48:42,037 (DEBUG) - PIL.Image - Importing WebPImagePlugin
+2024-06-17 08:48:42,038 (DEBUG) - PIL.Image - Importing WmfImagePlugin
+2024-06-17 08:48:42,039 (DEBUG) - PIL.Image - Importing XbmImagePlugin
+2024-06-17 08:48:42,040 (DEBUG) - PIL.Image - Importing XpmImagePlugin
+2024-06-17 08:48:42,040 (DEBUG) - PIL.Image - Importing XVThumbImagePlugin
+2024-06-17 08:48:42,041 (DEBUG) - root - 
+fileName='pdfs/963258_fitaawd@gmail.com_Third party insurance_20240617084841.pdf_barcode.png' identity=[ImageReader@0x7f76481bee90 filename='pdfs/963258_fitaawd@gmail.com_Third party insurance_20240617084841.pdf_barcode.png'] cannot identify image file <_io.BytesIO object at 0x7f76480c43b0>
+2024-06-17 08:48:42,042 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 08:49:41,030 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:49:41,614 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:49:48,084 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:49:48,122 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:49:48,171 (DEBUG) - PIL.Image - Importing BlpImagePlugin
+2024-06-17 08:49:48,172 (DEBUG) - PIL.Image - Importing BmpImagePlugin
+2024-06-17 08:49:48,172 (DEBUG) - PIL.Image - Importing BufrStubImagePlugin
+2024-06-17 08:49:48,173 (DEBUG) - PIL.Image - Importing CurImagePlugin
+2024-06-17 08:49:48,173 (DEBUG) - PIL.Image - Importing DcxImagePlugin
+2024-06-17 08:49:48,173 (DEBUG) - PIL.Image - Importing DdsImagePlugin
+2024-06-17 08:49:48,178 (DEBUG) - PIL.Image - Importing EpsImagePlugin
+2024-06-17 08:49:48,178 (DEBUG) - PIL.Image - Importing FitsImagePlugin
+2024-06-17 08:49:48,179 (DEBUG) - PIL.Image - Importing FliImagePlugin
+2024-06-17 08:49:48,179 (DEBUG) - PIL.Image - Importing FpxImagePlugin
+2024-06-17 08:49:48,180 (DEBUG) - PIL.Image - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-06-17 08:49:48,180 (DEBUG) - PIL.Image - Importing FtexImagePlugin
+2024-06-17 08:49:48,180 (DEBUG) - PIL.Image - Importing GbrImagePlugin
+2024-06-17 08:49:48,180 (DEBUG) - PIL.Image - Importing GifImagePlugin
+2024-06-17 08:49:48,180 (DEBUG) - PIL.Image - Importing GribStubImagePlugin
+2024-06-17 08:49:48,180 (DEBUG) - PIL.Image - Importing Hdf5StubImagePlugin
+2024-06-17 08:49:48,181 (DEBUG) - PIL.Image - Importing IcnsImagePlugin
+2024-06-17 08:49:48,182 (DEBUG) - PIL.Image - Importing IcoImagePlugin
+2024-06-17 08:49:48,182 (DEBUG) - PIL.Image - Importing ImImagePlugin
+2024-06-17 08:49:48,182 (DEBUG) - PIL.Image - Importing ImtImagePlugin
+2024-06-17 08:49:48,183 (DEBUG) - PIL.Image - Importing IptcImagePlugin
+2024-06-17 08:49:48,183 (DEBUG) - PIL.Image - Importing JpegImagePlugin
+2024-06-17 08:49:48,183 (DEBUG) - PIL.Image - Importing Jpeg2KImagePlugin
+2024-06-17 08:49:48,183 (DEBUG) - PIL.Image - Importing McIdasImagePlugin
+2024-06-17 08:49:48,183 (DEBUG) - PIL.Image - Importing MicImagePlugin
+2024-06-17 08:49:48,184 (DEBUG) - PIL.Image - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-06-17 08:49:48,184 (DEBUG) - PIL.Image - Importing MpegImagePlugin
+2024-06-17 08:49:48,184 (DEBUG) - PIL.Image - Importing MpoImagePlugin
+2024-06-17 08:49:48,185 (DEBUG) - PIL.Image - Importing MspImagePlugin
+2024-06-17 08:49:48,186 (DEBUG) - PIL.Image - Importing PalmImagePlugin
+2024-06-17 08:49:48,186 (DEBUG) - PIL.Image - Importing PcdImagePlugin
+2024-06-17 08:49:48,187 (DEBUG) - PIL.Image - Importing PcxImagePlugin
+2024-06-17 08:49:48,187 (DEBUG) - PIL.Image - Importing PdfImagePlugin
+2024-06-17 08:49:48,192 (DEBUG) - PIL.Image - Importing PixarImagePlugin
+2024-06-17 08:49:48,193 (DEBUG) - PIL.Image - Importing PngImagePlugin
+2024-06-17 08:49:48,193 (DEBUG) - PIL.Image - Importing PpmImagePlugin
+2024-06-17 08:49:48,193 (DEBUG) - PIL.Image - Importing PsdImagePlugin
+2024-06-17 08:49:48,193 (DEBUG) - PIL.Image - Importing QoiImagePlugin
+2024-06-17 08:49:48,193 (DEBUG) - PIL.Image - Importing SgiImagePlugin
+2024-06-17 08:49:48,194 (DEBUG) - PIL.Image - Importing SpiderImagePlugin
+2024-06-17 08:49:48,194 (DEBUG) - PIL.Image - Importing SunImagePlugin
+2024-06-17 08:49:48,194 (DEBUG) - PIL.Image - Importing TgaImagePlugin
+2024-06-17 08:49:48,195 (DEBUG) - PIL.Image - Importing TiffImagePlugin
+2024-06-17 08:49:48,195 (DEBUG) - PIL.Image - Importing WebPImagePlugin
+2024-06-17 08:49:48,196 (DEBUG) - PIL.Image - Importing WmfImagePlugin
+2024-06-17 08:49:48,196 (DEBUG) - PIL.Image - Importing XbmImagePlugin
+2024-06-17 08:49:48,197 (DEBUG) - PIL.Image - Importing XpmImagePlugin
+2024-06-17 08:49:48,198 (DEBUG) - PIL.Image - Importing XVThumbImagePlugin
+2024-06-17 08:49:48,199 (DEBUG) - root - 
+fileName='pdfs/963258_fitaawd@gmail.com_Third party insurance_20240617084948.pdf_barcode.png' identity=[ImageReader@0x7efe5c2c73d0 filename='pdfs/963258_fitaawd@gmail.com_Third party insurance_20240617084948.pdf_barcode.png'] cannot identify image file <_io.BytesIO object at 0x7efe5c2c8450>
+2024-06-17 08:49:48,200 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 08:50:35,169 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:50:35,742 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:50:37,310 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:50:37,842 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:50:39,648 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:50:39,684 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:51:25,730 (WARNING) - django.request - Not Found: /files/gen_files/e0106244-f288-42fa-89d2-91772ac7c182
+2024-06-17 08:51:28,642 (WARNING) - django.request - Not Found: /files/gen_files/e0106244-f288-42fa-89d2-91772ac7c182/
+2024-06-17 08:52:02,867 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:52:02,900 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:53:27,679 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:53:28,292 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:53:29,840 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:53:30,487 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:53:34,355 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:53:34,389 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:53:34,424 (DEBUG) - root - Paragraph.__init__() got an unexpected keyword argument 'alignment'
+2024-06-17 08:53:34,425 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 08:53:42,181 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:53:42,224 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:53:42,268 (DEBUG) - root - Paragraph.__init__() got an unexpected keyword argument 'alignment'
+2024-06-17 08:53:42,269 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 08:54:11,840 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:54:12,422 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:54:13,971 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:54:14,501 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:54:18,083 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:54:18,784 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:54:25,869 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:54:35,734 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:54:35,763 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:54:35,813 (DEBUG) - root - Paragraph.__init__() got multiple values for argument 'style'
+2024-06-17 08:54:35,815 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 08:54:42,752 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:54:43,339 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:54:49,233 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:54:49,269 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:55:22,725 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:55:23,320 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:55:34,032 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:55:34,567 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:55:36,097 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:55:36,688 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:55:37,527 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:55:37,562 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 08:55:51,487 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:55:52,042 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:55:54,607 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 08:55:55,136 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 08:56:00,928 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 08:56:00,973 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 09:01:16,880 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 09:01:17,402 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 09:01:20,797 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 09:01:21,366 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 09:02:13,325 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 09:02:13,838 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 09:02:16,141 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 09:02:16,665 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 09:02:24,339 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 09:02:24,903 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 09:02:32,382 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 09:02:32,918 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 09:02:39,362 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 09:02:39,887 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 09:02:44,289 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 09:02:44,809 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 09:02:47,675 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 09:02:47,721 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 09:02:47,785 (DEBUG) - root - Can only add Shape or UserNode objects to a Group
+2024-06-17 09:02:47,786 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 09:09:17,936 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 09:09:18,475 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 09:09:40,147 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 09:09:40,711 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 09:09:43,016 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 09:09:43,501 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 09:09:52,144 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 09:09:52,699 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 09:09:54,272 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 09:09:54,791 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 09:10:18,935 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 09:10:18,968 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 09:10:18,995 (DEBUG) - root - Can only add Shape or UserNode objects to a Group
+2024-06-17 09:10:18,997 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 09:10:21,223 (WARNING) - django.request - Unauthorized: /documents/renew_insurance/963258/
+2024-06-17 09:10:40,987 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 09:10:41,001 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/get_payment_info/963258/ HTTP/1.1" 200 90
+2024-06-17 09:10:41,015 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-17 09:10:41,016 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-17 09:10:55,648 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 09:10:55,671 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 09:10:55,698 (DEBUG) - root - Can only add Shape or UserNode objects to a Group
+2024-06-17 09:10:55,700 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-17 09:10:55,700 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-17 09:10:55,705 (WARNING) - django.request - Bad Request: /documents/renew_insurance/963258/
+2024-06-17 09:11:13,121 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 09:11:13,708 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 09:11:18,125 (INFO) - django.utils.autoreload - /home/dawit/projects/customer_account_service/files/utils/generate_pdf.py changed, reloading.
+2024-06-17 09:11:18,695 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 09:11:25,995 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 09:11:26,021 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "PUT /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 09:11:26,063 (DEBUG) - MARKDOWN - Successfully imported extension module "markdown.extensions.toc".
+2024-06-17 09:11:26,064 (DEBUG) - MARKDOWN - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+2024-06-17 09:13:17,702 (WARNING) - django.request - Method Not Allowed: /vehicles/owner_vehicle/006d6092-e840-468e-9aac-5f285f95d78f/
+2024-06-17 09:13:30,878 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 09:13:30,916 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/963258 HTTP/1.1" 301 None
+2024-06-17 09:13:30,918 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-17 09:13:30,947 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/963258/ HTTP/1.1" 200 337
+2024-06-17 09:13:30,950 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 09:13:30,990 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/963258 HTTP/1.1" 301 None
+2024-06-17 09:13:30,994 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-17 09:13:31,021 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/963258/ HTTP/1.1" 200 337
+2024-06-17 09:13:31,024 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 09:13:31,052 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/963258 HTTP/1.1" 301 None
+2024-06-17 09:13:31,055 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-17 09:13:31,080 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 09:13:31,084 (WARNING) - django.request - Bad Request: /vehicles/add_vehicle/
+2024-06-17 09:13:55,011 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 09:13:55,038 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/963258 HTTP/1.1" 301 None
+2024-06-17 09:13:55,040 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-17 09:13:55,067 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadauthrity/963258/ HTTP/1.1" 200 337
+2024-06-17 09:13:55,070 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 09:13:55,094 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/963258 HTTP/1.1" 301 None
+2024-06-17 09:13:55,097 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-17 09:13:55,125 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /roadfund/963258/ HTTP/1.1" 200 337
+2024-06-17 09:13:55,128 (DEBUG) - urllib3.connectionpool - Starting new HTTP connection (1): localhost:8001
+2024-06-17 09:13:55,158 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/963258 HTTP/1.1" 301 None
+2024-06-17 09:13:55,161 (DEBUG) - urllib3.connectionpool - Resetting dropped connection: localhost
+2024-06-17 09:13:55,190 (DEBUG) - urllib3.connectionpool - http://localhost:8001 "GET /insurance/963258/ HTTP/1.1" 200 359
+2024-06-17 10:31:01,175 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-17 10:31:01,176 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-17 10:31:01,176 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-17 10:31:01,176 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-17 10:31:01,176 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-17 10:31:01,176 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-17 10:31:01,177 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-17 10:31:01,177 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-17 10:31:01,177 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-17 10:31:01,178 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-17 10:31:01,178 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-17 10:31:10,254 (DEBUG) - celery.utils.functional - 
+def xmap(task, it):
+    return 1
+
+2024-06-17 10:31:10,255 (DEBUG) - celery.utils.functional - 
+def backend_cleanup():
+    return 1
+
+2024-06-17 10:31:10,255 (DEBUG) - celery.utils.functional - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-06-17 10:31:10,255 (DEBUG) - celery.utils.functional - 
+def clean_unverfied_user():
+    return 1
+
+2024-06-17 10:31:10,255 (DEBUG) - celery.utils.functional - 
+def xstarmap(task, it):
+    return 1
+
+2024-06-17 10:31:10,256 (DEBUG) - celery.utils.functional - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-06-17 10:31:10,257 (DEBUG) - celery.utils.functional - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-06-17 10:31:10,257 (DEBUG) - celery.utils.functional - 
+def chunks(task, it, n):
+    return 1
+
+2024-06-17 10:31:10,257 (DEBUG) - celery.utils.functional - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2024-06-17 10:31:10,258 (DEBUG) - celery.utils.functional - 
+def check_expiry_date():
+    return 1
+
+2024-06-17 10:31:10,258 (DEBUG) - celery.utils.functional - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-06-17 11:50:11,780 (WARNING) - django.request - Not Found: /guests/dffggvvg/
+2024-06-17 11:54:09,769 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 11:54:32,280 (WARNING) - django.request - Unauthorized: /guests/9f548ddb/
+2024-06-17 11:54:41,096 (WARNING) - django.request - Unauthorized: /guests/9f548ddb/
+2024-06-17 11:54:41,829 (WARNING) - django.request - Unauthorized: /guests/9f548ddb/
+2024-06-17 12:06:35,829 (WARNING) - django.request - Not Found: /guests/9f548ddd/
+2024-06-17 14:04:40,351 (INFO) - django.utils.autoreload - /home/dawit/.local/share/virtualenvs/customer_account_service-MVFMxRZG/lib/python3.11/site-packages/urllib3/poolmanager.py changed, reloading.
+2024-06-17 14:04:40,776 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-06-17 17:17:56,134 (WARNING) - django.request - Unauthorized: /auth/jwt/create
