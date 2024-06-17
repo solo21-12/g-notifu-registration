@@ -38,3 +38,4 @@ makefile
 
 /static/
 *.log
+.env
