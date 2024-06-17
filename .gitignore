@@ -39,3 +39,4 @@ makefile
 /static/
 *.log
 .env
+goma-account-key.json
